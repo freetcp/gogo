@@ -111,17 +111,10 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_hysteria_11
-- name: 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  strategy: consistent-hashing
-  proxies: null
 - name: 选择代理
   type: select
   proxies:
   - 自动选择
-  - 负载均衡
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
