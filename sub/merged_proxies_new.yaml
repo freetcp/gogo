@@ -102,7 +102,6 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - DIRECT
   - meta_trojan_01
   - meta_trojan_02
   - meta_trojan_03
