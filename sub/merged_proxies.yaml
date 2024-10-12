@@ -12,13 +12,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
   - 223.5.5.5
-  - 180.76.76.76
+  - 8.8.8.8
   nameserver:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
   fallback:
-  - 1.1.1.1
-  - 8.8.8.8
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -87,6 +87,16 @@ proxies:
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
 proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - meta_trojan_01
+  - meta_trojan_02
+  - meta_trojan_03
+  - meta_trojan_04
+  - meta_trojan_05
+  - meta_trojan_06
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -99,18 +109,9 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-- name: 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  strategy: consistent-hashing
-  proxies: null
-- name: 选择代理
-  type: select
-  proxies:
-  - 自动选择
-  - 负载均衡
 rules:
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,选择代理
+- MATCH,节点选择
