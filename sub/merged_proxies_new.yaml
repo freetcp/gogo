@@ -98,17 +98,31 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 proxy-groups:
-- name: ♻️ 自动选择
+- name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
+  proxies:
+  - meta_trojan_01
+  - meta_trojan_02
+  - meta_trojan_03
+  - meta_trojan_04
+  - meta_trojan_05
+  - meta_trojan_06
+  - meta_hysteria_11
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: consistent-hashing
   proxies: null
-- name: 🌍 选择代理
+- name: 选择代理
   type: select
   proxies:
-  - ♻️ 自动选择
+  - 自动选择
+  - 负载均衡
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,🌍 选择代理
+- MATCH,选择代理
