@@ -12,37 +12,38 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
   - 223.5.5.5
-  - 8.8.8.8
+  - 180.76.76.76
   nameserver:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
   fallback:
-  - https://1.0.0.1/dns-query
-  - tls://dns.google
+  - 1.1.1.1
+  - 8.8.8.8
   fallback-filter:
     geoip: true
     geoip-code: CN
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: WARP
+- name: ☁ WARP
   type: vless
-  server: cf.zerone-cdn.pp.ua
-  port: 443
+  server: ct.090227.xyz
+  port: 8443
   uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
-  udp: false
+  encryption: none
+  udp: true
   tls: true
   network: ws
-  servername: ws.freews.eu.org
+  servername: trojan.freews.eu.org
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: ws.freews.eu.org
+      Host: trojan.freews.eu.org
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
   - 8.8.8.8
-  dialer-proxy: WARP前置节点
+  dialer-proxy: ☁ WARP前置节点
 - name: meta_trojan_01
   port: 443
   server: 202408-ru1a.88888806.xyz
@@ -116,46 +117,30 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 proxy-groups:
-- name: 节点选择
-  type: select
-  proxies:
-  - WARP
-  - 自动选择
-  - 负载均衡
-- name: WARP前置节点
-  type: select
-  proxies:
-  - 自动选择
-  - 负载均衡
-- name: 自动选择
+- name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:
-  - meta_trojan_01
-  - meta_trojan_02
-  - meta_trojan_03
-  - meta_trojan_04
-  - meta_trojan_05
-  - meta_trojan_06
-  - meta_hysteria_11
-- name: 负载均衡
+  proxies: null
+- name: ⚖ 负载均衡
   type: load-balance
-  proxies:
-  - meta_trojan_01
-  - meta_trojan_02
-  - meta_trojan_03
-  - meta_trojan_04
-  - meta_trojan_05
-  - meta_trojan_06
-  - meta_hysteria_11
   url: http://www.gstatic.com/generate_204
   interval: 300
-  strategy: round-robin
+  strategy: consistent-hashing
+  proxies: null
+- name: ☁ WARP前置节点
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+- name: 🌍 选择代理
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - ☁ WARP
 rules:
-- DOMAIN,clash.razord.top,DIRECT
-- DOMAIN,yacd.haishan.me,DIRECT
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,节点选择
+- MATCH,🌍 选择代理
