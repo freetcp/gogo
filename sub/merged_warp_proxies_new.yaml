@@ -27,18 +27,17 @@ dns:
 proxies:
 - name: WARP
   type: vless
-  server: ct.090227.xyz
-  port: 8443
+  server: cf.zerone-cdn.pp.ua
+  port: 443
   uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
-  encryption: none
-  udp: true
+  udp: false
   tls: true
   network: ws
-  servername: trojan.freews.eu.org
+  servername: ws.freews.eu.org
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: trojan.freews.eu.org
+      Host: ws.freews.eu.org
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
