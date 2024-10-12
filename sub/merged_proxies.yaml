@@ -104,17 +104,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies: null
-- name: ⚖ 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  strategy: consistent-hashing
-  proxies: null
 - name: 🌍 选择代理
   type: select
   proxies:
   - ♻️ 自动选择
-  - ⚖ 负载均衡
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
