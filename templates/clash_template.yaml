@@ -31,6 +31,7 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
+      - 负载均衡
 
   - name: 自动选择
     type: url-test
@@ -38,7 +39,13 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-
+    
+  - name: 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
