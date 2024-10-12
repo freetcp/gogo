@@ -105,7 +105,167 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_hysteria_11
+- name: meta_trojan_11
+  type: trojan
+  server: cf.zerone-cdn.pp.ua
+  port: 443
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_12
+  type: trojan
+  server: cmcc.090227.xyz
+  port: 8443
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws}
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_13
+  type: trojan
+  server: cdn.2020111.xyz
+  port: 2053
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_14
+  type: trojan
+  server: cfip.cfcdn.vip
+  port: 2083
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_15
+  type: trojan
+  server: 115155.xyz
+  port: 2087
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_16
+  type: trojan
+  server: cloudflare.182682.xyz
+  port: 2096
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: trojan.freews.eu.org
+- name: meta_trojan_17
+  type: trojan
+  server: 202408-ru2a.88888806.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+- name: meta_vless_21
+  type: vless
+  server: cf.zerone-cdn.pp.ua
+  port: 443
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_vless_22
+  type: vless
+  server: cmcc.090227.xyz
+  port: 8443
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_vless_23
+  type: vless
+  server: cdn.2020111.xyz
+  port: 2053
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_vless_24
+  type: vless
+  server: cfip.cfcdn.vip
+  port: 2083
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_vless_25
+  type: vless
+  server: 115155.xyz
+  port: 2087
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_vless_26
+  type: vless
+  server: cloudflare.182682.xyz
+  port: 2096
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
+- name: meta_hysteria_31
   type: hysteria
   server: 46.29.166.206
   port: 100
@@ -116,6 +276,20 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- name: hysteria_0
+  type: hysteria
+  server: 46.17.43.223
+  port: 12311
+  ports: 12311
+  auth_str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -129,7 +303,21 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_hysteria_11
+  - meta_trojan_11
+  - meta_trojan_12
+  - meta_trojan_13
+  - meta_trojan_14
+  - meta_trojan_15
+  - meta_trojan_16
+  - meta_trojan_17
+  - meta_vless_21
+  - meta_vless_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_vless_25
+  - meta_vless_26
+  - meta_hysteria_31
+  - hysteria_0
 - name: WARP前置节点
   type: select
   proxies:
