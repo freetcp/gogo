@@ -40,7 +40,7 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-    
+
   - name: 选择代理
     type: select
     proxies:
