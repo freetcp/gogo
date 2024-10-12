@@ -1,2 +1,1 @@
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/trojan.yaml
-https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/cf_vless.yaml
