@@ -91,6 +91,7 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
+  - 负载均衡
   - meta_trojan_01
   - meta_trojan_02
   - meta_trojan_03
@@ -109,6 +110,12 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: consistent-hashing
+  proxies: null
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
