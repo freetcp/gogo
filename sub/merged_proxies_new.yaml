@@ -86,7 +86,111 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_vmess_11
+- name: meta_ss_11
+  server: 69.50.92.72
+  port: 8090
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: meta_ss_12
+  server: 45.87.175.188
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: gDFRe52uiIvVaxqPlqw439
+- name: meta_ss_13
+  server: tg_mfbpn03.52cloud.us.kg
+  port: 38404
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+- name: meta_ss_14
+  server: 69.50.92.72
+  port: 6679
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: meta_ss_15
+  server: 69.50.92.72
+  port: 8882
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: meta_ss_16
+  server: 169.197.141.84
+  port: 5499
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: meta_trojan_17
+  server: naiu-hk.05vr9nyqg5.download
+  port: 13008
+  type: trojan
+  password: d6d86a97-2bef-4f89-9527-ce2003377677
+  sni: naiu-hk.05vr9nyqg5.download
+- name: meta_ss_18
+  server: 212.102.53.198
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: meta_ss_19
+  server: tg_mfbpn03.52cloud.us.kg
+  port: 42348
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+- name: meta_trojan_110
+  server: std1.loadingip.com
+  port: 443
+  type: trojan
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+- name: meta_ss_111
+  server: 45.158.171.2
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+- name: meta_vmess_112
+  server: 172.67.219.194
+  port: 443
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: adenc36v.xtooltech.cfd
+- name: meta_ss_113
+  server: 69.50.92.72
+  port: 8881
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: meta_ss_114
+  server: 103.174.86.113
+  port: 51348
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
+- name: meta_ss_115
+  server: 194.87.45.189
+  port: 40076
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: sOJ7Wo6yHqWQv8FUEq3BKV
+- name: meta_vmess_116
+  server: z3.fragranceninja.com
+  port: 12960
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  alterId: 0
+  cipher: auto
+  tls: true
+- name: meta_vmess_117
   server: irvideo.cfd
   port: 443
   type: vmess
@@ -99,68 +203,30 @@ proxies:
     path: /linkws
     headers:
       Host: irvideo.cfd
-- name: meta_ss_12
-  server: 169.197.141.84
-  port: 5499
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: meta_ss_13
-  server: 169.197.142.216
-  port: 2376
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: meta_vmess_14
-  server: z3.fragranceninja.com
-  port: 12960
+- name: meta_vmess_118
+  server: go.alipay.ovh
+  port: 80
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /aries?ed=2048
+    headers:
+      Host: open.alipay.ovh
+- name: meta_vmess_119
+  server: 23.162.200.227
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
-- name: meta_ss_15
-  server: 169.197.142.216
-  port: 6679
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: meta_ss_16
-  server: 103.174.86.113
-  port: 51348
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
-- name: meta_ss_17
-  server: 169.197.142.216
-  port: 6697
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: meta_ss_18
-  server: 212.102.53.198
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: meta_ss_19
-  server: 45.87.175.188
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: gDFRe52uiIvVaxqPlqw439
-- name: meta_ss_110
-  server: pj.shakalaka.xyz
-  port: 11789
-  type: ss
-  cipher: aes-128-gcm
-  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
-- name: meta_ss_111
-  server: 194.87.45.189
-  port: 40076
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: sOJ7Wo6yHqWQv8FUEq3BKV
+  network: ws
+  ws-opts:
+    path: /linkvws
 proxy-groups:
 - name: 节点选择
   type: select
@@ -172,17 +238,25 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_vmess_11
+  - meta_ss_11
   - meta_ss_12
   - meta_ss_13
-  - meta_vmess_14
+  - meta_ss_14
   - meta_ss_15
   - meta_ss_16
-  - meta_ss_17
+  - meta_trojan_17
   - meta_ss_18
   - meta_ss_19
-  - meta_ss_110
+  - meta_trojan_110
   - meta_ss_111
+  - meta_vmess_112
+  - meta_ss_113
+  - meta_ss_114
+  - meta_ss_115
+  - meta_vmess_116
+  - meta_vmess_117
+  - meta_vmess_118
+  - meta_vmess_119
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -195,17 +269,25 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_vmess_11
+  - meta_ss_11
   - meta_ss_12
   - meta_ss_13
-  - meta_vmess_14
+  - meta_ss_14
   - meta_ss_15
   - meta_ss_16
-  - meta_ss_17
+  - meta_trojan_17
   - meta_ss_18
   - meta_ss_19
-  - meta_ss_110
+  - meta_trojan_110
   - meta_ss_111
+  - meta_vmess_112
+  - meta_ss_113
+  - meta_ss_114
+  - meta_ss_115
+  - meta_vmess_116
+  - meta_vmess_117
+  - meta_vmess_118
+  - meta_vmess_119
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
