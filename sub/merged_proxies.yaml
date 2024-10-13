@@ -86,6 +86,81 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+- name: meta_vmess_11
+  server: irvideo.cfd
+  port: 443
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: irvideo.cfd
+- name: meta_ss_12
+  server: 169.197.141.84
+  port: 5499
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: meta_ss_13
+  server: 169.197.142.216
+  port: 2376
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: meta_vmess_14
+  server: z3.fragranceninja.com
+  port: 12960
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  alterId: 0
+  cipher: auto
+  tls: true
+- name: meta_ss_15
+  server: 169.197.142.216
+  port: 6679
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: meta_ss_16
+  server: 103.174.86.113
+  port: 51348
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
+- name: meta_ss_17
+  server: 169.197.142.216
+  port: 6697
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: meta_ss_18
+  server: 212.102.53.198
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: meta_ss_19
+  server: 45.87.175.188
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: gDFRe52uiIvVaxqPlqw439
+- name: meta_ss_110
+  server: pj.shakalaka.xyz
+  port: 11789
+  type: ss
+  cipher: aes-128-gcm
+  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
+- name: meta_ss_111
+  server: 194.87.45.189
+  port: 40076
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: sOJ7Wo6yHqWQv8FUEq3BKV
 proxy-groups:
 - name: 节点选择
   type: select
@@ -97,6 +172,17 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
+  - meta_vmess_11
+  - meta_ss_12
+  - meta_ss_13
+  - meta_vmess_14
+  - meta_ss_15
+  - meta_ss_16
+  - meta_ss_17
+  - meta_ss_18
+  - meta_ss_19
+  - meta_ss_110
+  - meta_ss_111
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -109,6 +195,17 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
+  - meta_vmess_11
+  - meta_ss_12
+  - meta_ss_13
+  - meta_vmess_14
+  - meta_ss_15
+  - meta_ss_16
+  - meta_ss_17
+  - meta_ss_18
+  - meta_ss_19
+  - meta_ss_110
+  - meta_ss_111
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
