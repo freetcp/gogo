@@ -1,3 +1,2 @@
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/trojan.yaml
-https://fastly.jsdelivr.net/gh/jsvpn/jsproxy@dev/yule/20200325/1299699.md
 https://www.githubip.xyz/jsvpn/jsproxy/dev/yule/20200325/1299699.md
