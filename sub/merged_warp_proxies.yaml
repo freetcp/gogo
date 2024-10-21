@@ -104,24 +104,6 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_trojan_11
-  server: chgo-fr2c.88888801.xyz
-  port: 443
-  type: trojan
-  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
-  udp: true
-  network: ws
-  ws-opts:
-    path: /2024dc09-chrome-gooo-b9cf-836523956698
-- name: meta_trojan_12
-  server: chgo-kr1c.88888801.xyz
-  port: 443
-  type: trojan
-  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
-  udp: true
-  network: ws
-  ws-opts:
-    path: /2024dc09-chrome-gooo-b9cf-836523956698
 - name: shadowtls_1
   type: ss
   server: 91.149.239.23
@@ -147,8 +129,6 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_trojan_11
-  - meta_trojan_12
   - shadowtls_1
 - name: WARP前置节点
   type: select
