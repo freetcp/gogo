@@ -1,1 +1,7 @@
-
+https://www.githubip.xyz/jsvpn/jsproxy/dev/yule/20200325/1299699.md
+https://gitlab.com/free9999/ipupdate/-/raw/master/naiveproxy/config.json
+https://www.githubip.xyz/Alvin9999/PAC/master/naiveproxy/config.json
+https://fastly.jsdelivr.net/gh/Alvin9999/PAC@latest/naiveproxy/config.json
+https://gitlab.com/free9999/ipupdate/-/raw/master/singbox/config.json
+https://www.githubip.xyz/Alvin9999/pac2/master/singbox/config.json
+https://fastly.jsdelivr.net/gh/Alvin9999/pac2@latest/singbox/config.json
