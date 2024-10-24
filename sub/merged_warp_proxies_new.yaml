@@ -43,45 +43,36 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_01
-  port: 45020
-  server: 183.236.51.23
+  port: 30251
+  server: 1.65.205.116
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_02
-  network: ws
-  port: '36000'
-  server: 223.26.61.135
-  servername: www.89070185.xyz
-  skip-cert-verify: false
+  name: meta_ss_02
+  password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
+  port: 11001
+  server: 183.232.229.165
   tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.89070185.xyz
-    path: /path/011410073331
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_03
-  port: 43310
-  server: 38.147.189.161
+  port: 44826
+  server: ambxxid02hk.dorabbb.top
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 1703a6a6-4f1c-47fc-a0e3-9d4d6d43cc60
+  uuid: 5c0126d0-0435-4024-8656-c93b7a9591e9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -115,54 +106,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 01c2c827-e55e-4a81-83aa-85c0a17dfc96
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_07
-  network: ws
-  port: '30000'
-  server: 27.124.10.146
-  servername: www.60443882.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 2525f395-86fc-4090-b203-d9e6db481101
-  ws-opts:
-    headers:
-      Host: www.60443882.xyz
-    path: /path/011410073331
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_08
+  name: meta_ss_07
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
   tfo: false
   type: ss
-- alterId: 64
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_08
+  network: tcp
+  port: '30251'
+  server: 1.65.205.116
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
   cipher: auto
   name: meta_vmess_09
   network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  port: '44826'
+  server: ambxxid02hk.dorabbb.top
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 5c0126d0-0435-4024-8656-c93b7a9591e9
 - alterId: 0
   cipher: auto
   name: meta_vmess_010
-  network: tcp
-  port: '43310'
-  server: 38.147.189.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1703a6a6-4f1c-47fc-a0e3-9d4d6d43cc60
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_011
   network: tcp
   port: '30251'
   server: hkt2.bika.hk
@@ -172,7 +146,7 @@ proxies:
   uuid: 9e88a10b-655c-5120-89d0-408634169561
 - alterId: 0
   cipher: auto
-  name: meta_vmess_012
+  name: meta_vmess_011
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -182,7 +156,7 @@ proxies:
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
-  name: meta_vmess_013
+  name: meta_vmess_012
   network: tcp
   port: '54037'
   server: 38.147.188.137
@@ -193,9 +167,9 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_11
-  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
-  port: 40018
-  server: hzhz2.sssyun.xyz
+  password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3
+  port: 31632
+  server: gdcub.yunnode.win
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -206,15 +180,37 @@ proxies:
   server: 221.181.185.71
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_22
-  password: amazonskr05
-  port: 443
-  server: 54.254.7.5
+  password: 11300d6e-fa6e-4c2e-83aa-f0a0aa6311c4
+  port: 35627
+  server: gdcub.yunnode.win
   tfo: false
   type: ss
-- name: meta_vless_23
+- client-fingerprint: chrome
+  name: meta_trojan_23
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: easy-mako.opossum872.cfd
+  skip-cert-verify: false
+  sni: easy-mako.opossum872.cfd
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: amazonskr05
+  port: 443
+  server: 52.193.244.212
+  tfo: false
+  type: ss
+- name: meta_trojan_25
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: easy-mako.opossum872.cfd
+  type: trojan
+- name: meta_vless_26
   network: ws
   port: 443
   server: 206.238.237.74
@@ -228,7 +224,7 @@ proxies:
     headers:
       Host: ls.ylks.us.kg
     path: /?ed=2560
-- name: meta_vless_24
+- name: meta_vless_27
   network: ws
   port: 443
   server: 206.238.237.74
@@ -240,7 +236,7 @@ proxies:
     headers:
       Host: ls.ylka.us.kg
     path: /?ed=2560
-- name: meta_vless_25
+- name: meta_vless_28
   network: ws
   port: 443
   server: 206.238.237.60
@@ -254,7 +250,7 @@ proxies:
     headers:
       Host: lu.ylka.us.kg
     path: /?ed=2560
-- name: meta_vless_26
+- name: meta_vless_29
   network: ws
   port: 443
   server: 206.238.236.83
@@ -268,7 +264,7 @@ proxies:
     headers:
       Host: lu.ylks01.eu.org
     path: /blue
-- name: meta_vless_27
+- name: meta_vless_210
   network: ws
   port: 443
   server: 206.238.236.83
@@ -280,7 +276,7 @@ proxies:
     headers:
       Host: cs.ylks.xyz
     path: /freecodes
-- name: meta_vless_28
+- name: meta_vless_211
   network: ws
   port: 443
   server: 206.238.237.133
@@ -292,7 +288,7 @@ proxies:
     headers:
       Host: cs.ylks.xyz
     path: /freecodes
-- name: meta_vless_29
+- name: meta_vless_212
   network: ws
   port: 443
   server: 206.238.236.83
@@ -304,7 +300,7 @@ proxies:
     headers:
       Host: ds.ylks.xyz
     path: /freecodes
-- name: meta_vless_210
+- name: meta_vless_213
   network: ws
   port: 443
   server: 206.238.237.74
@@ -316,7 +312,7 @@ proxies:
     headers:
       Host: cs.ylks.xyz
     path: /freecodes
-- name: meta_vless_211
+- name: meta_vless_214
   network: ws
   port: 443
   server: 206.238.237.182
@@ -330,7 +326,7 @@ proxies:
     headers:
       Host: du.ylks.xyz
     path: /blue
-- name: meta_vless_212
+- name: meta_vless_215
   network: ws
   port: 443
   server: 206.238.237.133
@@ -344,7 +340,7 @@ proxies:
     headers:
       Host: as.ylks.xyz
     path: /blue
-- name: meta_vless_213
+- name: meta_vless_216
   network: ws
   port: 443
   server: 206.238.237.60
@@ -356,7 +352,7 @@ proxies:
     headers:
       Host: ds.ylks.xyz
     path: /freecodes
-- name: meta_vless_214
+- name: meta_vless_217
   network: ws
   port: 443
   server: 206.238.237.88
@@ -370,7 +366,7 @@ proxies:
     headers:
       Host: ds.ylks.xyz
     path: /?proxyip=proxyis.ss.fxxs.dedys.io
-- name: meta_vless_215
+- name: meta_vless_218
   network: ws
   port: 443
   server: 206.238.237.60
@@ -382,7 +378,7 @@ proxies:
     headers:
       Host: as.ylks.xyz
     path: /blue
-- name: meta_vless_216
+- name: meta_vless_219
   network: ws
   port: 443
   server: 206.238.237.182
@@ -405,45 +401,25 @@ proxies:
   tls: false
   type: vmess
   uuid: c061522e-67dd-43b7-bd84-20ef3c954c35
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_32
-  network: ws
-  port: '443'
-  server: 104.37.215.79
-  servername: www.77992842.xyz
+- client-fingerprint: chrome
+  name: meta_trojan_32
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: enabling-filly.opossum872.cfd
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.77992842.xyz
-    path: /path/011410073331
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_33
-  port: 35008
-  server: tanz-kr.01byx31qzn.download
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
+  sni: enabling-filly.opossum872.cfd
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_34
+  name: meta_ss_33
   password: amazonskr05
   port: 443
-  server: 52.198.194.170
+  server: 54.255.237.249
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_35
+  name: meta_vmess_34
   network: tcp
   port: '40166'
   server: 45.94.68.173
@@ -451,17 +427,14 @@ proxies:
   tls: false
   type: vmess
   uuid: c061522e-67dd-43b7-bd84-20ef3c954c35
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_36
+- name: meta_trojan_35
   network: tcp
-  port: '35008'
-  server: tanz-kr.01byx31qzn.download
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
-- name: meta_vless_37
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: enabling-filly.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
+- name: meta_vless_36
   network: ws
   port: 32900
   server: 146.56.151.254
@@ -473,7 +446,7 @@ proxies:
     headers:
       Host: as.ylks.xyz
     path: /blue
-- name: meta_vless_38
+- name: meta_vless_37
   network: ws
   port: 32900
   server: 146.56.151.254
@@ -485,7 +458,7 @@ proxies:
     headers:
       Host: ls.ylks.us.kg
     path: /?ed=2560
-- name: meta_vless_39
+- name: meta_vless_38
   network: ws
   port: 12273
   server: 211.228.180.147
@@ -499,35 +472,29 @@ proxies:
     headers:
       Host: as.ylks.xyz
     path: /freecodes
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_41
-  port: 56916
-  server: 45.159.50.165
+- client-fingerprint: chrome
+  name: meta_trojan_41
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: central-minnow.opossum872.cfd
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: edcc6b8f-bcf5-4d2a-9026-c58967fb2b5d
+  sni: central-minnow.opossum872.cfd
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_42
   password: amazonskr05
   port: 443
-  server: 18.176.53.132
+  server: 13.212.252.162
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_43
+- name: meta_trojan_43
   network: tcp
-  port: '56916'
-  server: 45.159.50.165
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: edcc6b8f-bcf5-4d2a-9026-c58967fb2b5d
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: central-minnow.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
 - name: meta_trojan_44
   password: 64e0ee38-2874-3f3f-b7d2-34f5a03cbaab
   port: 443
@@ -646,24 +613,23 @@ proxy-groups:
   tolerance: 50
   proxies:
   - meta_vmess_01
-  - meta_vmess_02
+  - meta_ss_02
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vmess_07
-  - meta_ss_08
+  - meta_ss_07
+  - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vmess_013
   - meta_ss_11
   - meta_ss_21
   - meta_ss_22
-  - meta_vless_23
-  - meta_vless_24
-  - meta_vless_25
+  - meta_trojan_23
+  - meta_ss_24
+  - meta_trojan_25
   - meta_vless_26
   - meta_vless_27
   - meta_vless_28
@@ -675,18 +641,20 @@ proxy-groups:
   - meta_vless_214
   - meta_vless_215
   - meta_vless_216
+  - meta_vless_217
+  - meta_vless_218
+  - meta_vless_219
   - meta_vmess_31
-  - meta_vmess_32
-  - meta_vmess_33
-  - meta_ss_34
-  - meta_vmess_35
-  - meta_vmess_36
+  - meta_trojan_32
+  - meta_ss_33
+  - meta_vmess_34
+  - meta_trojan_35
+  - meta_vless_36
   - meta_vless_37
   - meta_vless_38
-  - meta_vless_39
-  - meta_vmess_41
+  - meta_trojan_41
   - meta_ss_42
-  - meta_vmess_43
+  - meta_trojan_43
   - meta_trojan_44
   - meta_trojan_45
   - meta_vless_46
