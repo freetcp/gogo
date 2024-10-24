@@ -213,32 +213,6 @@ proxies:
 - name: meta_vless_26
   network: ws
   port: 443
-  server: 206.238.237.74
-  servername: ls.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ls.ylks.us.kg
-    path: /?ed=2560
-- name: meta_vless_27
-  network: ws
-  port: 443
-  server: 206.238.237.74
-  servername: ls.ylka.us.kg
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ls.ylka.us.kg
-    path: /?ed=2560
-- name: meta_vless_28
-  network: ws
-  port: 443
   server: 206.238.237.60
   servername: lu.ylka.us.kg
   skip-cert-verify: true
@@ -250,7 +224,7 @@ proxies:
     headers:
       Host: lu.ylka.us.kg
     path: /?ed=2560
-- name: meta_vless_29
+- name: meta_vless_27
   network: ws
   port: 443
   server: 206.238.236.83
@@ -264,55 +238,7 @@ proxies:
     headers:
       Host: lu.ylks01.eu.org
     path: /blue
-- name: meta_vless_210
-  network: ws
-  port: 443
-  server: 206.238.236.83
-  servername: cs.ylks.xyz
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: cs.ylks.xyz
-    path: /freecodes
-- name: meta_vless_211
-  network: ws
-  port: 443
-  server: 206.238.237.133
-  servername: cs.ylks.xyz
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: cs.ylks.xyz
-    path: /freecodes
-- name: meta_vless_212
-  network: ws
-  port: 443
-  server: 206.238.236.83
-  servername: ds.ylks.xyz
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ds.ylks.xyz
-    path: /freecodes
-- name: meta_vless_213
-  network: ws
-  port: 443
-  server: 206.238.237.74
-  servername: cs.ylks.xyz
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: cs.ylks.xyz
-    path: /freecodes
-- name: meta_vless_214
+- name: meta_vless_28
   network: ws
   port: 443
   server: 206.238.237.182
@@ -326,70 +252,6 @@ proxies:
     headers:
       Host: du.ylks.xyz
     path: /blue
-- name: meta_vless_215
-  network: ws
-  port: 443
-  server: 206.238.237.133
-  servername: as.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: as.ylks.xyz
-    path: /blue
-- name: meta_vless_216
-  network: ws
-  port: 443
-  server: 206.238.237.60
-  servername: ds.ylks.xyz
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ds.ylks.xyz
-    path: /freecodes
-- name: meta_vless_217
-  network: ws
-  port: 443
-  server: 206.238.237.88
-  servername: ds.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ds.ylks.xyz
-    path: /?proxyip=proxyis.ss.fxxs.dedys.io
-- name: meta_vless_218
-  network: ws
-  port: 443
-  server: 206.238.237.60
-  servername: as.ylks.xyz
-  tls: true
-  type: vless
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: as.ylks.xyz
-    path: /blue
-- name: meta_vless_219
-  network: ws
-  port: 443
-  server: 206.238.237.182
-  servername: as.ylks.xyz
-  tls: true
-  type: vless
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: as.ylks.xyz
-    path: /freecodes
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -434,44 +296,6 @@ proxies:
   server: enabling-filly.opossum872.cfd
   skip-cert-verify: true
   type: trojan
-- name: meta_vless_36
-  network: ws
-  port: 32900
-  server: 146.56.151.254
-  servername: as.ylks.xyz
-  tls: true
-  type: vless
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: as.ylks.xyz
-    path: /blue
-- name: meta_vless_37
-  network: ws
-  port: 32900
-  server: 146.56.151.254
-  servername: ls.ylks.us.kg
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: ls.ylks.us.kg
-    path: /?ed=2560
-- name: meta_vless_38
-  network: ws
-  port: 12273
-  server: 211.228.180.147
-  servername: as.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: as.ylks.xyz
-    path: /freecodes
 - client-fingerprint: chrome
   name: meta_trojan_41
   password: '!!str 3690911436885991424'
@@ -495,26 +319,11 @@ proxies:
   server: central-minnow.opossum872.cfd
   skip-cert-verify: true
   type: trojan
-- name: meta_trojan_44
-  password: 64e0ee38-2874-3f3f-b7d2-34f5a03cbaab
-  port: 443
-  server: 54.238.135.78
-  skip-cert-verify: true
-  sni: steamcdn-a.akamaihd.net
-  type: trojan
-  udp: true
-- name: meta_trojan_45
-  password: 64e0ee38-2874-3f3f-b7d2-34f5a03cbaab
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: origin-a.akamaihd.net
-  type: trojan
-  udp: true
 - alpn:
   - h2
-  client-fingerprint: randomized
-  name: meta_vless_46
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_44
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -528,10 +337,37 @@ proxies:
     headers:
       Host: downloadlynet.ir.
     path: /@custom_config?ed=2560
+- name: meta_vless_45
+  network: ws
+  port: 2083
+  server: 103.116.7.67
+  servername: nicorobin.eula.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
+  ws-opts:
+    headers:
+      Host: nicorobin.eula.cloudns.org
+    path: /telegram@linkvws?ed=2048
+- name: meta_vless_46
+  network: ws
+  port: 2096
+  server: 103.116.7.152
+  servername: nicorobin.eula.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
+  ws-opts:
+    headers:
+      Host: nicorobin.eula.cloudns.org
+    path: /?ed=2048
 - alpn:
   - h2
-  - http/1.1
-  client-fingerprint: chrome
+  client-fingerprint: randomized
   name: meta_vless_47
   network: ws
   port: 443
@@ -546,53 +382,80 @@ proxies:
     headers:
       Host: downloadlynet.ir.
     path: /@custom_config?ed=2560
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: meta_vless_48
+- name: meta_vless_48
   network: ws
-  port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: Zmaoz.Faculty.Ucdavis.Edu
-  skip-cert-verify: false
+  port: 8443
+  server: 154.92.9.1
+  servername: sB-1U6.PAGes.DeV
   tls: true
   type: vless
-  udp: true
-  uuid: d6ec4a5b-3e01-4688-a40b-e8c714f4b461
+  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
   ws-opts:
     headers:
-      Host: downloadlynet.ir.
-    path: /@custom_config?ed=2560
+      Host: sB-1U6.PAGes.DeV
+    path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
 - name: meta_vless_49
   network: ws
-  port: 2083
-  server: 103.116.7.67
-  servername: nicorobin.eula.cloudns.org
+  port: 443
+  server: 154.92.9.2
+  servername: BPb005.pAgeS.Dev
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
+  uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4
   ws-opts:
     headers:
-      Host: nicorobin.eula.cloudns.org
-    path: /telegram@linkvws?ed=2048
+      Host: BPb005.pAgeS.Dev
+    path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
 - name: meta_vless_410
   network: ws
-  port: 2096
-  server: 103.116.7.152
-  servername: nicorobin.eula.cloudns.org
-  skip-cert-verify: true
+  port: 8443
+  server: 154.92.9.2
+  servername: sB-1U6.PAGes.DeV
   tls: true
   type: vless
-  udp: true
+  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
+  ws-opts:
+    headers:
+      Host: sB-1U6.PAGes.DeV
+    path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
+- name: meta_vless_411
+  network: ws
+  port: 2096
+  server: 103.116.7.220
+  servername: nicorobin.eula.cloudns.org
+  tls: true
+  type: vless
   uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
   ws-opts:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /?ed=2048
+- name: meta_vless_412
+  network: ws
+  port: 2087
+  server: 154.92.9.1
+  servername: Sb-1u6.paGEs.dEv
+  tls: true
+  type: vless
+  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
+  ws-opts:
+    headers:
+      Host: Sb-1u6.paGEs.dEv
+    path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
+- name: meta_vless_413
+  network: ws
+  port: 443
+  server: 154.92.9.1
+  servername: sb-1u6.pageS.Dev
+  tls: true
+  type: vless
+  uuid: fca01448-d84a-436e-9aec-3be1ebdfb350
+  ws-opts:
+    headers:
+      Host: sb-1u6.pageS.Dev
+    path: /o56edk55jth9andd/mtu4ljewms4ymdmumti3?ed=2560
 - name: shadowtls_1
   type: ss
   server: 91.149.239.23
@@ -633,35 +496,24 @@ proxy-groups:
   - meta_vless_26
   - meta_vless_27
   - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
-  - meta_vless_212
-  - meta_vless_213
-  - meta_vless_214
-  - meta_vless_215
-  - meta_vless_216
-  - meta_vless_217
-  - meta_vless_218
-  - meta_vless_219
   - meta_vmess_31
   - meta_trojan_32
   - meta_ss_33
   - meta_vmess_34
   - meta_trojan_35
-  - meta_vless_36
-  - meta_vless_37
-  - meta_vless_38
   - meta_trojan_41
   - meta_ss_42
   - meta_trojan_43
-  - meta_trojan_44
-  - meta_trojan_45
+  - meta_vless_44
+  - meta_vless_45
   - meta_vless_46
   - meta_vless_47
   - meta_vless_48
   - meta_vless_49
   - meta_vless_410
+  - meta_vless_411
+  - meta_vless_412
+  - meta_vless_413
   - shadowtls_1
 - name: WARP前置节点
   type: select
