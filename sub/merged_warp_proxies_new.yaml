@@ -121,48 +121,6 @@ proxies:
   server: 13.113.17.246
   tfo: false
   type: ss
-- name: meta_vless_24
-  network: ws
-  port: 443
-  server: 206.238.237.60
-  servername: lu.ylka.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: lu.ylka.us.kg
-    path: /?ed=2560
-- name: meta_vless_25
-  network: ws
-  port: 443
-  server: 206.238.236.83
-  servername: lu.ylks01.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: lu.ylks01.eu.org
-    path: /blue
-- name: meta_vless_26
-  network: ws
-  port: 443
-  server: 206.238.237.182
-  servername: du.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: du.ylks.xyz
-    path: /blue
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -208,25 +166,7 @@ proxies:
   tls: false
   type: vmess
   uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_44
-  network: ws
-  port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: Zmaoz.Faculty.Ucdavis.Edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6ec4a5b-3e01-4688-a40b-e8c714f4b461
-  ws-opts:
-    headers:
-      Host: downloadlynet.ir.
-    path: /@custom_config?ed=2560
-- name: meta_vless_45
+- name: meta_vless_44
   network: ws
   port: 2083
   server: 103.116.7.67
@@ -240,7 +180,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /telegram@linkvws?ed=2048
-- name: meta_vless_46
+- name: meta_vless_45
   network: ws
   port: 2096
   server: 103.116.7.152
@@ -254,24 +194,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /?ed=2048
-- alpn:
-  - h2
-  client-fingerprint: randomized
-  name: meta_vless_47
-  network: ws
-  port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: Zmaoz.Faculty.Ucdavis.Edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6ec4a5b-3e01-4688-a40b-e8c714f4b461
-  ws-opts:
-    headers:
-      Host: downloadlynet.ir.
-    path: /@custom_config?ed=2560
-- name: meta_vless_48
+- name: meta_vless_46
   network: ws
   port: 8443
   server: 154.92.9.1
@@ -283,7 +206,7 @@ proxies:
     headers:
       Host: sB-1U6.PAGes.DeV
     path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_49
+- name: meta_vless_47
   network: ws
   port: 443
   server: 154.92.9.2
@@ -297,7 +220,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: meta_vless_410
+- name: meta_vless_48
   network: ws
   port: 8443
   server: 154.92.9.2
@@ -309,7 +232,7 @@ proxies:
     headers:
       Host: sB-1U6.PAGes.DeV
     path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_411
+- name: meta_vless_49
   network: ws
   port: 2096
   server: 103.116.7.220
@@ -321,7 +244,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /?ed=2048
-- name: meta_vless_412
+- name: meta_vless_410
   network: ws
   port: 2087
   server: 154.92.9.1
@@ -333,7 +256,7 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_413
+- name: meta_vless_411
   network: ws
   port: 443
   server: 154.92.9.1
@@ -373,9 +296,6 @@ proxy-groups:
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
   - meta_ss_31
   - meta_ss_32
   - meta_vmess_41
@@ -389,8 +309,6 @@ proxy-groups:
   - meta_vless_49
   - meta_vless_410
   - meta_vless_411
-  - meta_vless_412
-  - meta_vless_413
   - shadowtls_1
 - name: WARP前置节点
   type: select
