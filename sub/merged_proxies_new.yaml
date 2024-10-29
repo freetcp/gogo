@@ -25,28 +25,40 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_01
+  network: ws
+  port: '12959'
+  server: z3.fragranceninja.com
+  servername: z3.fragranceninja.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z3.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_02
+  port: 45219
+  server: 103.224.80.27
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ac134134-87e5-42b5-8805-565395a30acc
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ss_01
+  name: meta_ss_03
   password: asd123456
   port: 8388
-  server: 154.197.98.64
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_02
-  password: 0b94687a-2628-4ef1-a677-aab2431e2182
-  port: 11001
-  server: 183.240.255.75
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_03
-  password: 0b94687a-2628-4ef1-a677-aab2431e2182
-  port: 12003
-  server: 183.240.188.43
+  server: 38.147.190.72
   tfo: false
   type: ss
 - alterId: 0
@@ -60,9 +72,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: meta_ssr_05
+  obfs: plain
+  obfs-param: 8195986416.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40206
+  protocol: auth_aes128_md5
+  protocol-param: 86416:SlZFuy
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: meta_vmess_05
+  name: meta_vmess_06
+  network: tcp
+  port: '45219'
+  server: 103.224.80.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac134134-87e5-42b5-8805-565395a30acc
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_07
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -70,20 +103,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- cipher: chacha20-ietf-poly1305
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: meta_ss_11
-  password: f2a7baac-c6d4-4d29-aab2-02426814f0ce
-  port: 39201
-  server: hzhz1.sssyun.xyz
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: 7c0ad96494.microsoft.com
+    mode: http
+  port: 1170
+  server: 163.177.58.179
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: meta_ss_12
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: 7c0ad96494.microsoft.com
+    mode: http
+  port: 1171
+  server: 163.177.58.179
+  tfo: false
+  type: ss
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: meta_ss_21
-  password: 1c47b2d3-6ff0-491d-89fa-7f8a38e49c99
-  port: 29971
-  server: osg020.nod3.org
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: 7c0ad96494.microsoft.com
+    mode: http
+  port: 1190
+  server: 163.177.58.179
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -100,25 +153,62 @@ proxies:
   name: meta_ss_23
   password: amazonskr05
   port: 443
-  server: 13.113.17.246
+  server: 54.169.139.18
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: amazonskr05
+  port: 443
+  server: 54.169.135.226
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_31
+  port: 54997
+  server: 45.94.68.140
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 287dca94-9652-47c1-88e2-92b455b49591
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: f2a7baac-c6d4-4d29-aab2-02426814f0ce
+  port: 40015
+  server: hzhz2.sssyun.xyz
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_31
+  name: meta_ss_33
   password: f2a7baac-c6d4-4d29-aab2-02426814f0ce
-  port: 39206
+  port: 39202
   server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_34
   password: amazonskr05
   port: 443
-  server: 54.255.245.62
+  server: 44.244.21.125
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_35
+  network: tcp
+  port: '54997'
+  server: 45.94.68.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 287dca94-9652-47c1-88e2-92b455b49591
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -130,17 +220,42 @@ proxies:
   tls: false
   type: vmess
   uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
+- client-fingerprint: chrome
+  name: meta_trojan_42
+  network: tcp
+  password: 5b4becce-5739-483f-97ec-68b81a855d68
+  port: 13013
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_42
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 13.229.98.87
+  server: 3.112.215.69
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: meta_ss_44
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_45
+  password: amazonskr05
+  port: 443
+  server: 18.142.50.59
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_43
+  name: meta_vmess_46
   network: tcp
   port: '25004'
   server: d.baodesign.top
@@ -148,7 +263,7 @@ proxies:
   tls: false
   type: vmess
   uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-- name: meta_vless_44
+- name: meta_vless_47
   network: ws
   port: 2083
   server: 103.116.7.67
@@ -162,7 +277,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /telegram@linkvws?ed=2048
-- name: meta_vless_45
+- name: meta_vless_48
   network: ws
   port: 2096
   server: 103.116.7.152
@@ -176,7 +291,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /?ed=2048
-- name: meta_vless_46
+- name: meta_vless_49
   network: ws
   port: 8443
   server: 154.92.9.1
@@ -188,7 +303,7 @@ proxies:
     headers:
       Host: sB-1U6.PAGes.DeV
     path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_47
+- name: meta_vless_410
   network: ws
   port: 443
   server: 154.92.9.2
@@ -202,7 +317,7 @@ proxies:
     headers:
       Host: BPb005.pAgeS.Dev
     path: /81eqvt6gwdd8gwo8/mtuyljy3ljiznc40oq
-- name: meta_vless_48
+- name: meta_vless_411
   network: ws
   port: 8443
   server: 154.92.9.2
@@ -214,7 +329,7 @@ proxies:
     headers:
       Host: sB-1U6.PAGes.DeV
     path: /6fzdo6vhq9d4ddj7/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_49
+- name: meta_vless_412
   network: ws
   port: 2096
   server: 103.116.7.220
@@ -226,7 +341,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /?ed=2048
-- name: meta_vless_410
+- name: meta_vless_413
   network: ws
   port: 2087
   server: 154.92.9.1
@@ -238,7 +353,7 @@ proxies:
     headers:
       Host: Sb-1u6.paGEs.dEv
     path: /pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560
-- name: meta_vless_411
+- name: meta_vless_414
   network: ws
   port: 443
   server: 154.92.9.1
@@ -267,28 +382,38 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - meta_ss_01
-  - meta_ss_02
+  - meta_vmess_01
+  - meta_vmess_02
   - meta_ss_03
   - meta_vmess_04
-  - meta_vmess_05
+  - meta_ssr_05
+  - meta_vmess_06
+  - meta_vmess_07
   - meta_ss_11
+  - meta_ss_12
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_ss_31
+  - meta_ss_24
+  - meta_vmess_31
   - meta_ss_32
+  - meta_ss_33
+  - meta_ss_34
+  - meta_vmess_35
   - meta_vmess_41
-  - meta_ss_42
-  - meta_vmess_43
-  - meta_vless_44
-  - meta_vless_45
-  - meta_vless_46
+  - meta_trojan_42
+  - meta_ss_43
+  - meta_ss_44
+  - meta_ss_45
+  - meta_vmess_46
   - meta_vless_47
   - meta_vless_48
   - meta_vless_49
   - meta_vless_410
   - meta_vless_411
+  - meta_vless_412
+  - meta_vless_413
+  - meta_vless_414
   - shadowtls_1
 - name: 自动选择
   type: url-test
@@ -296,28 +421,38 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - meta_ss_01
-  - meta_ss_02
+  - meta_vmess_01
+  - meta_vmess_02
   - meta_ss_03
   - meta_vmess_04
-  - meta_vmess_05
+  - meta_ssr_05
+  - meta_vmess_06
+  - meta_vmess_07
   - meta_ss_11
+  - meta_ss_12
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_ss_31
+  - meta_ss_24
+  - meta_vmess_31
   - meta_ss_32
+  - meta_ss_33
+  - meta_ss_34
+  - meta_vmess_35
   - meta_vmess_41
-  - meta_ss_42
-  - meta_vmess_43
-  - meta_vless_44
-  - meta_vless_45
-  - meta_vless_46
+  - meta_trojan_42
+  - meta_ss_43
+  - meta_ss_44
+  - meta_ss_45
+  - meta_vmess_46
   - meta_vless_47
   - meta_vless_48
   - meta_vless_49
   - meta_vless_410
   - meta_vless_411
+  - meta_vless_412
+  - meta_vless_413
+  - meta_vless_414
   - shadowtls_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
