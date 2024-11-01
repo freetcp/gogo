@@ -43,48 +43,40 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_01
-  password: cd594a00-a48b-42c6-b71d-b99cd71a5a52
-  port: 11001
-  server: 183.240.255.75
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ss_02
+  name: meta_ss_01
   password: asd123456
   port: 8388
-  server: 154.197.98.64
+  server: 103.36.91.32
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_03
-  port: 20177
-  server: 38.147.189.214
+  name: meta_vmess_02
+  port: 31878
+  server: 183.236.48.161
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 6adbf964-0468-44a0-8c1d-ccc354a7cc4f
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_03
+  port: 48009
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_04
-  port: 44806
-  server: ambxxic01hk.dorabbb.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b077b598-5ce4-4640-a0ba-af220303e3d1
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_05
   port: 2902
   server: 143.92.42.65
   skip-cert-verify: false
@@ -92,37 +84,59 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_06
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_07
-  network: tcp
-  port: '20177'
-  server: 38.147.189.214
-  servername: ''
+  client-fingerprint: chrome
+  name: meta_vmess_05
+  port: 44806
+  server: ambxxic01hk.dorabbb.top
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 6adbf964-0468-44a0-8c1d-ccc354a7cc4f
+  uuid: 66fe2d6f-704c-4b39-8b9e-0f6532f1a598
 - alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_06
+  port: 52636
+  server: 103.224.80.119
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fbbe5895-5fd2-4ccc-b72a-84b81d0714b1
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_07
+  password: df52203b-7cc6-4199-ae2d-e9f2f76f3381
+  port: 11001
+  server: 183.240.255.75
+  tfo: false
+  type: ss
+- alterId: 64
   cipher: auto
   name: meta_vmess_08
   network: tcp
-  port: '44806'
-  server: ambxxic01hk.dorabbb.top
+  port: '31878'
+  server: 183.236.48.161
   servername: ''
   tls: false
   type: vmess
-  uuid: b077b598-5ce4-4640-a0ba-af220303e3d1
-- alterId: 0
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
   cipher: auto
   name: meta_vmess_09
+  network: tcp
+  port: '48009'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_010
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -130,17 +144,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_11
-  password: 00613126-f8b1-4387-81a4-ff82da0783c0
-  port: 58547
-  server: jioawdm.zhangwei.li
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_011
+  network: tcp
+  port: '44806'
+  server: ambxxic01hk.dorabbb.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66fe2d6f-704c-4b39-8b9e-0f6532f1a598
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_012
+  network: tcp
+  port: '52636'
+  server: 103.224.80.119
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fbbe5895-5fd2-4ccc-b72a-84b81d0714b1
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ssr_12
+  name: meta_ssr_11
   obfs: plain
   obfs-param: 83e2a40208.microsoft.com
   password: NaikoCloud
@@ -154,7 +180,7 @@ proxies:
   name: meta_ss_21
   password: amazonskr05
   port: 443
-  server: 54.255.237.249
+  server: 52.198.194.170
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -171,37 +197,20 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 47.130.3.54
+  server: 52.69.236.102
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_41
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  network: tcp
-  password: 5b4becce-5739-483f-97ec-68b81a855d68
-  port: 13013
-  server: naiu-jp.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_43
-  password: cd594a00-a48b-42c6-b71d-b99cd71a5a52
+  name: meta_ss_41
+  password: df52203b-7cc6-4199-ae2d-e9f2f76f3381
   port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_42
   password: shadowsocks
   port: 443
   server: 149.22.87.240
@@ -209,10 +218,10 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 13.215.205.186
+  server: 52.221.255.53
   tfo: false
   type: ss
 - name: shadowtls_1
@@ -235,24 +244,24 @@ proxy-groups:
   tolerance: 50
   proxies:
   - meta_ss_01
-  - meta_ss_02
+  - meta_vmess_02
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
-  - meta_ss_06
-  - meta_vmess_07
+  - meta_vmess_06
+  - meta_ss_07
   - meta_vmess_08
   - meta_vmess_09
-  - meta_ss_11
-  - meta_ssr_12
+  - meta_vmess_010
+  - meta_vmess_011
+  - meta_vmess_012
+  - meta_ssr_11
   - meta_ss_21
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_ss_45
   - shadowtls_1
 - name: WARP前置节点
   type: select
