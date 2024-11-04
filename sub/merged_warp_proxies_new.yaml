@@ -194,12 +194,11 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
       Host: juzi8186.5112233.xyz
-    path: /?ed=2560
+    path: /?ed=2560fp=random
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_11
