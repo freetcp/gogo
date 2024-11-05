@@ -125,7 +125,7 @@ proxies:
   name: meta_vless_011
   network: ws
   port: 587
-  server: 47.76.77.127
+  server: 152.32.129.97
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -140,7 +140,7 @@ proxies:
   name: meta_vless_012
   network: ws
   port: 587
-  server: 47.243.91.39
+  server: 47.76.154.53
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -155,7 +155,7 @@ proxies:
   name: meta_vless_013
   network: ws
   port: 587
-  server: 47.76.111.33
+  server: 8.210.76.17
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -169,23 +169,22 @@ proxies:
 - client-fingerprint: chrome
   name: meta_vless_014
   network: ws
-  port: 587
-  server: 47.76.165.252
-  servername: vless.ifx.us.kg
+  port: 23555
+  server: 219.77.65.212
+  servername: juzi8186.5112233.xyz
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
+      Host: juzi8186.5112233.xyz
+    path: /?ed=2560fp=random
 - client-fingerprint: chrome
   name: meta_vless_015
   network: ws
   port: 587
-  server: 47.76.154.53
+  server: 47.76.77.127
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -199,8 +198,8 @@ proxies:
 - client-fingerprint: chrome
   name: meta_vless_016
   network: ws
-  port: 587
-  server: 152.32.129.97
+  port: 6666
+  server: 124.156.129.206
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -215,7 +214,7 @@ proxies:
   name: meta_vless_017
   network: ws
   port: 587
-  server: 8.210.76.17
+  server: 206.237.5.205
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -230,7 +229,7 @@ proxies:
   name: meta_vless_018
   network: ws
   port: 587
-  server: 206.237.3.187
+  server: 103.41.65.161
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -244,52 +243,23 @@ proxies:
 - client-fingerprint: chrome
   name: meta_vless_019
   network: ws
-  port: 23555
-  server: 219.77.65.212
-  servername: juzi8186.5112233.xyz
+  port: 587
+  server: 206.237.3.187
+  servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: juzi8186.5112233.xyz
-    path: /?ed=2560fp=random
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_vless_020
   network: ws
   port: 587
-  server: 206.237.5.205
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_021
-  network: ws
-  port: 587
-  server: 103.41.65.161
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_022
-  network: ws
-  port: 6666
-  server: 124.156.129.206
+  server: 47.243.91.39
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -555,8 +525,8 @@ proxies:
 - client-fingerprint: chrome
   name: meta_vless_44
   network: ws
-  port: 587
-  server: 38.47.97.33
+  port: 8087
+  server: 38.6.155.65
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -570,8 +540,8 @@ proxies:
 - client-fingerprint: chrome
   name: meta_vless_45
   network: ws
-  port: 8087
-  server: 38.6.155.65
+  port: 587
+  server: 38.47.97.33
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -601,7 +571,7 @@ proxies:
   name: meta_vless_47
   network: ws
   port: 587
-  server: 138.2.49.197
+  server: 168.138.51.162
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -616,7 +586,7 @@ proxies:
   name: meta_vless_48
   network: ws
   port: 587
-  server: 168.138.51.162
+  server: 138.2.49.197
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tls: true
@@ -664,8 +634,6 @@ proxy-groups:
   - meta_vless_018
   - meta_vless_019
   - meta_vless_020
-  - meta_vless_021
-  - meta_vless_022
   - meta_ss_11
   - meta_trojan_12
   - meta_ss_13
@@ -720,8 +688,6 @@ proxy-groups:
   - meta_vless_018
   - meta_vless_019
   - meta_vless_020
-  - meta_vless_021
-  - meta_vless_022
   - meta_ss_11
   - meta_trojan_12
   - meta_ss_13
