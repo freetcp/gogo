@@ -46,7 +46,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_01
-  password: e182d6b4-403c-40d6-bd66-6d281a67d282
+  password: 5d7cd009-e16d-4a8f-9d23-01395a4e6467
   port: 11001
   server: 183.240.255.75
   tfo: false
@@ -62,18 +62,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_03
-  password: 84856344-8644-46e0-98cb-5d54509ee059
-  port: 14427
-  server: atom.986886.xyz
+  password: U4W5JSFDBCGUTTWN
+  port: 15002
+  server: 120.241.45.50
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_04
+  password: 4322aee9-98c9-4cf6-8cc5-4b3a9bc3a8ec
+  port: 11001
+  server: 183.232.229.165
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_04
+  name: meta_vmess_05
   port: 2902
   server: 143.92.42.65
   skip-cert-verify: false
@@ -81,9 +89,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_06
+  port: 34169
+  server: 38.147.189.161
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b7edcefb-9720-4829-8257-842b9a29f8fc
 - alterId: 64
   cipher: auto
-  name: meta_vmess_05
+  name: meta_vmess_07
   network: tcp
   port: '56601'
   server: 183.236.51.23
@@ -93,7 +112,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_06
+  name: meta_vmess_08
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -101,8 +120,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_09
+  network: tcp
+  port: '34169'
+  server: 38.147.189.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b7edcefb-9720-4829-8257-842b9a29f8fc
 - client-fingerprint: chrome
-  name: meta_vless_07
+  name: meta_vless_010
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -116,30 +145,13 @@ proxies:
       Host: juzi8186.5112233.xyz
     path: /?ed=2560fp=randomfp=chrome
 - client-fingerprint: chrome
-  name: meta_trojan_11
-  network: tcp
-  password: b264982e-e333-4085-ac04-406afef23455
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
+  name: meta_trojan_21
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: flexible-griffon.iguana938.mom
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  sni: flexible-griffon.iguana938.mom
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_12
-  password: 84856344-8644-46e0-98cb-5d54509ee059
-  port: 42303
-  server: atom.986886.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_21
-  password: 9b296d1b-dea9-40fd-aef7-a62b083be9ec
-  port: 45782
-  server: atom.986886.xyz
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -156,12 +168,19 @@ proxies:
   name: meta_ss_23
   password: amazonskr05
   port: 443
-  server: 54.200.148.115
+  server: 43.203.218.87
   tfo: false
   type: ss
+- name: meta_trojan_24
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: flexible-griffon.iguana938.mom
+  skip-cert-verify: true
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_24
+  name: meta_vmess_25
   network: tcp
   port: '40002'
   server: 183.236.48.163
@@ -170,7 +189,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: meta_vless_25
+  name: meta_vless_26
   network: ws
   port: 587
   server: 103.180.161.69
@@ -184,96 +203,60 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
-  password: 84856344-8644-46e0-98cb-5d54509ee059
-  port: 15760
-  server: atom.986886.xyz
+  password: amazonskr05
+  port: 443
+  server: 52.79.56.225
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_32
-  port: 47369
-  server: 45.94.68.135
+  name: meta_vmess_41
+  port: 15836
+  server: 45.159.50.76
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 99fd4269-a32b-4b6b-99e3-81dee59271b1
-- cipher: aes-256-cfb
+  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_33
-  password: amazonskr05
-  port: 443
-  server: 3.112.215.69
+  name: meta_ss_42
+  password: 7DJY7GZN9AQ2AURN
+  port: 18001
+  server: 120.241.45.50
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_34
-  network: tcp
-  port: '47369'
-  server: 45.94.68.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 99fd4269-a32b-4b6b-99e3-81dee59271b1
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_41
-  password: a58a5239-3b34-4c35-8724-953ef363015c
+  name: meta_ss_43
+  password: cfa8359e-b5d5-4fa7-a182-18b85b41a9e2
   port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  password: '!!str 3669023833404481536'
-  port: 443
-  server: fleet-gopher.iguana938.mom
-  skip-cert-verify: false
-  sni: fleet-gopher.iguana938.mom
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_43
-  password: 84856344-8644-46e0-98cb-5d54509ee059
-  port: 25617
-  server: atom.986886.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_44
-  password: '!!str 3669023833404481536'
-  port: 443
-  server: amazing-salmon.iguana938.mom
-  skip-cert-verify: false
-  sni: amazing-salmon.iguana938.mom
-  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_44
   password: amazonskr05
   port: 443
-  server: 13.125.158.71
+  server: 3.35.54.153
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_45
+  network: tcp
+  port: '15836'
+  server: 45.159.50.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
 - name: meta_trojan_46
-  network: tcp
-  password: '!!str 3669023833404481536'
-  port: 443
-  server: fleet-gopher.iguana938.mom
-  type: trojan
-- name: meta_trojan_47
-  network: tcp
-  password: '!!str 3669023833404481536'
-  port: 443
-  server: amazing-salmon.iguana938.mom
-  type: trojan
-- name: meta_trojan_48
   password: 8e4248f7-aae5-3a38-b99d-88bf1cd37e0d
   port: 443
   server: 35.75.8.137
@@ -303,29 +286,26 @@ proxy-groups:
   - meta_ss_01
   - meta_vmess_02
   - meta_ss_03
-  - meta_vmess_04
+  - meta_ss_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vless_07
-  - meta_trojan_11
-  - meta_ss_12
-  - meta_ss_21
+  - meta_vmess_07
+  - meta_vmess_08
+  - meta_vmess_09
+  - meta_vless_010
+  - meta_trojan_21
   - meta_vmess_22
   - meta_ss_23
-  - meta_vmess_24
-  - meta_vless_25
+  - meta_trojan_24
+  - meta_vmess_25
+  - meta_vless_26
   - meta_ss_31
-  - meta_vmess_32
-  - meta_ss_33
-  - meta_vmess_34
-  - meta_ss_41
-  - meta_trojan_42
+  - meta_vmess_41
+  - meta_ss_42
   - meta_ss_43
-  - meta_trojan_44
-  - meta_ss_45
+  - meta_ss_44
+  - meta_vmess_45
   - meta_trojan_46
-  - meta_trojan_47
-  - meta_trojan_48
   - shadowtls_1
 - name: WARP前置节点
   type: select
