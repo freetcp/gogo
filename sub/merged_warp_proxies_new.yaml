@@ -46,7 +46,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_01
-  password: 5d7cd009-e16d-4a8f-9d23-01395a4e6467
+  password: 860dd85c-cfdc-48aa-b677-c216a8cb5620
   port: 11001
   server: 183.240.255.75
   tfo: false
@@ -73,9 +73,9 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_04
-  password: 4322aee9-98c9-4cf6-8cc5-4b3a9bc3a8ec
-  port: 11001
-  server: 183.232.229.165
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31320
+  server: 111.29.57.108
   tfo: false
   type: ss
 - alterId: 0
@@ -89,20 +89,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_06
-  port: 34169
-  server: 38.147.189.161
-  skip-cert-verify: false
+  name: meta_ss_06
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31321
+  server: node2.cenxiwc.shop
   tfo: false
-  tls: false
-  type: vmess
-  uuid: b7edcefb-9720-4829-8257-842b9a29f8fc
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_07
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31318
+  server: 111.29.57.108
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_07
+  name: meta_vmess_08
   network: tcp
   port: '56601'
   server: 183.236.51.23
@@ -112,7 +117,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_09
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -120,16 +125,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_09
-  network: tcp
-  port: '34169'
-  server: 38.147.189.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b7edcefb-9720-4829-8257-842b9a29f8fc
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: meta_vless_010
@@ -162,24 +157,39 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_23
-  password: amazonskr05
-  port: 443
-  server: 43.203.218.87
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31619
+  server: 111.29.57.108
   tfo: false
   type: ss
-- name: meta_trojan_24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31618
+  server: node1.cenxiwc.shop
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_25
+  password: amazonskr05
+  port: 443
+  server: 57.180.49.182
+  tfo: false
+  type: ss
+- name: meta_trojan_26
   network: tcp
   password: '!!str 3690911436885991424'
   port: 443
   server: flexible-griffon.iguana938.mom
-  skip-cert-verify: true
   type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_25
+  name: meta_vmess_27
   network: tcp
   port: '40002'
   server: 183.236.48.163
@@ -188,7 +198,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: meta_vless_26
+  name: meta_vless_28
   network: ws
   port: 587
   server: 103.180.161.69
@@ -202,56 +212,23 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_27
-  network: ws
-  port: 587
-  server: 103.180.161.123
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
-  password: amazonskr05
-  port: 443
-  server: 52.79.56.225
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31520
+  server: 111.29.57.108
   tfo: false
   type: ss
-- name: meta_vless_32
-  network: ws
-  port: 33890
-  server: 221.166.163.61
-  servername: vless.ifx.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: amazonskr05
+  port: 443
+  server: 34.209.103.254
+  tfo: false
+  type: ss
 - name: meta_vless_33
-  network: ws
-  port: 19150
-  server: 183.104.236.91
-  servername: vless.ifx.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: meta_vless_34
   network: ws
   port: 28006
   server: 14.57.129.244
@@ -264,17 +241,40 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
+- name: meta_vless_34
+  network: ws
+  port: 33890
+  server: 221.166.163.61
+  servername: vless.ifx.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- name: meta_vless_35
+  network: ws
+  port: 19150
+  server: 183.104.236.91
+  servername: vless.ifx.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_41
-  port: 15836
-  server: 45.159.50.76
-  skip-cert-verify: false
+  name: meta_ss_41
+  password: f0f58ff3-545a-4d1a-a81b-347ed427c164
+  port: 11001
+  server: 61.172.235.22
   tfo: false
-  tls: false
-  type: vmess
-  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_42
@@ -286,30 +286,36 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_43
-  password: cfa8359e-b5d5-4fa7-a182-18b85b41a9e2
-  port: 11001
-  server: 61.172.235.22
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31419
+  server: node1.cenxiwc.shop
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_44
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31621
+  server: node2.cenxiwc.shop
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_45
+  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
+  port: 31420
+  server: 111.29.57.108
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_46
   password: amazonskr05
   port: 443
-  server: 3.35.54.153
+  server: 13.230.104.31
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_45
-  network: tcp
-  port: '15836'
-  server: 45.159.50.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
-- name: meta_vless_46
+- name: meta_vless_47
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -323,24 +329,6 @@ proxies:
     headers:
       Host: Falcunargo.net
     path: /5Ve373mPjKg4vceF?ed
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_47
-  network: ws
-  port: 443
-  server: live.skornorth.com
-  servername: live.skornorth.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6bda686e-b4b8-442d-84bc-3c4842523d23
-  ws-opts:
-    headers:
-      Host: Join_Evay_vpn.ir
-    path: /@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn?ed=2560
 - name: shadowtls_1
   type: ss
   server: 91.149.239.23
@@ -365,28 +353,30 @@ proxy-groups:
   - meta_ss_03
   - meta_ss_04
   - meta_vmess_05
-  - meta_vmess_06
-  - meta_vmess_07
+  - meta_ss_06
+  - meta_ss_07
   - meta_vmess_08
   - meta_vmess_09
   - meta_vless_010
   - meta_trojan_21
   - meta_vmess_22
   - meta_ss_23
-  - meta_trojan_24
-  - meta_vmess_25
-  - meta_vless_26
-  - meta_vless_27
+  - meta_ss_24
+  - meta_ss_25
+  - meta_trojan_26
+  - meta_vmess_27
+  - meta_vless_28
   - meta_ss_31
-  - meta_vless_32
+  - meta_ss_32
   - meta_vless_33
   - meta_vless_34
-  - meta_vmess_41
+  - meta_vless_35
+  - meta_ss_41
   - meta_ss_42
   - meta_ss_43
   - meta_ss_44
-  - meta_vmess_45
-  - meta_vless_46
+  - meta_ss_45
+  - meta_ss_46
   - meta_vless_47
   - shadowtls_1
 - name: WARP前置节点
