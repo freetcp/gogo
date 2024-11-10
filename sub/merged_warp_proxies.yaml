@@ -125,19 +125,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: meta_vless_010
-  network: tcp
-  port: 19280
-  reality-opts:
-    public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo
-    short-id: a8bd783f
-  server: 103.17.99.54
-  servername: cdn-dynmedia-1.microsoft.com
-  tls: true
-  type: vless
-  uuid: 89b90001-4206-4871-a99d-1744d48f215b
 - client-fingerprint: chrome
   name: meta_trojan_21
   password: '!!str 3690911436885991424'
@@ -197,21 +184,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: meta_vless_28
-  network: ws
-  port: 587
-  server: 103.180.161.69
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -230,19 +202,6 @@ proxies:
   type: ss
 - name: meta_vless_33
   network: ws
-  port: 28006
-  server: 14.57.129.244
-  servername: vless.ifx.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- name: meta_vless_34
-  network: ws
   port: 33890
   server: 221.166.163.61
   servername: vless.ifx.us.kg
@@ -254,7 +213,7 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: meta_vless_35
+- name: meta_vless_34
   network: ws
   port: 19150
   server: 183.104.236.91
@@ -357,7 +316,6 @@ proxy-groups:
   - meta_ss_07
   - meta_vmess_08
   - meta_vmess_09
-  - meta_vless_010
   - meta_trojan_21
   - meta_vmess_22
   - meta_ss_23
@@ -365,12 +323,10 @@ proxy-groups:
   - meta_ss_25
   - meta_trojan_26
   - meta_vmess_27
-  - meta_vless_28
   - meta_ss_31
   - meta_ss_32
   - meta_vless_33
   - meta_vless_34
-  - meta_vless_35
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
