@@ -46,7 +46,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_01
-  password: 860dd85c-cfdc-48aa-b677-c216a8cb5620
+  password: 94c4e6e0-85b4-4740-81c2-cc7d1afd3c02
   port: 11001
   server: 183.240.255.75
   tfo: false
@@ -70,14 +70,17 @@ proxies:
   server: 120.241.45.50
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_04
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31320
-  server: 111.29.57.108
+  name: meta_vmess_04
+  port: 45840
+  server: 103.224.80.100
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: daf8d2e7-d4e2-42d9-871f-6e287da72dd6
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -89,25 +92,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_06
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31321
-  server: node2.cenxiwc.shop
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_07
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31318
-  server: 111.29.57.108
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_06
   network: tcp
   port: '56601'
   server: 183.236.51.23
@@ -117,7 +104,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_07
+  network: tcp
+  port: '45840'
+  server: 103.224.80.100
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: daf8d2e7-d4e2-42d9-871f-6e287da72dd6
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_08
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -126,12 +123,21 @@ proxies:
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - client-fingerprint: chrome
+  name: meta_trojan_11
+  network: tcp
+  password: 9cf656d0-6283-4a69-a64c-3806529ba2cd
+  port: 18147
+  server: svip.88de.hongxingdl.vip
+  skip-cert-verify: false
+  sni: mm2.redapricotcloud.com
+  type: trojan
+- client-fingerprint: chrome
   name: meta_trojan_21
   password: '!!str 3690911436885991424'
   port: 443
-  server: flexible-griffon.iguana938.mom
+  server: master-boxer.pig299.lat
   skip-cert-verify: false
-  sni: flexible-griffon.iguana938.mom
+  sni: master-boxer.pig299.lat
   type: trojan
 - alterId: 64
   cipher: auto
@@ -144,35 +150,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_23
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31619
-  server: 111.29.57.108
+  password: ZRN4E3KJH2N5Q5Y2
+  port: 16001
+  server: 120.241.45.50
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_24
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31618
-  server: node1.cenxiwc.shop
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_24
+  network: tcp
+  password: d90e5504-a42b-44c1-8289-3543471bf55a
+  port: 8009
+  server: n2.sps465ad81.top
+  skip-cert-verify: false
+  sni: n2.sps465ad81.top
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_25
   password: amazonskr05
   port: 443
-  server: 57.180.49.182
+  server: 54.238.90.188
   tfo: false
   type: ss
 - name: meta_trojan_26
   network: tcp
   password: '!!str 3690911436885991424'
   port: 443
-  server: flexible-griffon.iguana938.mom
+  server: master-boxer.pig299.lat
+  skip-cert-verify: true
   type: trojan
 - alterId: 64
   cipher: auto
@@ -187,9 +195,9 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31520
-  server: 111.29.57.108
+  password: d4eeaa7b-43c6-49dc-8020-7389bba4d033
+  port: 40016
+  server: hzhz2.sssyun.xyz
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -197,7 +205,7 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 34.209.103.254
+  server: 3.38.209.2
   tfo: false
   type: ss
 - name: meta_vless_33
@@ -213,23 +221,10 @@ proxies:
     headers:
       Host: vless.ifx.us.kg
     path: /?ed=2560
-- name: meta_vless_34
-  network: ws
-  port: 19150
-  server: 183.104.236.91
-  servername: vless.ifx.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_41
-  password: f0f58ff3-545a-4d1a-a81b-347ed427c164
+  password: 372c936f-acce-4859-92fe-4286bb9d1e17
   port: 11001
   server: 61.172.235.22
   tfo: false
@@ -242,39 +237,24 @@ proxies:
   server: 120.241.45.50
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_43
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31419
-  server: node1.cenxiwc.shop
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_44
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31621
-  server: node2.cenxiwc.shop
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_45
-  password: 6d1a3101-7f94-4290-9a9a-9c238e161371
-  port: 31420
-  server: 111.29.57.108
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_43
+  network: tcp
+  password: d90e5504-a42b-44c1-8289-3543471bf55a
+  port: 8443
+  server: n3.jp4589871.top
+  skip-cert-verify: false
+  sni: n3.jp4589871.top
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_46
+  name: meta_ss_44
   password: amazonskr05
   port: 443
-  server: 13.230.104.31
+  server: 52.79.157.153
   tfo: false
   type: ss
-- name: meta_vless_47
+- name: meta_vless_45
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -310,30 +290,27 @@ proxy-groups:
   - meta_ss_01
   - meta_vmess_02
   - meta_ss_03
-  - meta_ss_04
+  - meta_vmess_04
   - meta_vmess_05
-  - meta_ss_06
-  - meta_ss_07
+  - meta_vmess_06
+  - meta_vmess_07
   - meta_vmess_08
-  - meta_vmess_09
+  - meta_trojan_11
   - meta_trojan_21
   - meta_vmess_22
   - meta_ss_23
-  - meta_ss_24
+  - meta_trojan_24
   - meta_ss_25
   - meta_trojan_26
   - meta_vmess_27
   - meta_ss_31
   - meta_ss_32
   - meta_vless_33
-  - meta_vless_34
   - meta_ss_41
   - meta_ss_42
-  - meta_ss_43
+  - meta_trojan_43
   - meta_ss_44
-  - meta_ss_45
-  - meta_ss_46
-  - meta_vless_47
+  - meta_vless_45
   - shadowtls_1
 - name: WARP前置节点
   type: select
