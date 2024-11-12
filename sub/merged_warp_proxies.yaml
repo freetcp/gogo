@@ -250,19 +250,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b0c2a29-a5f6-4382-b187-a5a424b50e4b
-- name: meta_vless_35
-  network: ws
-  port: 33890
-  server: 221.166.163.61
-  servername: vless.ifx.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_41
@@ -309,6 +296,7 @@ proxies:
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
   server: plowman.meijireform.com
+  skip-cert-verify: false
   type: trojan
 - name: meta_vless_47
   network: ws
@@ -365,7 +353,6 @@ proxy-groups:
   - meta_vmess_32
   - meta_ss_33
   - meta_vmess_34
-  - meta_vless_35
   - meta_ss_41
   - meta_ss_42
   - meta_trojan_43
