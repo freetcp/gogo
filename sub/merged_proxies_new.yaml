@@ -139,6 +139,20 @@ proxies:
   port: 23555
   server: 219.77.65.212
   servername: juzi8186.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzi8186.5112233.xyz
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: meta_vless_013
+  network: ws
+  port: 23555
+  server: 219.77.65.212
+  servername: juzi8186.5112233.xyz
   skip-cert-verify: true
   tls: true
   type: vless
@@ -148,20 +162,6 @@ proxies:
     headers:
       Host: juzi8186.5112233.xyz
     path: /?ed=2560fp=random
-- client-fingerprint: chrome
-  name: meta_vless_013
-  network: ws
-  port: 23555
-  server: 219.77.65.212
-  servername: juzi8186.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzi8186.5112233.xyz
-    path: /?ed=2560
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
@@ -170,24 +170,17 @@ proxies:
   server: lsjd.yunxiang8.mom
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_vless_12
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: sub.putata.eu.org
+- name: meta_hysteria2_21
+  password: 4959177b-62d7-4d1b-b6a3-eed72c0609c5
+  port: 443
+  server: 140.245.57.42
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a
-  ws-opts:
-    headers:
-      Host: sub.putata.eu.org
-    path: /?ed=2048
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ss_21
+  name: meta_ss_22
   password: asd123456
   port: 8388
   server: 103.36.91.32
@@ -196,7 +189,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_22
+  name: meta_vmess_23
   port: 40002
   server: 183.236.48.163
   skip-cert-verify: false
@@ -206,7 +199,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_23
+  name: meta_ss_24
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 39782
   server: lsjd.yunxiang8.mom
@@ -214,7 +207,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_24
+  name: meta_ss_25
   password: amazonskr05
   port: 443
   server: 13.125.37.249
@@ -222,7 +215,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_25
+  name: meta_vmess_26
   network: tcp
   port: '40002'
   server: 183.236.48.163
@@ -269,21 +262,6 @@ proxies:
   uuid: 37a9e3d4-08b2-4a54-92ad-e9dce926657d
 - client-fingerprint: chrome
   name: meta_vless_35
-  network: ws
-  port: 28006
-  server: 220.124.232.109
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_36
   network: ws
   port: 14985
   server: 61.81.181.169
@@ -351,24 +329,8 @@ proxies:
   port: 443
   server: demise.meijireform.com
   type: trojan
-- name: meta_trojan_47
-  password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3
-  port: 443
-  server: 54.238.135.78
-  skip-cert-verify: true
-  sni: edge.steam-dns.top.comcast.net
-  type: trojan
-  udp: true
-- name: meta_trojan_48
-  password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: fastly.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: meta_vless_49
+  name: meta_vless_47
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -383,7 +345,7 @@ proxies:
       Host: Falcunargo.net
     path: /5Ve373mPjKg4vceF?ed
 - client-fingerprint: chrome
-  name: meta_vless_410
+  name: meta_vless_48
   network: ws
   port: 443
   server: 217.142.243.226
@@ -395,34 +357,6 @@ proxies:
   ws-opts:
     headers:
       Host: ap.ylks.xyz
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: meta_vless_411
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: ap.ylks.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: ap.ylks.xyz
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: meta_vless_412
-  network: ws
-  port: 443
-  server: 64.110.104.30
-  servername: lp.kpcloud.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: lp.kpcloud.eu.org
     path: /?ed=2048
 - name: shadowtls_1
   type: ss
@@ -455,30 +389,25 @@ proxy-groups:
   - meta_vless_012
   - meta_vless_013
   - meta_ss_11
-  - meta_vless_12
-  - meta_ss_21
-  - meta_vmess_22
-  - meta_ss_23
+  - meta_hysteria2_21
+  - meta_ss_22
+  - meta_vmess_23
   - meta_ss_24
-  - meta_vmess_25
+  - meta_ss_25
+  - meta_vmess_26
   - meta_ss_31
   - meta_vmess_32
   - meta_ss_33
   - meta_vmess_34
   - meta_vless_35
-  - meta_vless_36
   - meta_ss_41
   - meta_ss_42
   - meta_trojan_43
   - meta_vmess_44
   - meta_ss_45
   - meta_trojan_46
-  - meta_trojan_47
-  - meta_trojan_48
-  - meta_vless_49
-  - meta_vless_410
-  - meta_vless_411
-  - meta_vless_412
+  - meta_vless_47
+  - meta_vless_48
   - shadowtls_1
 - name: 自动选择
   type: url-test
@@ -500,30 +429,25 @@ proxy-groups:
   - meta_vless_012
   - meta_vless_013
   - meta_ss_11
-  - meta_vless_12
-  - meta_ss_21
-  - meta_vmess_22
-  - meta_ss_23
+  - meta_hysteria2_21
+  - meta_ss_22
+  - meta_vmess_23
   - meta_ss_24
-  - meta_vmess_25
+  - meta_ss_25
+  - meta_vmess_26
   - meta_ss_31
   - meta_vmess_32
   - meta_ss_33
   - meta_vmess_34
   - meta_vless_35
-  - meta_vless_36
   - meta_ss_41
   - meta_ss_42
   - meta_trojan_43
   - meta_vmess_44
   - meta_ss_45
   - meta_trojan_46
-  - meta_trojan_47
-  - meta_trojan_48
-  - meta_vless_49
-  - meta_vless_410
-  - meta_vless_411
-  - meta_vless_412
+  - meta_vless_47
+  - meta_vless_48
   - shadowtls_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
