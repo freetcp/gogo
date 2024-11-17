@@ -246,8 +246,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 1c327622-a059-4131-b9da-a457e9792a01
+- name: meta_hysteria2_41
+  password: 59df7208-e1f6-4e0c-ab8c-fc8d4d2608e0
+  port: 8080
+  server: 23.26.34.209
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  name: meta_trojan_41
+  name: meta_trojan_42
   network: tcp
   password: AO0FjYBS38ZFCC2q93RpcAXySE6wON5apeaT83nDRDZlz7KxyeYC3xaDISgul4
   port: 28332
@@ -258,7 +266,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_42
+  name: meta_vmess_43
   network: ws
   port: '33202'
   server: yd2.ainivp.com
@@ -275,7 +283,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_43
+  name: meta_vmess_44
   network: ws
   port: '30002'
   server: 134.122.184.117
@@ -292,7 +300,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_44
+  name: meta_vmess_45
   network: ws
   port: '443'
   server: 107.148.1.118
@@ -308,14 +316,14 @@ proxies:
     path: /path/351212081517
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_46
   password: amazonskr05
   port: 443
   server: 54.151.152.144
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: meta_vless_46
+  name: meta_vless_47
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -366,12 +374,13 @@ proxy-groups:
   - meta_vmess_33
   - meta_ss_34
   - meta_vmess_35
-  - meta_trojan_41
-  - meta_vmess_42
+  - meta_hysteria2_41
+  - meta_trojan_42
   - meta_vmess_43
   - meta_vmess_44
-  - meta_ss_45
-  - meta_vless_46
+  - meta_vmess_45
+  - meta_ss_46
+  - meta_vless_47
   - shadowtls_1
 - name: 自动选择
   type: url-test
@@ -399,12 +408,13 @@ proxy-groups:
   - meta_vmess_33
   - meta_ss_34
   - meta_vmess_35
-  - meta_trojan_41
-  - meta_vmess_42
+  - meta_hysteria2_41
+  - meta_trojan_42
   - meta_vmess_43
   - meta_vmess_44
-  - meta_ss_45
-  - meta_vless_46
+  - meta_vmess_45
+  - meta_ss_46
+  - meta_vless_47
   - shadowtls_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
