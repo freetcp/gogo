@@ -136,12 +136,19 @@ proxies:
 - name: meta_trojan_012
   password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
   port: 27001
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: meta_trojan_013
+  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
+  port: 27001
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - client-fingerprint: chrome
-  name: meta_vless_013
+  name: meta_vless_014
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -155,7 +162,7 @@ proxies:
       Host: juzi8186.5112233.xyz
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: meta_vless_014
+  name: meta_vless_015
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -259,7 +266,7 @@ proxies:
   type: vmess
   uuid: 1c327622-a059-4131-b9da-a457e9792a01
 - client-fingerprint: chrome
-  name: meta_trojan_42
+  name: meta_trojan_41
   network: tcp
   password: QwwHvrnN
   port: 17806
@@ -269,7 +276,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_43
+  name: meta_vmess_42
   network: ws
   port: '33202'
   server: yd2.ainivp.com
@@ -285,7 +292,7 @@ proxies:
     path: /ray
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_43
   password: 83fd6a24-41c2-4158-ac18-6fcf0b842764
   port: 20004
   server: cdn.node2.lilisi.link
@@ -293,14 +300,14 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_44
   password: amazonskr05
   port: 443
   server: 13.212.78.66
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: meta_vless_46
+  name: meta_vless_45
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -343,8 +350,9 @@ proxy-groups:
   - meta_vmess_010
   - meta_vmess_011
   - meta_trojan_012
-  - meta_vless_013
+  - meta_trojan_013
   - meta_vless_014
+  - meta_vless_015
   - meta_trojan_11
   - meta_ss_21
   - meta_vmess_22
@@ -354,11 +362,11 @@ proxy-groups:
   - meta_vmess_31
   - meta_ss_32
   - meta_vmess_33
-  - meta_trojan_42
-  - meta_vmess_43
+  - meta_trojan_41
+  - meta_vmess_42
+  - meta_ss_43
   - meta_ss_44
-  - meta_ss_45
-  - meta_vless_46
+  - meta_vless_45
   - shadowtls_1
 - name: 自动选择
   type: url-test
@@ -378,8 +386,9 @@ proxy-groups:
   - meta_vmess_010
   - meta_vmess_011
   - meta_trojan_012
-  - meta_vless_013
+  - meta_trojan_013
   - meta_vless_014
+  - meta_vless_015
   - meta_trojan_11
   - meta_ss_21
   - meta_vmess_22
@@ -389,11 +398,11 @@ proxy-groups:
   - meta_vmess_31
   - meta_ss_32
   - meta_vmess_33
-  - meta_trojan_42
-  - meta_vmess_43
+  - meta_trojan_41
+  - meta_vmess_42
+  - meta_ss_43
   - meta_ss_44
-  - meta_ss_45
-  - meta_vless_46
+  - meta_vless_45
   - shadowtls_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
