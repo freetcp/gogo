@@ -52,32 +52,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: meta_trojan_04
-  network: tcp
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13008
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_05
-  port: 58002
-  server: 120.232.153.27
+  name: meta_vmess_04
+  port: 39949
+  server: 185.207.155.123
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: meta_ss_05
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_06
-  port: 30565
-  server: 183.240.253.26
+  port: 58002
+  server: 120.232.153.27
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -93,9 +92,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: meta_vmess_08
+  network: tcp
+  port: '39949'
+  server: 185.207.155.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
+- alterId: 64
+  cipher: auto
+  name: meta_vmess_09
   network: tcp
   port: '58002'
   server: 120.232.153.27
@@ -103,53 +112,144 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_09
-  network: tcp
-  port: '30565'
-  server: 183.240.253.26
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- name: meta_vless_010
+  network: ws
+  port: 587
+  server: 8.217.29.82
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_011
+  network: ws
+  port: 587
+  server: 8.218.153.62
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_012
+  network: ws
+  port: 587
+  server: 8.218.132.79
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_013
+  network: ws
+  port: 587
+  server: 8.218.152.147
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_014
+  network: ws
+  port: 587
+  server: 107.150.119.240
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_015
+  network: ws
+  port: 54321
+  server: 59.149.204.218
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_21
-  port: 40002
-  server: 183.236.48.163
+  name: meta_vmess_11
+  network: ws
+  port: '80'
+  server: twriyfjhhhh1.hfhfb.homes
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
+  ws-opts:
+    headers:
+      Host: app.dingtalk.com
+    path: /?ed
+- client-fingerprint: chrome
+  name: meta_trojan_21
+  network: tcp
+  password: 0ff8c310-3191-4071-925e-1f7be8f1f94f
+  port: 8009
+  server: n2.sps465ad81.top
+  skip-cert-verify: false
+  sni: n2.sps465ad81.top
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_22
   password: amazonskr05
   port: 443
-  server: 54.254.186.175
+  server: 13.229.212.209
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_23
-  network: tcp
-  port: '40002'
-  server: 183.236.48.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_24
-  password: 9a745aad-7df7-480b-8f6b-068ca21f6954
-  port: 443
-  server: sgtestngxqisel.57257597.xyz
-  skip-cert-verify: false
-  sni: sgtestngxqisel.57257597.xyz
-  type: trojan
+- name: meta_vless_23
+  network: ws
+  port: 587
+  server: 8.222.129.84
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
   udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_24
+  network: ws
+  port: 587
+  server: 138.2.109.23
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_31
   network: tcp
@@ -169,17 +269,25 @@ proxies:
   tls: false
   type: vmess
   uuid: f083427f-9d8b-4863-b4a5-fc15255547d2
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_33
+  password: b40fb56c-f538-4bf2-951e-b645f48b9937
+  port: 39202
+  server: hzhz1.sssyun.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_34
   password: amazonskr05
   port: 443
-  server: 13.214.193.121
+  server: 54.95.5.168
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_34
+  name: meta_vmess_35
   network: tcp
   port: '34103'
   server: 45.94.68.179
@@ -187,6 +295,149 @@ proxies:
   tls: false
   type: vmess
   uuid: f083427f-9d8b-4863-b4a5-fc15255547d2
+- name: meta_vless_36
+  network: ws
+  port: 8000
+  server: 146.56.179.20
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_37
+  network: ws
+  port: 587
+  server: 140.238.2.81
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_38
+  network: ws
+  port: 33890
+  server: 14.43.88.180
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_39
+  network: ws
+  port: 11310
+  server: 222.112.148.240
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_310
+  network: ws
+  port: 11211
+  server: 211.107.83.151
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_311
+  network: ws
+  port: 33890
+  server: 119.200.244.99
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_312
+  network: ws
+  port: 11001
+  server: 61.84.15.163
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_313
+  network: ws
+  port: 27018
+  server: 125.128.118.250
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_314
+  network: ws
+  port: 11001
+  server: 220.87.185.18
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_315
+  network: ws
+  port: 19150
+  server: 121.184.130.110
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_316
+  network: ws
+  port: 28006
+  server: 61.80.1.32
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -195,30 +446,75 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
+- client-fingerprint: chrome
+  name: meta_trojan_42
+  network: tcp
+  password: 0ff8c310-3191-4071-925e-1f7be8f1f94f
+  port: 443
+  server: n2.jp4589871.top
+  skip-cert-verify: false
+  sni: n2.jp4589871.top
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_42
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 13.212.229.251
+  server: 3.36.115.124
   tfo: false
   type: ss
-- name: meta_trojan_43
-  password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: steamcdn-a.akamaihd.net
-  type: trojan
+- name: meta_vless_44
+  network: ws
+  port: 587
+  server: 8.209.217.106
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
   udp: true
-- name: meta_trojan_44
-  password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
-  port: 443
-  server: 18.179.44.127
-  skip-cert-verify: true
-  sni: akamai.cdn.steampipe.steamcontent.com
-  type: trojan
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_45
+  network: ws
+  port: 587
+  server: 8.209.220.155
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
   udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_46
+  network: ws
+  port: 8889
+  server: 160.16.242.208
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
+- name: meta_vless_47
+  network: ws
+  port: 587
+  server: 64.110.103.142
+  servername: a.mifeng.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
 - name: shadowtls_1
   type: ss
   server: 91.149.239.23
@@ -239,24 +535,46 @@ proxy-groups:
   - meta_trojan_01
   - meta_trojan_02
   - meta_vmess_03
-  - meta_trojan_04
-  - meta_vmess_05
+  - meta_vmess_04
+  - meta_ss_05
   - meta_vmess_06
   - meta_vmess_07
   - meta_vmess_08
   - meta_vmess_09
-  - meta_vmess_21
+  - meta_vless_010
+  - meta_vless_011
+  - meta_vless_012
+  - meta_vless_013
+  - meta_vless_014
+  - meta_vless_015
+  - meta_vmess_11
+  - meta_trojan_21
   - meta_ss_22
-  - meta_vmess_23
-  - meta_trojan_24
+  - meta_vless_23
+  - meta_vless_24
   - meta_trojan_31
   - meta_vmess_32
   - meta_ss_33
-  - meta_vmess_34
+  - meta_ss_34
+  - meta_vmess_35
+  - meta_vless_36
+  - meta_vless_37
+  - meta_vless_38
+  - meta_vless_39
+  - meta_vless_310
+  - meta_vless_311
+  - meta_vless_312
+  - meta_vless_313
+  - meta_vless_314
+  - meta_vless_315
+  - meta_vless_316
   - meta_trojan_41
-  - meta_ss_42
-  - meta_trojan_43
-  - meta_trojan_44
+  - meta_trojan_42
+  - meta_ss_43
+  - meta_vless_44
+  - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
   - shadowtls_1
 - name: 自动选择
   type: url-test
@@ -267,24 +585,46 @@ proxy-groups:
   - meta_trojan_01
   - meta_trojan_02
   - meta_vmess_03
-  - meta_trojan_04
-  - meta_vmess_05
+  - meta_vmess_04
+  - meta_ss_05
   - meta_vmess_06
   - meta_vmess_07
   - meta_vmess_08
   - meta_vmess_09
-  - meta_vmess_21
+  - meta_vless_010
+  - meta_vless_011
+  - meta_vless_012
+  - meta_vless_013
+  - meta_vless_014
+  - meta_vless_015
+  - meta_vmess_11
+  - meta_trojan_21
   - meta_ss_22
-  - meta_vmess_23
-  - meta_trojan_24
+  - meta_vless_23
+  - meta_vless_24
   - meta_trojan_31
   - meta_vmess_32
   - meta_ss_33
-  - meta_vmess_34
+  - meta_ss_34
+  - meta_vmess_35
+  - meta_vless_36
+  - meta_vless_37
+  - meta_vless_38
+  - meta_vless_39
+  - meta_vless_310
+  - meta_vless_311
+  - meta_vless_312
+  - meta_vless_313
+  - meta_vless_314
+  - meta_vless_315
+  - meta_vless_316
   - meta_trojan_41
-  - meta_ss_42
-  - meta_trojan_43
-  - meta_trojan_44
+  - meta_trojan_42
+  - meta_ss_43
+  - meta_vless_44
+  - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
   - shadowtls_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
