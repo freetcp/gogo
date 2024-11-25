@@ -52,17 +52,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: meta_vmess_04
-  port: 18271
-  server: 38.147.188.139
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3ba5dca3-a24b-48f3-a571-60052ab43fef
+  name: meta_ssr_04
+  obfs: plain
+  obfs-param: 7cc15102946.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40239
+  protocol: auth_aes128_md5
+  protocol-param: 102946:2LUBMA
+  server: 28b09af269781f9b.cdn.jiashule.com
+  type: ssr
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -77,22 +77,30 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_06
-  password: a93aa7ad-a2fd-41c7-a9f4-2ad622d7756d
-  port: 11001
-  server: 183.232.229.164
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_07
-  password: b9ff32d3-78bf-42a4-8673-61968a1a9545
+  password: 38c4951c-4975-4737-a5d4-7faad420b4c5
   port: 11001
   server: 183.240.255.75
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_07
+  password: cbd12f94-bfa2-4079-95bb-50c49d7aaf7e
+  port: 30017
+  server: 117.176.203.229
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_08
+  password: bb741d28-cd11-4ce8-8799-459407bacde8
+  port: 49897
+  server: 4.api-catssr.catcloud.host
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_09
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -100,16 +108,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_09
-  network: tcp
-  port: '18271'
-  server: 38.147.188.139
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3ba5dca3-a24b-48f3-a571-60052ab43fef
 - alterId: 64
   cipher: auto
   name: meta_vmess_010
@@ -120,20 +118,50 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_21
-  password: 96a8c243-0219-403e-b8fa-f48f696435e1
-  port: 33577
-  server: iepl1.nezha.tech
+  name: meta_vmess_11
+  port: 40201
+  server: r1.xinyo.me
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: cd2c81eb-b93c-4349-96f2-878564878445
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_12
+  network: tcp
+  port: '40201'
+  server: r1.xinyo.me
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cd2c81eb-b93c-4349-96f2-878564878445
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_21
+  network: ws
+  port: '8080'
+  server: go.daluquan.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 800e95d5-43f8-4988-a0d3-9ddcbb1de7f7
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_22
   password: amazonskr05
   port: 443
-  server: 52.195.4.43
+  server: 54.248.142.136
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -149,7 +177,7 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 13.231.108.239
+  server: 43.206.238.246
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -160,51 +188,50 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- alterId: 64
-  cipher: auto
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: meta_vmess_42
-  port: 59952
-  server: 183.236.48.158
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  name: meta_ssr_42
+  obfs: plain
+  obfs-param: e0a3163814.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40201
+  protocol: auth_aes128_md5
+  protocol-param: 63814:v10ko160fk
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_43
-  password: a93aa7ad-a2fd-41c7-a9f4-2ad622d7756d
-  port: 11002
+  password: 3b2ea7fe-645d-4d79-b899-7170797a3399
+  port: 11003
   server: 61.172.235.22
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_44
-  password: 2852c164-1a5b-4628-b668-3554c7aa4453
+  password: 4bd9a564-e41a-4d4b-9c62-7b2086221a9b
   port: 11001
   server: 61.172.235.22
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_45
+  network: tcp
+  password: ad6e2bae-d580-4117-aa37-a8c111100740
+  port: 13012
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_46
   password: amazonskr05
   port: 443
-  server: 54.64.20.76
+  server: 18.183.217.223
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_46
-  network: tcp
-  port: '59952'
-  server: 183.236.48.158
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: meta_trojan_47
   password: 637308bc-fd52-343d-b573-7693835b8e20
   port: 443
@@ -241,23 +268,25 @@ proxy-groups:
   - meta_trojan_01
   - meta_trojan_02
   - meta_vmess_03
-  - meta_vmess_04
+  - meta_ssr_04
   - meta_vmess_05
   - meta_ss_06
   - meta_ss_07
-  - meta_vmess_08
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_ss_21
+  - meta_vmess_11
+  - meta_vmess_12
+  - meta_vmess_21
   - meta_ss_22
   - meta_trojan_31
   - meta_ss_32
   - meta_trojan_41
-  - meta_vmess_42
+  - meta_ssr_42
   - meta_ss_43
   - meta_ss_44
-  - meta_ss_45
-  - meta_vmess_46
+  - meta_trojan_45
+  - meta_ss_46
   - meta_trojan_47
   - meta_trojan_48
   - shadowtls_1
@@ -270,23 +299,25 @@ proxy-groups:
   - meta_trojan_01
   - meta_trojan_02
   - meta_vmess_03
-  - meta_vmess_04
+  - meta_ssr_04
   - meta_vmess_05
   - meta_ss_06
   - meta_ss_07
-  - meta_vmess_08
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_ss_21
+  - meta_vmess_11
+  - meta_vmess_12
+  - meta_vmess_21
   - meta_ss_22
   - meta_trojan_31
   - meta_ss_32
   - meta_trojan_41
-  - meta_vmess_42
+  - meta_ssr_42
   - meta_ss_43
   - meta_ss_44
-  - meta_ss_45
-  - meta_vmess_46
+  - meta_trojan_45
+  - meta_ss_46
   - meta_trojan_47
   - meta_trojan_48
   - shadowtls_1
