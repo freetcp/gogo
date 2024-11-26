@@ -172,6 +172,7 @@ proxies:
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: meta_ssr_42
@@ -209,19 +210,11 @@ proxies:
   tfo: false
   type: ss
 - name: meta_trojan_46
-  password: 637308bc-fd52-343d-b573-7693835b8e20
+  password: dfe1ef9b-e590-3b93-816a-e58a908bce99
   port: 443
   server: 18.179.44.127
   skip-cert-verify: true
-  sni: cloudsync-prod.s3.amazonaws.com
-  type: trojan
-  udp: true
-- name: meta_trojan_47
-  password: 637308bc-fd52-343d-b573-7693835b8e20
-  port: 443
-  server: 35.75.8.137
-  skip-cert-verify: true
-  sni: www.microsoft365.com
+  sni: upos-hz-mirrorakam.akamaized.net
   type: trojan
   udp: true
 proxy-groups:
@@ -250,7 +243,6 @@ proxy-groups:
   - meta_trojan_44
   - meta_ss_45
   - meta_trojan_46
-  - meta_trojan_47
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -278,7 +270,6 @@ proxy-groups:
   - meta_trojan_44
   - meta_ss_45
   - meta_trojan_46
-  - meta_trojan_47
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
