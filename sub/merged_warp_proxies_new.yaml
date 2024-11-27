@@ -214,6 +214,14 @@ proxies:
 - name: meta_trojan_46
   password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
   port: 443
+  server: 18.179.44.127
+  skip-cert-verify: true
+  sni: fastly.cdn.steampipe.steamcontent.com
+  type: trojan
+  udp: true
+- name: meta_trojan_47
+  password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
+  port: 443
   server: 35.75.8.137
   skip-cert-verify: true
   sni: steampipe-kr.akamaized.net
@@ -246,6 +254,7 @@ proxy-groups:
   - meta_ssr_44
   - meta_ss_45
   - meta_trojan_46
+  - meta_trojan_47
 - name: WARP前置节点
   type: select
   proxies:
