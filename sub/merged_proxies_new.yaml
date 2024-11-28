@@ -147,6 +147,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: meta_vless_013
+  network: ws
+  port: 443
+  server: 154.218.15.1
+  servername: 445566.666888.lol
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 23d9aa04-8a2a-4ffc-9a3c-479a9f43f6fe
+  ws-opts:
+    headers:
+      Host: 445566.666888.lol
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_11
@@ -188,314 +204,38 @@ proxies:
   server: 54.180.157.150
   tfo: false
   type: ss
-- client-fingerprint: edge
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: meta_vless_23
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
+  network: ws
+  port: 4443
+  server: 140.245.51.131
+  servername: 445566.666888.lol
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 44498c73-d3b0-4f1d-95f7-f224155b518c
-- client-fingerprint: chrome
+  uuid: 23d9aa04-8a2a-4ffc-9a3c-479a9f43f6fe
+  ws-opts:
+    headers:
+      Host: 445566.666888.lol
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: meta_vless_24
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
+  network: ws
+  port: 443
+  server: 27.50.48.13
+  servername: 445566.666888.lol
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 7af8a763-ac88-4fd2-8fc2-f04d66e2378a
-- client-fingerprint: firefox
-  name: meta_vless_25
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 54f0b6fb-f19d-4617-ae8b-bba0706559bc
-- client-fingerprint: safari
-  name: meta_vless_26
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4835b13a-2099-4ed7-8d50-4bc4b9441975
-- client-fingerprint: ios
-  name: meta_vless_27
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: aa33e3cd-3e9e-4524-a2ca-b3090af67882
-- client-fingerprint: chrome
-  name: meta_vless_28
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4018a780-0ef9-45ce-9a1e-1057dc3cd1af
-- client-fingerprint: qq
-  name: meta_vless_29
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a091eec8-904b-4bfb-b8dc-4028af1291f5
-- client-fingerprint: chrome
-  name: meta_vless_210
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a1d17715-093b-491d-af59-c8f760719a03
-- client-fingerprint: safari
-  name: meta_vless_211
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f9d2b3ea-cb00-42ff-8cd4-3a228f060672
-- client-fingerprint: safari
-  name: meta_vless_212
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: af9360a4-bcd9-40af-9bd8-fa7d4e1e28c8
-- client-fingerprint: ios
-  name: meta_vless_213
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 55c19651-6c59-43c2-a224-e2c5ff9f767d
-- client-fingerprint: qq
-  name: meta_vless_214
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 469e824f-b5d1-4533-a3f3-f418b51cf17e
-- client-fingerprint: edge
-  name: meta_vless_215
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 3607a21d-b6ea-4762-8526-7093e2119c2b
-- client-fingerprint: qq
-  name: meta_vless_216
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b5a92a2f-b156-4246-90ef-1f90613e64ed
-- client-fingerprint: safari
-  name: meta_vless_217
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 2e89c9f3-6265-4958-9989-09d7f410eb82
-- client-fingerprint: firefox
-  name: meta_vless_218
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4f00748e-f424-4a39-b156-0fd5e7d2881d
-- client-fingerprint: firefox
-  name: meta_vless_219
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 92a70433-5a60-4724-9172-cbde71879ca3
-- client-fingerprint: edge
-  name: meta_vless_220
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a51c8701-ae69-4976-9b23-cafb8d12ef60
-- client-fingerprint: ios
-  name: meta_vless_221
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 3655392a-d91f-41a4-8922-d9a2f1796591
-- client-fingerprint: qq
-  name: meta_vless_222
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: af027267-9324-4765-ba00-23f45f60ccf0
-- client-fingerprint: ios
-  name: meta_vless_223
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14457fb2-6b2b-4d09-8192-864b1b8f085a
-- client-fingerprint: edge
-  name: meta_vless_224
-  network: tcp
-  packet-encoding: xudp
-  port: 18443
-  reality-opts:
-    public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA
-    short-id: 32ff656d
-  server: sgv2test.566678.xyz
-  servername: www.tesla.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1d6027c9-1a75-43f1-8999-31bfbc32a723
+  uuid: 23d9aa04-8a2a-4ffc-9a3c-479a9f43f6fe
+  ws-opts:
+    headers:
+      Host: 445566.666888.lol
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -536,6 +276,38 @@ proxies:
   server: 54.250.148.116
   tfo: false
   type: ss
+- name: meta_trojan_44
+  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
+  port: 443
+  server: 43.206.140.241
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  type: trojan
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: meta_vless_45
+  network: ws
+  port: 12212
+  server: 45.159.48.192
+  servername: 445566.666888.lol
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 23d9aa04-8a2a-4ffc-9a3c-479a9f43f6fe
+  ws-opts:
+    headers:
+      Host: 445566.666888.lol
+    path: /?ed=2560
+- name: meta_trojan_46
+  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
+  port: 443
+  server: 18.179.44.127
+  skip-cert-verify: true
+  sni: steampipe.akamaized.net
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -553,37 +325,21 @@ proxy-groups:
   - meta_vmess_010
   - meta_trojan_011
   - meta_vmess_012
+  - meta_vless_013
   - meta_ss_11
   - meta_ss_12
   - meta_vmess_21
   - meta_ss_22
   - meta_vless_23
   - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
-  - meta_vless_212
-  - meta_vless_213
-  - meta_vless_214
-  - meta_vless_215
-  - meta_vless_216
-  - meta_vless_217
-  - meta_vless_218
-  - meta_vless_219
-  - meta_vless_220
-  - meta_vless_221
-  - meta_vless_222
-  - meta_vless_223
-  - meta_vless_224
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
+  - meta_trojan_44
+  - meta_vless_45
+  - meta_trojan_46
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -602,37 +358,21 @@ proxy-groups:
   - meta_vmess_010
   - meta_trojan_011
   - meta_vmess_012
+  - meta_vless_013
   - meta_ss_11
   - meta_ss_12
   - meta_vmess_21
   - meta_ss_22
   - meta_vless_23
   - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
-  - meta_vless_212
-  - meta_vless_213
-  - meta_vless_214
-  - meta_vless_215
-  - meta_vless_216
-  - meta_vless_217
-  - meta_vless_218
-  - meta_vless_219
-  - meta_vless_220
-  - meta_vless_221
-  - meta_vless_222
-  - meta_vless_223
-  - meta_vless_224
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
+  - meta_trojan_44
+  - meta_vless_45
+  - meta_trojan_46
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
