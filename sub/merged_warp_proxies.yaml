@@ -120,6 +120,38 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: meta_vless_09
+  network: ws
+  port: 443
+  server: 8.218.120.79
+  servername: paged.sosorg.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8caec8c9-869a-4121-9309-4251d4e23200
+  ws-opts:
+    headers:
+      Host: paged.sosorg.nyc.mn
+    path: /?ed=2560
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: meta_vless_010
+  network: ws
+  port: 20443
+  server: 23.26.217.56
+  servername: paged.sosorg.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8caec8c9-869a-4121-9309-4251d4e23200
+  ws-opts:
+    headers:
+      Host: paged.sosorg.nyc.mn
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -217,36 +249,19 @@ proxies:
   tls: false
   type: vmess
   uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
-- name: meta_trojan_46
-  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
-  port: 443
-  server: 43.206.140.241
-  skip-cert-verify: true
-  sni: origin-a.akamaihd.net
-  type: trojan
-  udp: true
-- name: meta_trojan_47
-  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
-  port: 443
-  server: 18.179.44.127
-  skip-cert-verify: true
-  sni: steamcdn-a.akamaihd.net
-  type: trojan
-  udp: true
-- name: meta_vless_48
+- name: meta_vless_46
   network: ws
-  port: 587
-  server: 64.110.103.142
-  servername: a.mifeng.us.kg
+  port: 443
+  server: ergwork.web.unc.edu
+  servername: ergwork.web.unc.edu
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 3fecfaf1-02c1-436d-83b2-d43ddd82fd59
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
+      Host: sobip.ir
+    path: /telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn,telegram-@Sobi_Vpn?ed=2048
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -262,6 +277,8 @@ proxy-groups:
   - meta_ssr_06
   - meta_vmess_07
   - meta_vmess_08
+  - meta_vless_09
+  - meta_vless_010
   - meta_vmess_11
   - meta_ss_12
   - meta_ssr_21
@@ -272,9 +289,7 @@ proxy-groups:
   - meta_vmess_43
   - meta_ss_44
   - meta_vmess_45
-  - meta_trojan_46
-  - meta_trojan_47
-  - meta_vless_48
+  - meta_vless_46
 - name: WARP前置节点
   type: select
   proxies:
