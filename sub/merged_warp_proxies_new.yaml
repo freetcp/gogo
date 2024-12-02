@@ -147,32 +147,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_012
-  network: ws
-  port: 12345
-  server: 42.98.167.229
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳+@wangcai2+/?ed=2048
-- name: meta_vless_013
-  network: ws
-  port: 443
-  server: 8.218.148.106
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -202,19 +176,20 @@ proxies:
   tls: false
   type: vmess
   uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
-- name: meta_vless_14
+- client-fingerprint: chrome
+  name: meta_vless_14
   network: ws
-  port: 443
-  server: 103.137.63.2
-  servername: pvg.aghabeiki.homes
+  port: 10004
+  server: 114.34.202.224
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: test2.ccdd.site
+    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_21
@@ -223,19 +198,6 @@ proxies:
   server: 13.215.140.43
   tfo: false
   type: ss
-- name: meta_vless_22
-  network: ws
-  port: 587
-  server: 138.2.109.23
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_31
   network: tcp
@@ -263,160 +225,384 @@ proxies:
   type: ss
 - name: meta_vless_34
   network: ws
-  port: 443
-  server: 130.162.144.85
-  servername: pvg.aghabeiki.homes
+  port: 33889
+  server: 121.180.243.59
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 - name: meta_vless_35
   network: ws
-  port: 443
-  server: 150.230.248.166
-  servername: pvg.aghabeiki.homes
+  port: 33889
+  server: 121.176.166.69
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 - name: meta_vless_36
   network: ws
-  port: 443
-  server: 144.24.78.162
-  servername: pvg.aghabeiki.homes
+  port: 11310
+  server: 118.37.231.34
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_37
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: meta_vless_37
   network: ws
-  port: 443
-  server: 146.56.153.6
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 168.126.205.5
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_38
+      Host: test2.ccdd.site
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: meta_vless_38
   network: ws
-  port: 443
-  server: 146.56.41.215
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 121.146.123.154
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: test2.ccdd.site
+    path: /?ed=2560
 - name: meta_vless_39
   network: ws
-  port: 443
-  server: 140.238.23.148
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 211.38.177.17
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
 - name: meta_vless_310
   network: ws
-  port: 443
-  server: 152.70.88.98
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 59.15.153.141
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_311
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
+- client-fingerprint: chrome
+  name: meta_vless_311
   network: ws
-  port: 443
-  server: 131.186.17.132
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 14.38.253.135
+  servername: test2.ccdd.site
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: test2.ccdd.site
+    path: /?ed=2560
 - name: meta_vless_312
   network: ws
-  port: 443
-  server: 144.24.90.107
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 112.164.28.162
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
 - name: meta_vless_313
   network: ws
-  port: 443
-  server: 152.70.232.151
-  servername: pvg.aghabeiki.homes
+  port: 33889
+  server: 121.178.21.146
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 - name: meta_vless_314
   network: ws
-  port: 443
-  server: 132.145.80.224
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 211.39.65.170
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /telegram🇨🇳 @wangcai2 /?ed=2048
 - name: meta_vless_315
   network: ws
-  port: 443
-  server: 146.56.161.138
-  servername: pvg.aghabeiki.homes
+  port: 50000
+  server: 14.46.199.74
+  servername: edgetunnel.xiaomayi.nyc.mn
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_316
+  network: ws
+  port: 50000
+  server: 211.218.223.130
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_317
+  network: ws
+  port: 443
+  server: 59.3.3.161
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_318
+  network: ws
+  port: 50000
+  server: 211.221.20.167
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_319
+  network: ws
+  port: 50000
+  server: 222.108.252.112
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_320
+  network: ws
+  port: 50000
+  server: 210.99.119.3
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_321
+  network: ws
+  port: 50000
+  server: 218.152.197.93
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_322
+  network: ws
+  port: 50000
+  server: 222.103.6.229
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_323
+  network: ws
+  port: 50000
+  server: 119.197.35.190
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_324
+  network: ws
+  port: 50000
+  server: 183.105.48.110
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_325
+  network: ws
+  port: 50000
+  server: 218.159.236.206
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_326
+  network: ws
+  port: 50000
+  server: 61.81.13.82
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_327
+  network: ws
+  port: 33889
+  server: 121.178.21.146
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /
+- name: meta_vless_328
+  network: ws
+  port: 12480
+  server: 118.222.33.248
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_329
+  network: ws
+  port: 443
+  server: 4.230.9.53
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_330
+  network: ws
+  port: 10001
+  server: 112.165.35.70
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_331
+  network: ws
+  port: 443
+  server: 20.41.104.196
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: meta_vless_332
+  network: ws
+  port: 443
+  server: 52.141.25.42
+  servername: edgetunnel.xiaomayi.nyc.mn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  ws-opts:
+    headers:
+      Host: edgetunnel.xiaomayi.nyc.mn
+    path: /Telegram🇨🇳 @WangCai2 /
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -443,122 +629,30 @@ proxies:
   type: ss
 - name: meta_vless_44
   network: ws
-  port: 443
-  server: 47.91.18.127
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_45
-  network: ws
-  port: 443
-  server: 140.83.36.122
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_46
-  network: ws
-  port: 443
-  server: 132.226.7.222
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- client-fingerprint: chrome
-  name: meta_vless_47
-  network: ws
-  port: 8889
-  server: 160.16.242.208
-  servername: a.mifeng.us.kg
+  port: 587
+  server: 45.14.64.185
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
+      Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: meta_vless_48
+- name: meta_vless_45
   network: ws
-  port: 443
-  server: 141.147.161.58
-  servername: pvg.aghabeiki.homes
+  port: 587
+  server: 150.230.202.26
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_49
-  network: ws
-  port: 443
-  server: 152.69.197.102
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_410
-  network: ws
-  port: 443
-  server: 168.138.55.208
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_411
-  network: ws
-  port: 443
-  server: 141.147.154.214
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
-- name: meta_vless_412
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: pvg.aghabeiki.homes
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: pvg.aghabeiki.homes
-    path: /?ed=2744
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -577,14 +671,11 @@ proxy-groups:
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_vless_012
-  - meta_vless_013
   - meta_vmess_11
   - meta_ss_12
   - meta_vmess_13
   - meta_vless_14
   - meta_ss_21
-  - meta_vless_22
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_33
@@ -600,18 +691,28 @@ proxy-groups:
   - meta_vless_313
   - meta_vless_314
   - meta_vless_315
+  - meta_vless_316
+  - meta_vless_317
+  - meta_vless_318
+  - meta_vless_319
+  - meta_vless_320
+  - meta_vless_321
+  - meta_vless_322
+  - meta_vless_323
+  - meta_vless_324
+  - meta_vless_325
+  - meta_vless_326
+  - meta_vless_327
+  - meta_vless_328
+  - meta_vless_329
+  - meta_vless_330
+  - meta_vless_331
+  - meta_vless_332
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
   - meta_vless_44
   - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
-  - meta_vless_410
-  - meta_vless_411
-  - meta_vless_412
 - name: WARP前置节点
   type: select
   proxies:
