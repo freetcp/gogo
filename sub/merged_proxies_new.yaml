@@ -41,17 +41,17 @@ proxies:
   server: 36.151.192.239
   skip-cert-verify: true
   type: trojan
-- cipher: rc4-md5
+- alterId: 64
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ssr_03
-  obfs: plain
-  obfs-param: 7cc15102946.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40209
-  protocol: auth_aes128_md5
-  protocol-param: 102946:2LUBMA
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
+  name: meta_vmess_03
+  port: 40972
+  server: 120.232.153.63
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_04
@@ -71,15 +71,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: meta_trojan_06
-  network: tcp
-  password: 32a3dba3-7b31-409e-b0bd-15fafe7009ec
-  port: 20049
-  server: iepl04.catcat-123.com
-  skip-cert-verify: false
-  sni: cmhk-01.oneok.link
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_06
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54000
+  server: h-k01.loveroise.com
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -104,6 +103,16 @@ proxies:
   cipher: auto
   name: meta_vmess_09
   network: tcp
+  port: '40972'
+  server: 120.232.153.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 64
+  cipher: auto
+  name: meta_vmess_010
+  network: tcp
   port: '58831'
   server: 183.236.48.163
   servername: ''
@@ -112,7 +121,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -120,7 +129,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_011
+- name: meta_vless_012
   network: ws
   port: 12345
   server: 42.98.167.229
@@ -133,7 +142,7 @@ proxies:
     headers:
       Host: edgetunnel.xiaomayi.nyc.mn
     path: /telegram🇨🇳+@wangcai2+/?ed=2048
-- name: meta_vless_012
+- name: meta_vless_013
   network: ws
   port: 443
   server: 8.218.148.106
@@ -150,24 +159,32 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_11
-  port: 20016
-  server: i.needss.top
+  port: 45077
+  server: xdd.dashuai.cyou
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: b23172e2-eb36-4222-85ac-3d2f61651013
+  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_12
+  password: f0e7fd1e-0469-415f-95da-774021f16f36
+  port: 40020
+  server: soontw.soon.guru
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_12
+  name: meta_vmess_13
   network: tcp
-  port: '20016'
-  server: i.needss.top
+  port: '45077'
+  server: xdd.dashuai.cyou
   servername: ''
   tls: false
   type: vmess
-  uuid: b23172e2-eb36-4222-85ac-3d2f61651013
-- name: meta_vless_13
+  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
+- name: meta_vless_14
   network: ws
   port: 443
   server: 103.137.63.2
@@ -180,24 +197,15 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- client-fingerprint: chrome
-  name: meta_trojan_21
-  network: tcp
-  password: 5e2ce79c-170e-484a-8802-40584a1a3a12
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_22
+  name: meta_ss_21
   password: amazonskr05
   port: 443
-  server: 18.136.207.233
+  server: 13.215.140.43
   tfo: false
   type: ss
-- name: meta_vless_23
+- name: meta_vless_22
   network: ws
   port: 587
   server: 138.2.109.23
@@ -210,15 +218,32 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: meta_trojan_31
+  network: tcp
+  password: 1f962f36-f751-40c3-91b3-cb6d2360b450
+  port: 39593
+  server: lmgj.hongxingdl.vip
+  skip-cert-verify: false
+  sni: mmbiz10.redapricotcloud.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54012
+  server: k-r03.loveroise.com
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_31
+  name: meta_ss_33
   password: amazonskr05
   port: 443
   server: 47.129.60.132
   tfo: false
   type: ss
-- name: meta_vless_32
+- name: meta_vless_34
   network: ws
   port: 443
   server: 130.162.144.85
@@ -231,7 +256,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_33
+- name: meta_vless_35
   network: ws
   port: 443
   server: 150.230.248.166
@@ -244,7 +269,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_34
+- name: meta_vless_36
   network: ws
   port: 443
   server: 144.24.78.162
@@ -257,7 +282,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_35
+- name: meta_vless_37
   network: ws
   port: 443
   server: 146.56.153.6
@@ -270,7 +295,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_36
+- name: meta_vless_38
   network: ws
   port: 443
   server: 146.56.41.215
@@ -283,7 +308,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_37
+- name: meta_vless_39
   network: ws
   port: 443
   server: 140.238.23.148
@@ -296,7 +321,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_38
+- name: meta_vless_310
   network: ws
   port: 443
   server: 152.70.88.98
@@ -309,7 +334,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_39
+- name: meta_vless_311
   network: ws
   port: 443
   server: 131.186.17.132
@@ -322,7 +347,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_310
+- name: meta_vless_312
   network: ws
   port: 443
   server: 144.24.90.107
@@ -335,7 +360,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_311
+- name: meta_vless_313
   network: ws
   port: 443
   server: 152.70.232.151
@@ -348,7 +373,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_312
+- name: meta_vless_314
   network: ws
   port: 443
   server: 132.145.80.224
@@ -361,7 +386,7 @@ proxies:
     headers:
       Host: pvg.aghabeiki.homes
     path: /?ed=2744
-- name: meta_vless_313
+- name: meta_vless_315
   network: ws
   port: 443
   server: 146.56.161.138
@@ -382,12 +407,12 @@ proxies:
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_42
-  password: amazonskr05
-  port: 443
-  server: 43.207.163.206
+  password: b3d05306-e5ae-46ca-9deb-40dc2232912b
+  port: 11001
+  server: 61.172.235.22
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -395,7 +420,7 @@ proxies:
   name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 47.129.45.42
+  server: 47.129.236.42
   tfo: false
   type: ss
 - name: meta_vless_44
@@ -523,25 +548,26 @@ proxy-groups:
   - 自动选择
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ssr_03
+  - meta_vmess_03
   - meta_ss_04
   - meta_vmess_05
-  - meta_trojan_06
+  - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vless_011
+  - meta_vmess_011
   - meta_vless_012
+  - meta_vless_013
   - meta_vmess_11
-  - meta_vmess_12
-  - meta_vless_13
-  - meta_trojan_21
-  - meta_ss_22
-  - meta_vless_23
-  - meta_ss_31
-  - meta_vless_32
-  - meta_vless_33
+  - meta_ss_12
+  - meta_vmess_13
+  - meta_vless_14
+  - meta_ss_21
+  - meta_vless_22
+  - meta_trojan_31
+  - meta_ss_32
+  - meta_ss_33
   - meta_vless_34
   - meta_vless_35
   - meta_vless_36
@@ -552,6 +578,8 @@ proxy-groups:
   - meta_vless_311
   - meta_vless_312
   - meta_vless_313
+  - meta_vless_314
+  - meta_vless_315
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
@@ -572,25 +600,26 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ssr_03
+  - meta_vmess_03
   - meta_ss_04
   - meta_vmess_05
-  - meta_trojan_06
+  - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vless_011
+  - meta_vmess_011
   - meta_vless_012
+  - meta_vless_013
   - meta_vmess_11
-  - meta_vmess_12
-  - meta_vless_13
-  - meta_trojan_21
-  - meta_ss_22
-  - meta_vless_23
-  - meta_ss_31
-  - meta_vless_32
-  - meta_vless_33
+  - meta_ss_12
+  - meta_vmess_13
+  - meta_vless_14
+  - meta_ss_21
+  - meta_vless_22
+  - meta_trojan_31
+  - meta_ss_32
+  - meta_ss_33
   - meta_vless_34
   - meta_vless_35
   - meta_vless_36
@@ -601,6 +630,8 @@ proxy-groups:
   - meta_vless_311
   - meta_vless_312
   - meta_vless_313
+  - meta_vless_314
+  - meta_vless_315
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
