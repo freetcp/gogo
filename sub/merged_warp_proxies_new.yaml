@@ -48,15 +48,15 @@ proxies:
   network: tcp
   password: DNUMdmnJ
   port: 51377
-  server: 36.151.192.201
+  server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: meta_trojan_02
   network: tcp
   password: QwwHvrnN
-  port: 42395
-  server: 36.151.192.239
+  port: 17956
+  server: 223.113.54.144
   skip-cert-verify: true
   type: trojan
 - alterId: 64
@@ -117,9 +117,17 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_09
+  password: 6b475a32-8065-4407-b852-c9e26da30ef4
+  port: 11001
+  server: 183.240.255.75
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_010
   network: tcp
   port: '40972'
   server: 120.232.153.63
@@ -129,7 +137,7 @@ proxies:
   uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -139,7 +147,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_012
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -147,17 +155,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_11
-  port: 45077
-  server: xdd.dashuai.cyou
+- client-fingerprint: chrome
+  name: meta_trojan_11
+  network: tcp
+  password: 5e2ce79c-170e-484a-8802-40584a1a3a12
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_12
@@ -166,50 +172,51 @@ proxies:
   server: soontw.soon.guru
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_13
-  network: tcp
-  port: '45077'
-  server: xdd.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d574a472-d628-46cc-bcb7-ab85a6fe02bb
-- client-fingerprint: chrome
-  name: meta_vless_14
-  network: ws
-  port: 10004
-  server: 114.34.202.224
-  servername: test2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: test2.ccdd.site
-    path: /?ed=2560
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54030
+  server: s-g04.loveroise.com
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_22
   password: amazonskr05
   port: 443
   server: 13.215.140.43
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_31
-  network: tcp
-  password: 1f962f36-f751-40c3-91b3-cb6d2360b450
-  port: 39593
-  server: lmgj.hongxingdl.vip
+- name: meta_vless_23
+  network: ws
+  port: 587
+  server: 103.180.161.123
+  servername: a.xn--i-sx6a60i.us.kg
   skip-cert-verify: false
-  sni: mmbiz10.redapricotcloud.com
-  type: trojan
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: meta_vless_24
+  network: ws
+  port: 587
+  server: 103.180.161.69
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_31
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54012
   server: k-r03.loveroise.com
@@ -217,13 +224,13 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_33
+  name: meta_ss_32
   password: amazonskr05
   port: 443
   server: 47.129.60.132
   tfo: false
   type: ss
-- name: meta_vless_34
+- name: meta_vless_33
   network: ws
   port: 33889
   server: 121.180.243.59
@@ -236,20 +243,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: meta_vless_35
-  network: ws
-  port: 33889
-  server: 121.176.166.69
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
-- name: meta_vless_36
+- name: meta_vless_34
   network: ws
   port: 11310
   server: 118.37.231.34
@@ -262,88 +256,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_37
-  network: ws
-  port: 50000
-  server: 168.126.205.5
-  servername: test2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: test2.ccdd.site
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_vless_38
-  network: ws
-  port: 50000
-  server: 121.146.123.154
-  servername: test2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: test2.ccdd.site
-    path: /?ed=2560
-- name: meta_vless_39
-  network: ws
-  port: 50000
-  server: 211.38.177.17
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳 @wangcai2 /?ed=2048
-- name: meta_vless_310
-  network: ws
-  port: 50000
-  server: 59.15.153.141
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳 @wangcai2 /?ed=2048
-- client-fingerprint: chrome
-  name: meta_vless_311
-  network: ws
-  port: 50000
-  server: 14.38.253.135
-  servername: test2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: test2.ccdd.site
-    path: /?ed=2560
-- name: meta_vless_312
-  network: ws
-  port: 50000
-  server: 112.164.28.162
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳 @wangcai2 /?ed=2048
-- name: meta_vless_313
+- name: meta_vless_35
   network: ws
   port: 33889
   server: 121.178.21.146
@@ -356,176 +269,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
-- name: meta_vless_314
-  network: ws
-  port: 50000
-  server: 211.39.65.170
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /telegram🇨🇳 @wangcai2 /?ed=2048
-- name: meta_vless_315
-  network: ws
-  port: 50000
-  server: 14.46.199.74
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_316
-  network: ws
-  port: 50000
-  server: 211.218.223.130
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_317
-  network: ws
-  port: 443
-  server: 59.3.3.161
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_318
-  network: ws
-  port: 50000
-  server: 211.221.20.167
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_319
-  network: ws
-  port: 50000
-  server: 222.108.252.112
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_320
-  network: ws
-  port: 50000
-  server: 210.99.119.3
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_321
-  network: ws
-  port: 50000
-  server: 218.152.197.93
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_322
-  network: ws
-  port: 50000
-  server: 222.103.6.229
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_323
-  network: ws
-  port: 50000
-  server: 119.197.35.190
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_324
-  network: ws
-  port: 50000
-  server: 183.105.48.110
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_325
-  network: ws
-  port: 50000
-  server: 218.159.236.206
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_326
-  network: ws
-  port: 50000
-  server: 61.81.13.82
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_327
+- name: meta_vless_36
   network: ws
   port: 33889
   server: 121.178.21.146
@@ -538,71 +282,32 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /
-- name: meta_vless_328
-  network: ws
-  port: 12480
-  server: 118.222.33.248
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_329
+- name: meta_vless_37
   network: ws
   port: 443
-  server: 4.230.9.53
-  servername: edgetunnel.xiaomayi.nyc.mn
+  server: 140.238.18.74
+  servername: BPb-4jH.PaGEs.dev
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_330
-  network: ws
-  port: 10001
-  server: 112.165.35.70
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_331
+      Host: BPb-4jH.PaGEs.dev
+    path: /aIa8EGozH9v6A091?ed=2560
+- name: meta_vless_38
   network: ws
   port: 443
-  server: 20.41.104.196
-  servername: edgetunnel.xiaomayi.nyc.mn
+  server: 132.145.94.80
+  servername: BPb-4jH.PaGEs.dev
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: meta_vless_332
-  network: ws
-  port: 443
-  server: 52.141.25.42
-  servername: edgetunnel.xiaomayi.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
-  ws-opts:
-    headers:
-      Host: edgetunnel.xiaomayi.nyc.mn
-    path: /Telegram🇨🇳 @WangCai2 /
+      Host: BPb-4jH.PaGEs.dev
+    path: /aIa8EGozH9v6A091?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -614,32 +319,27 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_42
-  password: b3d05306-e5ae-46ca-9deb-40dc2232912b
-  port: 11001
-  server: 61.172.235.22
+  password: f0e7fd1e-0469-415f-95da-774021f16f36
+  port: 40003
+  server: soonjp.soon.guru
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_43
+  password: aaf875c9-d3cf-41d2-9698-365d66fd257a
+  port: 20004
+  server: gy.666666222.shop
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_43
+  name: meta_ss_44
   password: amazonskr05
   port: 443
   server: 47.129.236.42
   tfo: false
   type: ss
-- name: meta_vless_44
-  network: ws
-  port: 587
-  server: 45.14.64.185
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
 - name: meta_vless_45
   network: ws
   port: 587
@@ -653,6 +353,24 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: /?ed=2560
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_46
+  network: ws
+  port: 443
+  server: Zmaoz.Faculty.UcdavIS.Edu
+  servername: Zmaoz.Faculty.UcdavIS.Edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 49d65fc2-8413-4d97-9303-ad34f0bdeef4
+  ws-opts:
+    headers:
+      Host: meloch-de.com
+    path: /@melov2ray/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpnd=2048
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -668,51 +386,30 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_vmess_09
+  - meta_ss_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_vmess_11
+  - meta_vmess_012
+  - meta_trojan_11
   - meta_ss_12
-  - meta_vmess_13
-  - meta_vless_14
   - meta_ss_21
-  - meta_trojan_31
+  - meta_ss_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_ss_31
   - meta_ss_32
-  - meta_ss_33
+  - meta_vless_33
   - meta_vless_34
   - meta_vless_35
   - meta_vless_36
   - meta_vless_37
   - meta_vless_38
-  - meta_vless_39
-  - meta_vless_310
-  - meta_vless_311
-  - meta_vless_312
-  - meta_vless_313
-  - meta_vless_314
-  - meta_vless_315
-  - meta_vless_316
-  - meta_vless_317
-  - meta_vless_318
-  - meta_vless_319
-  - meta_vless_320
-  - meta_vless_321
-  - meta_vless_322
-  - meta_vless_323
-  - meta_vless_324
-  - meta_vless_325
-  - meta_vless_326
-  - meta_vless_327
-  - meta_vless_328
-  - meta_vless_329
-  - meta_vless_330
-  - meta_vless_331
-  - meta_vless_332
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
-  - meta_vless_44
+  - meta_ss_44
   - meta_vless_45
+  - meta_vless_46
 - name: WARP前置节点
   type: select
   proxies:
