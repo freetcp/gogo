@@ -55,8 +55,8 @@ proxies:
   name: meta_trojan_02
   network: tcp
   password: QwwHvrnN
-  port: 17956
-  server: 223.113.54.144
+  port: 25241
+  server: 36.151.192.196
   skip-cert-verify: true
   type: trojan
 - alterId: 64
@@ -117,17 +117,28 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_09
+  port: 47292
+  server: 149.104.15.77
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 733eb24f-6e5f-4a1e-9f19-52ddca78aa20
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_09
-  password: 6b475a32-8065-4407-b852-c9e26da30ef4
+  name: meta_ss_010
+  password: 36a91bbc-8181-4862-a947-eb4379a30fcf
   port: 11001
-  server: 183.240.255.75
+  server: 183.232.229.164
   tfo: false
   type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '40972'
   server: 120.232.153.63
@@ -137,7 +148,7 @@ proxies:
   uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_012
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -147,7 +158,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_012
+  name: meta_vmess_013
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -155,7 +166,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_013
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_014
+  network: tcp
+  port: '47292'
+  server: 149.104.15.77
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 733eb24f-6e5f-4a1e-9f19-52ddca78aa20
+- name: meta_vless_015
   network: ws
   port: 8969
   server: 152.32.252.175
@@ -168,7 +189,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_014
+- name: meta_vless_016
   network: ws
   port: 35184
   server: 165.154.43.92
@@ -181,7 +202,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_015
+- name: meta_vless_017
   network: ws
   port: 8443
   server: 43.129.97.210
@@ -194,7 +215,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_016
+- name: meta_vless_018
   network: ws
   port: 1443
   server: 103.148.72.147
@@ -207,7 +228,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_017
+- name: meta_vless_019
   network: ws
   port: 443
   server: 20.6.159.95
@@ -220,7 +241,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_018
+- name: meta_vless_020
   network: ws
   port: 18443
   server: 18.162.246.4
@@ -233,7 +254,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_019
+- name: meta_vless_021
   network: ws
   port: 2087
   server: 154.211.8.227
@@ -246,7 +267,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_020
+- name: meta_vless_022
   network: ws
   port: 443
   server: 43.128.26.74
@@ -259,7 +280,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_021
+- name: meta_vless_023
   network: ws
   port: 2096
   server: 154.211.8.47
@@ -272,7 +293,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_022
+- name: meta_vless_024
   network: ws
   port: 14526
   server: 202.181.27.218
@@ -285,7 +306,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_023
+- name: meta_vless_025
   network: ws
   port: 18688
   server: 38.207.142.114
@@ -298,7 +319,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_024
+- name: meta_vless_026
   network: ws
   port: 8080
   server: 45.149.186.112
@@ -311,7 +332,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_025
+- name: meta_vless_027
   network: ws
   port: 56785
   server: 149.104.30.57
@@ -324,7 +345,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_026
+- name: meta_vless_028
   network: ws
   port: 35986
   server: 91.229.132.209
@@ -337,7 +358,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_027
+- name: meta_vless_029
   network: ws
   port: 40110
   server: 141.11.91.177
@@ -359,14 +380,6 @@ proxies:
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_12
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  port: 40020
-  server: soontw.soon.guru
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -815,19 +828,27 @@ proxies:
   client-fingerprint: chrome
   name: meta_ss_31
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  port: 54008
+  server: k-r01.loveroise.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54012
   server: k-r03.loveroise.com
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_33
   password: amazonskr05
   port: 443
   server: 47.129.60.132
   tfo: false
   type: ss
-- name: meta_vless_33
+- name: meta_vless_34
   network: ws
   port: 50000
   server: 125.134.172.40
@@ -840,7 +861,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_34
+- name: meta_vless_35
   network: ws
   port: 443
   server: 59.3.3.161
@@ -853,7 +874,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_35
+- name: meta_vless_36
   network: ws
   port: 50000
   server: 14.46.199.74
@@ -866,7 +887,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_36
+- name: meta_vless_37
   network: ws
   port: 50000
   server: 121.131.104.228
@@ -879,7 +900,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_37
+- name: meta_vless_38
   network: ws
   port: 50000
   server: 220.118.142.151
@@ -892,7 +913,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_38
+- name: meta_vless_39
   network: ws
   port: 50000
   server: 61.74.55.112
@@ -905,7 +926,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_39
+- name: meta_vless_310
   network: ws
   port: 50000
   server: 211.46.212.62
@@ -918,7 +939,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_310
+- name: meta_vless_311
   network: ws
   port: 50000
   server: 222.104.180.40
@@ -931,7 +952,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_311
+- name: meta_vless_312
   network: ws
   port: 50000
   server: 175.205.113.47
@@ -944,7 +965,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_312
+- name: meta_vless_313
   network: ws
   port: 50000
   server: 222.103.6.229
@@ -957,7 +978,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_313
+- name: meta_vless_314
   network: ws
   port: 50000
   server: 211.220.61.191
@@ -970,7 +991,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_314
+- name: meta_vless_315
   network: ws
   port: 50000
   server: 175.203.30.93
@@ -983,7 +1004,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_315
+- name: meta_vless_316
   network: ws
   port: 50000
   server: 125.142.102.60
@@ -996,7 +1017,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_316
+- name: meta_vless_317
   network: ws
   port: 50000
   server: 211.38.177.17
@@ -1009,7 +1030,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_317
+- name: meta_vless_318
   network: ws
   port: 50000
   server: 168.126.205.5
@@ -1022,7 +1043,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_318
+- name: meta_vless_319
   network: ws
   port: 50000
   server: 221.163.102.207
@@ -1035,7 +1056,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_319
+- name: meta_vless_320
   network: ws
   port: 50000
   server: 218.159.236.206
@@ -1048,7 +1069,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_320
+- name: meta_vless_321
   network: ws
   port: 50000
   server: 211.184.85.221
@@ -1061,7 +1082,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_321
+- name: meta_vless_322
   network: ws
   port: 50000
   server: 218.152.197.93
@@ -1074,7 +1095,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_322
+- name: meta_vless_323
   network: ws
   port: 50000
   server: 14.55.158.171
@@ -1087,7 +1108,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_323
+- name: meta_vless_324
   network: ws
   port: 50000
   server: 210.99.119.3
@@ -1100,7 +1121,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_324
+- name: meta_vless_325
   network: ws
   port: 50000
   server: 183.105.48.110
@@ -1113,7 +1134,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_325
+- name: meta_vless_326
   network: ws
   port: 50000
   server: 112.164.28.162
@@ -1126,7 +1147,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_326
+- name: meta_vless_327
   network: ws
   port: 50000
   server: 14.42.214.186
@@ -1139,7 +1160,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_327
+- name: meta_vless_328
   network: ws
   port: 50000
   server: 121.179.174.25
@@ -1152,7 +1173,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_328
+- name: meta_vless_329
   network: ws
   port: 50000
   server: 61.81.13.82
@@ -1165,7 +1186,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_329
+- name: meta_vless_330
   network: ws
   port: 50000
   server: 221.164.43.248
@@ -1178,7 +1199,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_330
+- name: meta_vless_331
   network: ws
   port: 50000
   server: 14.38.253.135
@@ -1191,7 +1212,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_331
+- name: meta_vless_332
   network: ws
   port: 50000
   server: 211.219.199.21
@@ -1204,7 +1225,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_332
+- name: meta_vless_333
   network: ws
   port: 50000
   server: 121.146.123.154
@@ -1217,7 +1238,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_333
+- name: meta_vless_334
   network: ws
   port: 50000
   server: 121.135.81.139
@@ -1230,7 +1251,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_334
+- name: meta_vless_335
   network: ws
   port: 50000
   server: 222.108.0.181
@@ -1243,7 +1264,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_335
+- name: meta_vless_336
   network: ws
   port: 50000
   server: 119.197.35.190
@@ -1256,7 +1277,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_336
+- name: meta_vless_337
   network: ws
   port: 30017
   server: 61.84.74.108
@@ -1269,7 +1290,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_337
+- name: meta_vless_338
   network: ws
   port: 50000
   server: 119.206.79.181
@@ -1282,7 +1303,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_338
+- name: meta_vless_339
   network: ws
   port: 10000
   server: 119.192.167.123
@@ -1295,7 +1316,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_339
+- name: meta_vless_340
   network: ws
   port: 50000
   server: 175.208.111.195
@@ -1308,7 +1329,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_340
+- name: meta_vless_341
   network: ws
   port: 50000
   server: 119.201.165.50
@@ -1321,7 +1342,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_341
+- name: meta_vless_342
   network: ws
   port: 50000
   server: 210.223.64.192
@@ -1334,7 +1355,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_342
+- name: meta_vless_343
   network: ws
   port: 16104
   server: 119.202.114.207
@@ -1347,7 +1368,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_343
+- name: meta_vless_344
   network: ws
   port: 50000
   server: 220.86.104.93
@@ -1360,7 +1381,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_344
+- name: meta_vless_345
   network: ws
   port: 50000
   server: 222.102.190.56
@@ -1373,7 +1394,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_345
+- name: meta_vless_346
   network: ws
   port: 19262
   server: 211.179.70.112
@@ -1386,7 +1407,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_346
+- name: meta_vless_347
   network: ws
   port: 443
   server: 20.41.104.196
@@ -1399,7 +1420,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_347
+- name: meta_vless_348
   network: ws
   port: 443
   server: 4.230.9.53
@@ -1412,7 +1433,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_348
+- name: meta_vless_349
   network: ws
   port: 443
   server: 52.141.25.42
@@ -1425,7 +1446,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_349
+- name: meta_vless_350
   network: ws
   port: 2053
   server: 52.231.97.210
@@ -1438,7 +1459,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_350
+- name: meta_vless_351
   network: ws
   port: 33517
   server: 175.114.195.4
@@ -1451,7 +1472,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_351
+- name: meta_vless_352
   network: ws
   port: 443
   server: 129.154.59.99
@@ -1464,7 +1485,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_352
+- name: meta_vless_353
   network: ws
   port: 31277
   server: 121.124.114.17
@@ -1477,7 +1498,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_353
+- name: meta_vless_354
   network: ws
   port: 50051
   server: 150.230.252.47
@@ -1490,7 +1511,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_354
+- name: meta_vless_355
   network: ws
   port: 443
   server: 146.56.101.141
@@ -1503,7 +1524,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_355
+- name: meta_vless_356
   network: ws
   port: 47394
   server: 45.141.139.150
@@ -1520,35 +1541,43 @@ proxies:
   name: meta_trojan_41
   network: tcp
   password: QwwHvrnN
-  port: 27381
+  port: 6985
   server: 36.151.192.242
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_42
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  port: 40003
-  server: soonjp.soon.guru
+  password: 54dcd75649dc4c78
+  port: 42929
+  server: 2bdefb8.kumgrb.xyz
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_43
-  password: aaf875c9-d3cf-41d2-9698-365d66fd257a
-  port: 20004
-  server: gy.666666222.shop
+  password: 6741d7d6-e19b-4ece-ab6c-c50d05df9fa5
+  port: 11001
+  server: 61.172.235.22
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_44
+  password: 36a91bbc-8181-4862-a947-eb4379a30fcf
+  port: 11001
+  server: 61.172.235.22
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_45
   password: amazonskr05
   port: 443
   server: 47.129.236.42
   tfo: false
   type: ss
-- name: meta_vless_45
+- name: meta_vless_46
   network: ws
   port: 443
   server: 52.68.248.185
@@ -1561,7 +1590,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_46
+- name: meta_vless_47
   network: ws
   port: 443
   server: 35.77.126.144
@@ -1574,7 +1603,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_47
+- name: meta_vless_48
   network: ws
   port: 443
   server: 43.206.192.211
@@ -1587,7 +1616,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_48
+- name: meta_vless_49
   network: ws
   port: 443
   server: 43.153.151.240
@@ -1600,7 +1629,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_49
+- name: meta_vless_410
   network: ws
   port: 443
   server: 35.73.102.80
@@ -1613,7 +1642,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_410
+- name: meta_vless_411
   network: ws
   port: 443
   server: 54.65.107.240
@@ -1626,7 +1655,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_411
+- name: meta_vless_412
   network: ws
   port: 2096
   server: 103.116.7.152
@@ -1639,7 +1668,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_412
+- name: meta_vless_413
   network: ws
   port: 2096
   server: 103.116.7.220
@@ -1652,7 +1681,7 @@ proxies:
     headers:
       Host: edg.comorg.us.kg
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: meta_vless_413
+- name: meta_vless_414
   network: ws
   port: 8880
   server: 138.2.18.82
@@ -1680,12 +1709,12 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_ss_09
-  - meta_vmess_010
+  - meta_vmess_09
+  - meta_ss_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vless_013
-  - meta_vless_014
+  - meta_vmess_013
+  - meta_vmess_014
   - meta_vless_015
   - meta_vless_016
   - meta_vless_017
@@ -1699,8 +1728,9 @@ proxy-groups:
   - meta_vless_025
   - meta_vless_026
   - meta_vless_027
+  - meta_vless_028
+  - meta_vless_029
   - meta_trojan_11
-  - meta_ss_12
   - meta_ss_21
   - meta_ss_22
   - meta_vless_23
@@ -1738,7 +1768,7 @@ proxy-groups:
   - meta_vless_235
   - meta_ss_31
   - meta_ss_32
-  - meta_vless_33
+  - meta_ss_33
   - meta_vless_34
   - meta_vless_35
   - meta_vless_36
@@ -1791,11 +1821,12 @@ proxy-groups:
   - meta_vless_353
   - meta_vless_354
   - meta_vless_355
+  - meta_vless_356
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
   - meta_ss_44
-  - meta_vless_45
+  - meta_ss_45
   - meta_vless_46
   - meta_vless_47
   - meta_vless_48
@@ -1804,6 +1835,7 @@ proxy-groups:
   - meta_vless_411
   - meta_vless_412
   - meta_vless_413
+  - meta_vless_414
 - name: WARP前置节点
   type: select
   proxies:
