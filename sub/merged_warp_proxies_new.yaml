@@ -108,33 +108,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_08
-  password: ea0f5ddd-2b70-4b4a-b61a-8d402093e52c
-  port: 11001
-  server: 183.232.229.165
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: meta_ss_09
-  password: asd123456
-  port: 8388
-  server: 38.147.190.72
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: meta_ss_010
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_08
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_09
   network: tcp
   port: '32193'
   server: 120.198.71.214
@@ -144,7 +133,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_012
+  name: meta_vmess_010
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -154,7 +143,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_013
+  name: meta_vmess_011
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -162,54 +151,42 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_014
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 40913
-  server: 16ab1c69cdfdbf898aa6c5c5131dfa99.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
+- name: meta_trojan_012
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  sni: tr.koiok.us.kg
   type: trojan
-  udp: true
-- name: meta_trojan_015
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 49468
-  server: e365c3a06d49e21c6027fce9ee36f181.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: us1.bilibili.com
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: meta_trojan_11
+  network: ws
+  password: ouo
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
   type: trojan
-  udp: true
-- name: meta_trojan_016
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 48385
-  server: eef72d13ad096a6703aabd5bae809848.v1.cac.node-is.green
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
+- name: meta_trojan_12
+  network: ws
+  password: ouo
+  port: 81
+  server: 210.61.97.241
   skip-cert-verify: true
-  sni: de1.bilibili.com
+  sni: tr.koiok.us.kg
   type: trojan
-  udp: true
-- name: meta_trojan_017
-  password: 285caaa4-dd31-4825-ab6a-3e4a6808dcc7
-  port: 47580
-  server: 26f3c1fb8b12d3dcbc594b4e5cad3f1a.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: meta_trojan_018
-  password: d75a2b07-34f4-454e-84ba-0de806c51b6d
-  port: 46509
-  server: dab1c8faaa893fecbc1e055db0894883.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_11
-  password: F585FCDB-6351-48D4-82C1-599B5447A589
-  port: 40020
-  server: soontw.soon.guru
-  tfo: false
-  type: ss
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -223,22 +200,9 @@ proxies:
   name: meta_ss_22
   password: amazonskr05
   port: 443
-  server: 54.251.196.3
+  server: 3.38.151.109
   tfo: false
   type: ss
-- alpn:
-  - h3
-  - h2
-  - http%2F1.1
-  name: meta_vless_23
-  network: tcp
-  port: 443
-  server: 152.42.238.145
-  servername: aka.ms
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 4f0bc55f-8824-4a09-a868-33ad3dd8fa26
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -260,71 +224,57 @@ proxies:
   name: meta_ss_33
   password: amazonskr05
   port: 443
-  server: 13.250.110.56
+  server: 18.143.139.72
   tfo: false
   type: ss
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
-  password: QwwHvrnN
-  port: 12176
-  server: 36.151.192.239
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  network: ws
-  password: ouo
-  port: 16800
-  server: 152.70.101.24
+  password: 50cce31a-d637-4058-b2cd-9362de722d64
+  port: 22269
+  server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
   skip-cert-verify: false
-  sni: tr.koiok.us.kg
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_43
+  name: meta_ss_42
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54102
   server: j-p04.loveroise.com
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_44
-  password: 62107dbc-51fc-4ca8-9bd9-67033b6a68f1
-  port: 11001
-  server: 61.172.235.22
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 18.183.146.147
+  server: 3.36.86.96
   tfo: false
   type: ss
-- name: meta_trojan_46
+- alpn:
+  - h2
+  - http%2F1.1
+  client-fingerprint: ios
+  name: meta_vless_44
   network: ws
-  password: ouo
-  port: 16800
-  server: 152.70.101.24
-  sni: tr.koiok.us.kg
-  type: trojan
+  port: 443
+  server: Zmaoz.Faculty.UcdavIS.Edu
+  servername: Zmaoz.Faculty.UcdavIS.Edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 35017be6-5b1c-4cd4-a248-95c4a99a46b1
   ws-opts:
     headers:
-      Host: tr.koiok.us.kg
-    path: '%2F%3Fed%3D2560'
+      Host: meloch-de.com
+    path: /@melov2ray/ws?ed=2048
 - alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: meta_vless_47
+  name: meta_vless_45
   network: ws
   port: 443
   server: Zmaoz.Faculty.UcdavIS.Edu
@@ -351,31 +301,23 @@ proxy-groups:
   - meta_vmess_05
   - meta_ss_06
   - meta_vmess_07
-  - meta_ss_08
-  - meta_ss_09
-  - meta_ss_010
+  - meta_trojan_08
+  - meta_vmess_09
+  - meta_vmess_010
   - meta_vmess_011
-  - meta_vmess_012
-  - meta_vmess_013
-  - meta_trojan_014
-  - meta_trojan_015
-  - meta_trojan_016
-  - meta_trojan_017
-  - meta_trojan_018
-  - meta_ss_11
+  - meta_trojan_012
+  - meta_trojan_11
+  - meta_trojan_12
   - meta_ss_21
   - meta_ss_22
-  - meta_vless_23
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
   - meta_trojan_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_ss_45
-  - meta_trojan_46
-  - meta_vless_47
+  - meta_vless_44
+  - meta_vless_45
 - name: WARP前置节点
   type: select
   proxies:
