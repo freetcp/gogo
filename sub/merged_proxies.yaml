@@ -45,8 +45,8 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_03
-  port: 32193
-  server: 120.198.71.214
+  port: 35601
+  server: 120.198.71.216
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -103,19 +103,28 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: meta_trojan_09
+  network: tcp
+  password: c41771a6-7c16-4015-80b4-de5ebdec2595
+  port: 32029
+  server: lbso.bnnodeservice.com
+  skip-cert-verify: false
+  sni: cert.bitbyte.one
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_010
   network: tcp
-  port: '32193'
-  server: 120.198.71.214
+  port: '35601'
+  server: 120.198.71.216
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -125,7 +134,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_012
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -133,7 +142,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_012
+- name: meta_trojan_013
   network: ws
   password: ouo
   port: 18443
@@ -185,6 +194,19 @@ proxies:
   server: 3.38.151.109
   tfo: false
   type: ss
+- name: meta_vless_23
+  network: ws
+  port: 443
+  server: 139.59.106.81
+  servername: asseassets.hangout.hitskeeper.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 293b624d-c3c3-4140-bb3d-84d6bacbef40
+  ws-opts:
+    headers:
+      Host: asseassets.hangout.hitskeeper.com
+    path: /freeplus
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -206,18 +228,17 @@ proxies:
   name: meta_ss_33
   password: amazonskr05
   port: 443
-  server: 18.143.139.72
+  server: 43.207.112.115
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_41
-  network: tcp
-  password: 50cce31a-d637-4058-b2cd-9362de722d64
-  port: 22269
-  server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_41
+  password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
+  port: 40003
+  server: soonjp.soon.guru
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_42
@@ -226,19 +247,51 @@ proxies:
   server: j-p04.loveroise.com
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_43
-  password: amazonskr05
+- name: meta_vless_43
+  network: ws
+  port: 80
+  server: 154.92.9.176
+  servername: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
+    path: /xmlrpc.php?ed=1080&id=dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+- name: meta_vless_44
+  network: ws
+  port: 80
+  server: 154.92.9.176
+  servername: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
+    path: /
+- name: meta_vless_45
+  network: ws
   port: 443
-  server: 3.36.86.96
-  tfo: false
-  type: ss
+  server: pscresearch.faculty.ucdavis.edu
+  servername: pscresearch.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ef78d69f-1bbf-4f5a-a669-df9670ed636a
+  ws-opts:
+    headers:
+      Host: jihvbtctvy9778.com
+    path: /ws/?ed=2048
 - alpn:
+  - h3
   - h2
   - http%2F1.1
-  client-fingerprint: ios
-  name: meta_vless_44
+  client-fingerprint: firefox
+  name: meta_vless_46
   network: ws
   port: 443
   server: Zmaoz.Faculty.UcdavIS.Edu
@@ -252,11 +305,27 @@ proxies:
       Host: meloch-de.com
     path: /@melov2ray/ws?ed=2048
 - alpn:
+  - h2
+  client-fingerprint: edge
+  name: meta_vless_47
+  network: ws
+  port: 443
+  server: Zmaoz.Faculty.UcdavIS.Edu
+  servername: Zmaoz.Faculty.UcdavIS.Edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 35017be6-5b1c-4cd4-a248-95c4a99a46b1
+  ws-opts:
+    headers:
+      Host: meloch-de.com
+    path: /@melov2ray/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpnd=2048fp=chrome
+- alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: meta_vless_45
+  name: meta_vless_48
   network: ws
   port: 443
   server: Zmaoz.Faculty.UcdavIS.Edu
@@ -282,22 +351,27 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_vmess_09
+  - meta_trojan_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_trojan_012
+  - meta_vmess_012
+  - meta_trojan_013
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
   - meta_ss_22
+  - meta_vless_23
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
-  - meta_trojan_41
+  - meta_ss_41
   - meta_ss_42
-  - meta_ss_43
+  - meta_vless_43
   - meta_vless_44
   - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
+  - meta_vless_48
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -312,22 +386,27 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_vmess_09
+  - meta_trojan_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_trojan_012
+  - meta_vmess_012
+  - meta_trojan_013
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
   - meta_ss_22
+  - meta_vless_23
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
-  - meta_trojan_41
+  - meta_ss_41
   - meta_ss_42
-  - meta_ss_43
+  - meta_vless_43
   - meta_vless_44
   - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
+  - meta_vless_48
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
