@@ -183,84 +183,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_015
-  network: ws
-  port: 2087
-  server: 154.211.8.109
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_016
-  network: ws
-  port: 443
-  server: 154.211.8.155
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_017
-  network: ws
-  port: 2083
-  server: 154.211.8.84
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_018
-  network: ws
-  port: 8443
-  server: 154.211.8.209
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_019
-  network: ws
-  port: 443
-  server: 154.211.8.240
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_020
-  network: ws
-  port: 2096
-  server: 154.211.8.150
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: ws
@@ -303,123 +225,6 @@ proxies:
   server: 13.213.67.37
   tfo: false
   type: ss
-- name: meta_vless_23
-  network: ws
-  port: 2087
-  server: 206.238.237.92
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_24
-  network: ws
-  port: 2083
-  server: 206.238.236.221
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_25
-  network: ws
-  port: 443
-  server: 206.238.237.212
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_26
-  network: ws
-  port: 2096
-  server: 206.238.236.8
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_27
-  network: ws
-  port: 2096
-  server: 92.243.74.23
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_28
-  network: ws
-  port: 2087
-  server: 27.50.48.18
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_29
-  network: ws
-  port: 8443
-  server: 92.243.74.2
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_210
-  network: ws
-  port: 8443
-  server: 27.50.49.177
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_211
-  network: ws
-  port: 2087
-  server: 27.50.49.209
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -445,6 +250,23 @@ proxies:
   server: 43.201.31.40
   tfo: false
   type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_33
+  network: ws
+  port: 443
+  server: bnnm.azurewebsites.net
+  servername: vkvd127.mycdn.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: bnnm.azurewebsites.net
+    path: /
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -461,89 +283,11 @@ proxies:
   server: j-p04.loveroise.com
   tfo: false
   type: ss
-- name: meta_vless_43
-  network: ws
-  port: 8880
-  server: 154.92.9.46
-  servername: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.
-    path: /@@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: meta_vless_44
-  network: ws
-  port: 443
-  server: 103.116.7.189
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_45
-  network: ws
-  port: 2083
-  server: 103.116.7.133
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_46
-  network: ws
-  port: 2083
-  server: 103.116.7.67
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_47
-  network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_48
-  network: ws
-  port: 443
-  server: pscresearch.faculty.ucdavis.edu
-  servername: pscresearch.faculty.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ef78d69f-1bbf-4f5a-a669-df9670ed636a
-  ws-opts:
-    headers:
-      Host: jihvbtctvy9778.com
-    path: /ws/?ed=2048
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: meta_vless_49
+  name: meta_vless_43
   network: ws
   port: 443
   server: live.theworldwidewolf.com
@@ -556,6 +300,19 @@ proxies:
     headers:
       Host: doWnloadlynEt.iR.
     path: /@custom_config?ed=2048
+- name: meta_vless_44
+  network: ws
+  port: 443
+  server: pscresearch.faculty.ucdavis.edu
+  servername: pscresearch.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ef78d69f-1bbf-4f5a-a669-df9670ed636a
+  ws-opts:
+    headers:
+      Host: jihvbtctvy9778.com
+    path: /ws/?ed=2048
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -577,36 +334,17 @@ proxy-groups:
   - meta_vmess_012
   - meta_trojan_013
   - meta_vmess_014
-  - meta_vless_015
-  - meta_vless_016
-  - meta_vless_017
-  - meta_vless_018
-  - meta_vless_019
-  - meta_vless_020
   - meta_trojan_11
   - meta_trojan_12
   - meta_trojan_21
   - meta_ss_22
-  - meta_vless_23
-  - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
   - meta_vmess_31
   - meta_ss_32
+  - meta_vless_33
   - meta_trojan_41
   - meta_ss_42
   - meta_vless_43
   - meta_vless_44
-  - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
 - name: WARP前置节点
   type: select
   proxies:
