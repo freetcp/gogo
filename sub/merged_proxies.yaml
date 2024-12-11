@@ -41,14 +41,17 @@ proxies:
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_03
-  password: 0e91a29a-989d-4934-a1fb-7b653319397f
-  port: 61008
-  server: 120.240.88.37
+  name: meta_vmess_03
+  port: 39041
+  server: hk1.tiljkc.top
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_04
@@ -100,20 +103,27 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: /?ed=2560
-- alterId: 64
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_vmess_09
-  port: 41490
-  server: 183.236.48.143
-  skip-cert-verify: false
+  name: meta_ss_09
+  password: 5BPUP4YJFYRRQK13
+  port: 15013
+  server: 113.99.142.152
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  type: ss
+- alterId: 0
   cipher: auto
   name: meta_vmess_010
+  network: tcp
+  port: '39041'
+  server: hk1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
+- alterId: 64
+  cipher: auto
+  name: meta_vmess_011
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -123,7 +133,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_012
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -131,7 +141,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_012
+- name: meta_trojan_013
   network: ws
   password: ouo
   port: 18443
@@ -142,42 +152,13 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_013
-  network: tcp
-  port: '41490'
-  server: 183.236.48.143
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_014
-  network: ws
-  port: 2083
-  server: 154.211.8.84
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_015
-  network: ws
-  port: 443
-  server: 154.211.8.155
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
+- name: meta_trojan_014
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 44991
+  server: 18.163.48.140
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: ws
@@ -211,79 +192,56 @@ proxies:
   server: s-g03.loveroise.com
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_22
+  port: 34843
+  server: sgp1.tiljkc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_23
+  port: 34842
+  server: sgp1.tiljkc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_22
+  name: meta_ss_24
   password: amazonskr05
   port: 443
   server: 13.124.228.227
   tfo: false
   type: ss
-- name: meta_vless_23
-  network: ws
-  port: 2087
-  server: 27.50.48.18
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_24
-  network: ws
-  port: 2087
-  server: 27.50.49.209
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_25
-  network: ws
-  port: 2096
-  server: 92.243.74.23
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_26
-  network: ws
-  port: 2083
-  server: 206.238.236.221
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_27
-  network: ws
-  port: 8443
-  server: 27.50.49.177
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_25
+  network: tcp
+  port: '34843'
+  server: sgp1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_26
+  network: tcp
+  port: '34842'
+  server: sgp1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_31
@@ -324,96 +282,35 @@ proxies:
   server: j-p04.loveroise.com
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_44
+  port: 38951
+  server: jp1.tiljkc.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_45
   password: amazonskr05
   port: 443
   server: 18.141.231.184
   tfo: false
   type: ss
-- name: meta_vless_45
-  network: ws
-  port: 443
-  server: 103.116.7.189
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_46
-  network: ws
-  port: 2083
-  server: 103.116.7.67
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_47
-  network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- name: meta_vless_48
-  network: ws
-  port: 2083
-  server: 103.116.7.133
-  servername: 123.drmIng.bUzz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 123.drmIng.bUzz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_49
-  network: ws
-  port: 443
-  server: live.theworldwidewolf.com
-  servername: www.robertwalters-usa.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a94a8c47-2dbc-491d-bcc6-2832f914149f
-  ws-opts:
-    headers:
-      Host: doWnloadlynEt.iR.
-    path: /@custom_config?ed=2048
-- name: meta_vless_410
-  network: ws
-  port: 443
-  server: pscresearch.faculty.ucdavis.edu
-  servername: pscresearch.faculty.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ef78d69f-1bbf-4f5a-a669-df9670ed636a
-  ws-opts:
-    headers:
-      Host: jihvbtctvy9778.com
-    path: /ws/?ed=2048
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_46
+  network: tcp
+  port: '38951'
+  server: jp1.tiljkc.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 proxy-groups:
 - name: 节点选择
   type: select
@@ -421,40 +318,34 @@ proxy-groups:
   - 自动选择
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ss_03
+  - meta_vmess_03
   - meta_ss_04
   - meta_vmess_05
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_vmess_09
+  - meta_ss_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_trojan_012
-  - meta_vmess_013
-  - meta_vless_014
-  - meta_vless_015
+  - meta_vmess_012
+  - meta_trojan_013
+  - meta_trojan_014
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
-  - meta_ss_22
-  - meta_vless_23
-  - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
+  - meta_vmess_22
+  - meta_vmess_23
+  - meta_ss_24
+  - meta_vmess_25
+  - meta_vmess_26
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
-  - meta_vless_410
+  - meta_vmess_44
+  - meta_ss_45
+  - meta_vmess_46
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -463,40 +354,34 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ss_03
+  - meta_vmess_03
   - meta_ss_04
   - meta_vmess_05
   - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
-  - meta_vmess_09
+  - meta_ss_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_trojan_012
-  - meta_vmess_013
-  - meta_vless_014
-  - meta_vless_015
+  - meta_vmess_012
+  - meta_trojan_013
+  - meta_trojan_014
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
-  - meta_ss_22
-  - meta_vless_23
-  - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
+  - meta_vmess_22
+  - meta_vmess_23
+  - meta_ss_24
+  - meta_vmess_25
+  - meta_vmess_26
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
   - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
-  - meta_vless_410
+  - meta_vmess_44
+  - meta_ss_45
+  - meta_vmess_46
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
