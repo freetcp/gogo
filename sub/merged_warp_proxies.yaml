@@ -151,31 +151,10 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - name: meta_trojan_012
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 40793
-  server: 43.198.108.18
+  port: 48539
+  server: 43.199.143.90
   skip-cert-verify: true
   sni: hk12.bilibili.com
-  type: trojan
-- name: meta_trojan_013
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49089
-  server: 16.163.104.216
-  skip-cert-verify: true
-  sni: jp12.bilibili.com
-  type: trojan
-- name: meta_trojan_014
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 40793
-  server: 18.162.188.231
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  type: trojan
-- name: meta_trojan_015
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 44991
-  server: 18.163.48.140
-  skip-cert-verify: true
-  sni: us1.bilibili.com
   type: trojan
 - client-fingerprint: chrome
   name: meta_trojan_11
@@ -337,6 +316,62 @@ proxies:
   tls: false
   type: vmess
   uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
+- name: meta_vless_48
+  network: ws
+  port: 80
+  server: pscresearch.faculty.ucdavis.edu
+  servername: harifet-manam-6.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
+  ws-opts:
+    headers:
+      Host: harifet-manam-6.com
+    path: /?ed=2560
+- name: meta_vless_49
+  network: ws
+  port: 80
+  server: zmaoz.faculty.ucdavis.edu
+  servername: harifet-manam-9.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
+  ws-opts:
+    headers:
+      Host: harifet-manam-9.com
+    path: /?ed=2560
+- name: meta_vless_410
+  network: ws
+  port: 80
+  server: bwdraper.faculty.ucdavis.edu
+  servername: harifet-manam-8.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
+  ws-opts:
+    headers:
+      Host: harifet-manam-8.com
+    path: /?ed=2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_411
+  network: ws
+  port: 443
+  server: live.skornorth.com
+  servername: live.skornorth.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d6252cc5-2f53-4966-ad3b-99285b891879
+  ws-opts:
+    headers:
+      Host: custom-config.ir
+    path: /@custom_config?ed=2048
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -356,9 +391,6 @@ proxy-groups:
   - meta_vmess_010
   - meta_trojan_011
   - meta_trojan_012
-  - meta_trojan_013
-  - meta_trojan_014
-  - meta_trojan_015
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
@@ -376,6 +408,10 @@ proxy-groups:
   - meta_ss_45
   - meta_ss_46
   - meta_vmess_47
+  - meta_vless_48
+  - meta_vless_49
+  - meta_vless_410
+  - meta_vless_411
 - name: WARP前置节点
   type: select
   proxies:
