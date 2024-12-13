@@ -148,6 +148,21 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
+- name: meta_trojan_011
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 41288
+  server: 218.190.230.207
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: meta_trojan_012
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 44991
+  server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: us1.bilibili.com
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: ws
@@ -336,6 +351,8 @@ proxy-groups:
   - meta_trojan_08
   - meta_vmess_09
   - meta_trojan_010
+  - meta_trojan_011
+  - meta_trojan_012
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
