@@ -59,32 +59,20 @@ proxies:
   server: 36.151.192.203
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - urydh.ljricbrd.top
-    method: GET
-    path:
-    - /ljyed
-  name: meta_vmess_03
-  network: http
-  port: '41002'
-  server: hk1.tiljkc.top
-  servername: urydh.ljricbrd.top
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: meta_ss_03
+  password: 718b6119-17fb-4700-a3ed-32e8417a3daa
+  port: 10002
+  server: hk02.51feitu.com
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: meta_ss_04
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54002
-  server: h-k02.loveroise.com
+  password: 9UB4OF8WZ0YXIPBD
+  port: 15015
+  server: 219.135.227.209
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -95,14 +83,26 @@ proxies:
   server: 219.135.227.209
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_06
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54000
-  server: h-k01.loveroise.com
+  http-opts:
+    headers:
+      Host:
+      - urydh.ljricbrd.top
+    method: GET
+    path:
+    - /ljyed
+  name: meta_vmess_06
+  network: http
+  port: '41001'
+  server: hk1.tiljkc.top
+  servername: urydh.ljricbrd.top
+  skip-cert-verify: true
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -114,22 +114,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: meta_trojan_08
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: /?ed=2560
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_08
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -137,32 +124,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_010
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  sni: tr.koiok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: '%2F%3Fed%3D2560'
-- name: meta_trojan_011
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 41288
-  server: 218.190.230.207
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  type: trojan
-- name: meta_trojan_012
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 44991
-  server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: us1.bilibili.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: ws
@@ -181,37 +142,29 @@ proxies:
   password: ouo
   port: 81
   server: 210.61.97.241
-  skip-cert-verify: true
   sni: tr.koiok.us.kg
   type: trojan
   ws-opts:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_21
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54028
-  server: s-g03.loveroise.com
+  name: meta_vmess_21
+  network: ws
+  port: '40000'
+  server: ml01.333210.xyz
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_22
-  password: 2F5D5R6AZHTMJC3K
-  port: 16016
-  server: 219.135.227.209
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_23
-  password: VKDQGD5V6EA0Z0PU
-  port: 16001
-  server: 113.99.142.152
-  tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 13364789-a8b2-4bcd-8df7-a794fb6f87e5
+  ws-opts:
+    headers:
+      Host: down.dingtalk.com
+    path: /bby
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -222,7 +175,7 @@ proxies:
     method: GET
     path:
     - /sg
-  name: meta_vmess_24
+  name: meta_vmess_22
   network: http
   port: '21005'
   server: sg1.tiljkc.top
@@ -231,29 +184,29 @@ proxies:
   tfo: false
   tls: true
   type: vmess
-  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-- cipher: aes-256-cfb
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_25
-  password: amazonskr05
-  port: 443
-  server: 13.250.110.56
+  name: meta_ss_23
+  password: OWLCP6DOQ4PZ5M7G
+  port: 16015
+  server: 219.135.227.209
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: amazonskr05
+  port: 443
+  server: 54.151.196.32
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54014
-  server: k-r04.loveroise.com
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 18.183.227.204
+  server: 18.143.139.72
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -264,76 +217,59 @@ proxies:
   server: 36.151.192.198
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_42
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54096
-  server: j-p01.loveroise.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_43
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54102
-  server: j-p04.loveroise.com
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_44
-  port: 38951
+  http-opts:
+    headers:
+      Host:
+      - urydh.ljricbrd.top
+    method: GET
+    path:
+    - /ljyed
+  name: meta_vmess_42
+  network: http
+  port: '53892'
   server: jp1.tiljkc.top
+  servername: urydh.ljricbrd.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_43
+  network: ws
+  port: '2086'
+  server: cdn1.bpcdn.cc
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
+  uuid: b2295415-b953-4959-8be0-88b358111e95
+  ws-opts:
+    headers:
+      Host: jpjhve0r3125kg1xmz.lovebaipiao.com
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_45
-  password: JT3JJY2B9WYM3ZFF
-  port: 18003
+  name: meta_ss_44
+  password: 364S7BOP8HTUCLZP
+  port: 18011
   server: 219.135.227.209
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_46
+  name: meta_ss_45
   password: amazonskr05
   port: 443
-  server: 18.143.139.72
+  server: 54.178.84.59
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_47
-  network: tcp
-  port: '38951'
-  server: jp1.tiljkc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_48
-  network: ws
-  port: 443
-  server: live.skornorth.com
-  servername: live.skornorth.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d6252cc5-2f53-4966-ad3b-99285b891879
-  ws-opts:
-    headers:
-      Host: soft-sun.com
-    path: /@custom_config?ed=2048
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -343,33 +279,24 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_vmess_03
+  - meta_ss_03
   - meta_ss_04
   - meta_ss_05
-  - meta_ss_06
+  - meta_vmess_06
   - meta_vmess_07
-  - meta_trojan_08
-  - meta_vmess_09
-  - meta_trojan_010
-  - meta_trojan_011
-  - meta_trojan_012
+  - meta_vmess_08
   - meta_trojan_11
   - meta_trojan_12
-  - meta_ss_21
-  - meta_ss_22
+  - meta_vmess_21
+  - meta_vmess_22
   - meta_ss_23
-  - meta_vmess_24
-  - meta_ss_25
+  - meta_ss_24
   - meta_ss_31
-  - meta_ss_32
   - meta_trojan_41
-  - meta_ss_42
-  - meta_ss_43
-  - meta_vmess_44
+  - meta_vmess_42
+  - meta_vmess_43
+  - meta_ss_44
   - meta_ss_45
-  - meta_ss_46
-  - meta_vmess_47
-  - meta_vless_48
 - name: WARP前置节点
   type: select
   proxies:
