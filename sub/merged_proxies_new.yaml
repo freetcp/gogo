@@ -123,6 +123,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_trojan_011
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 42534
+  server: 218.190.230.207
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: ws
@@ -306,6 +313,7 @@ proxy-groups:
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
+  - meta_trojan_011
   - meta_trojan_11
   - meta_vmess_12
   - meta_trojan_13
@@ -339,6 +347,7 @@ proxy-groups:
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
+  - meta_trojan_011
   - meta_trojan_11
   - meta_vmess_12
   - meta_trojan_13
