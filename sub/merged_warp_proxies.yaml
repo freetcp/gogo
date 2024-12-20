@@ -199,9 +199,17 @@ proxies:
   tls: false
   type: vmess
   uuid: c1ae98ab-35aa-36bf-b317-857006d2fdfb
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_23
+  password: amazonskr05
+  port: 443
+  server: 3.38.212.48
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_23
+  name: meta_vmess_24
   network: tcp
   port: '34842'
   server: sg1.tiljkc.top
@@ -220,17 +228,9 @@ proxies:
   tls: false
   type: vmess
   uuid: aa44bc1f-3085-4e33-96e4-fcfc5a18a688
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
-  password: amazonskr05
-  port: 443
-  server: 52.79.248.193
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_33
+  name: meta_vmess_32
   network: tcp
   port: '20021'
   server: i.needss.top
@@ -273,9 +273,17 @@ proxies:
   server: 156.231.104.11
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_45
+  password: amazonskr05
+  port: 443
+  server: 43.203.141.93
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_45
+  name: meta_vmess_46
   network: tcp
   port: '38951'
   server: jp1.tiljkc.top
@@ -287,7 +295,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: meta_vless_46
+  name: meta_vless_47
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -301,7 +309,7 @@ proxies:
       Host: fonmelo.com
     path: /olem/ws?ed=4096
 - client-fingerprint: randomized
-  name: meta_vless_47
+  name: meta_vless_48
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -337,17 +345,18 @@ proxy-groups:
   - meta_vmess_12
   - meta_ss_21
   - meta_vmess_22
-  - meta_vmess_23
+  - meta_ss_23
+  - meta_vmess_24
   - meta_vmess_31
-  - meta_ss_32
-  - meta_vmess_33
+  - meta_vmess_32
   - meta_ss_41
   - meta_vmess_42
   - meta_ss_43
   - meta_ss_44
-  - meta_vmess_45
-  - meta_vless_46
+  - meta_ss_45
+  - meta_vmess_46
   - meta_vless_47
+  - meta_vless_48
 - name: WARP前置节点
   type: select
   proxies:
