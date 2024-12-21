@@ -195,6 +195,104 @@ proxies:
   server: 43.202.1.19
   tfo: false
   type: ss
+- name: meta_vless_24
+  network: ws
+  port: 443
+  server: 8.222.198.109
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_25
+  network: ws
+  port: 443
+  server: 8.219.233.122
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_26
+  network: ws
+  port: 443
+  server: 8.222.201.175
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_27
+  network: ws
+  port: 443
+  server: 8.219.211.57
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_28
+  network: ws
+  port: 443
+  server: 8.222.224.152
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_29
+  network: ws
+  port: 443
+  server: 8.222.220.128
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
+- name: meta_vless_210
+  network: ws
+  port: 443
+  server: 8.222.155.151
+  servername: aksnmaioas.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
+  ws-opts:
+    headers:
+      Host: aksnmaioas.pages.dev
+    path: /Tel-@V2ray_Alpha/?ed=2048
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -331,17 +429,9 @@ proxies:
   server: 156.231.104.13
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_49
-  password: amazonskr05
-  port: 443
-  server: 52.32.68.164
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_410
+  name: meta_vmess_49
   network: tcp
   port: '38953'
   server: jp1.tiljkc.top
@@ -350,7 +440,7 @@ proxies:
   type: vmess
   uuid: 24a13b6a-be32-3c9b-9d71-c3613da5390e
 - client-fingerprint: randomized
-  name: meta_vless_411
+  name: meta_vless_410
   network: ws
   port: 443
   server: zmaoz.faculty.ucdavis.edu
@@ -358,28 +448,12 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 4108d6ca-bcb5-46c8-9347-8cd7f2ee245a
   ws-opts:
     headers:
       Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
     path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_412
-  network: ws
-  port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: zmaoz.faculty.ucdavis.edu.
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: bfb490c9-18d0-48a4-cb72-e4cc9002afde
-  ws-opts:
-    headers:
-      Host: fonmelo.com
-    path: /olem/ws?ed=4096
 proxy-groups:
 - name: 节点选择
   type: select
@@ -400,6 +474,13 @@ proxy-groups:
   - meta_vmess_21
   - meta_vmess_22
   - meta_ss_23
+  - meta_vless_24
+  - meta_vless_25
+  - meta_vless_26
+  - meta_vless_27
+  - meta_vless_28
+  - meta_vless_29
+  - meta_vless_210
   - meta_vmess_31
   - meta_vmess_32
   - meta_ss_33
@@ -411,10 +492,8 @@ proxy-groups:
   - meta_vmess_46
   - meta_ss_47
   - meta_ss_48
-  - meta_ss_49
-  - meta_vmess_410
-  - meta_vless_411
-  - meta_vless_412
+  - meta_vmess_49
+  - meta_vless_410
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -436,6 +515,13 @@ proxy-groups:
   - meta_vmess_21
   - meta_vmess_22
   - meta_ss_23
+  - meta_vless_24
+  - meta_vless_25
+  - meta_vless_26
+  - meta_vless_27
+  - meta_vless_28
+  - meta_vless_29
+  - meta_vless_210
   - meta_vmess_31
   - meta_vmess_32
   - meta_ss_33
@@ -447,10 +533,8 @@ proxy-groups:
   - meta_vmess_46
   - meta_ss_47
   - meta_ss_48
-  - meta_ss_49
-  - meta_vmess_410
-  - meta_vless_411
-  - meta_vless_412
+  - meta_vmess_49
+  - meta_vless_410
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
