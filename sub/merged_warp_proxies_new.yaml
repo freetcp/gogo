@@ -59,23 +59,17 @@ proxies:
   server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_03
-  network: ws
-  port: '51201'
-  server: b.naiun.node-is.green
-  servername: ''
+  port: 52908
+  server: 120.234.102.229
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2d570475-a7a6-4242-b733-d5300305b615
-  ws-opts:
-    headers:
-      Host: live.bilibili.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -98,10 +92,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: meta_ss_06
+  password: asd123456
+  port: 8388
+  server: 154.197.98.64
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_06
+  name: meta_vmess_07
   port: 46602
   server: 183.236.51.23
   skip-cert-verify: false
@@ -109,9 +111,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_08
+  password: de6a05b7-6770-46b8-81b5-70675391db6a
+  port: 32001
+  server: vmvmvm123.jmvks.cn
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_07
+  name: meta_vmess_09
+  network: tcp
+  port: '52908'
+  server: 120.234.102.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: meta_vmess_010
   network: tcp
   port: '34493'
   server: 120.198.71.214
@@ -121,7 +141,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_011
   network: tcp
   port: '51704'
   server: 183.236.51.23
@@ -131,7 +151,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_012
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -139,217 +159,51 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_010
-  network: ws
-  port: 443
-  server: 8.218.148.106
-  servername: lhxt.xiaomi.win
-  skip-cert-verify: false
+- name: meta_http_013
+  port: 4000
+  server: hk9.ftq.ink
   tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_11
-  password: 5b3f0c6a-7b91-4437-bf4b-008c86e512ed
-  port: 30002
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_21
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13029
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  type: http
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_22
-  port: 50792
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  name: meta_vmess_11
+  port: 62506
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 99266723-0802-4ef4-9d6c-4dc84c2ffa08
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_23
-  password: 5b3f0c6a-7b91-4437-bf4b-008c86e512ed
-  port: 30001
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
+  uuid: ea695d03-e64c-4be0-a8ea-6346e286ef60
 - alterId: 0
   cipher: auto
-  name: meta_vmess_24
+  name: meta_vmess_12
   network: tcp
-  port: '50792'
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  port: '62506'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 99266723-0802-4ef4-9d6c-4dc84c2ffa08
-- name: meta_vless_25
-  network: ws
+  uuid: ea695d03-e64c-4be0-a8ea-6346e286ef60
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_21
+  password: amazonskr05
   port: 443
-  server: 8.222.132.145
-  servername: lhxt.xiaomi.win
+  server: 54.238.219.226
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_31
+  port: 35384
+  server: 45.94.68.206
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- name: meta_vless_26
-  network: ws
-  port: 443
-  server: 47.245.120.119
-  servername: lhxt.xiaomi.win
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- name: meta_vless_27
-  network: ws
-  port: 443
-  server: 8.222.135.109
-  servername: lhxt.xiaomi.win
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- name: meta_vless_28
-  network: ws
-  port: 443
-  server: 8.219.55.76
-  servername: lhxt.xiaomi.win
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- name: meta_vless_29
-  network: ws
-  port: 443
-  server: 8.219.79.144
-  servername: lhxt.xiaomi.win
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
-- name: meta_vless_210
-  network: ws
-  port: 443
-  server: 8.219.129.213
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: meta_vless_211
-  network: ws
-  port: 443
-  server: 8.222.239.199
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: meta_vless_212
-  network: ws
-  port: 443
-  server: 47.245.87.17
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: meta_vless_213
-  network: ws
-  port: 443
-  server: 8.222.247.175
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: meta_vless_214
-  network: ws
-  port: 443
-  server: 8.222.222.203
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: meta_vless_215
-  network: ws
-  port: 443
-  server: 47.245.126.194
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- client-fingerprint: chrome
-  name: meta_trojan_31
-  network: tcp
-  password: 47a91992-6b70-4bb8-8c5f-f9600e0ba2da
-  port: 40801
-  server: r1.xinyo.me
-  skip-cert-verify: false
-  sni: node.xinyo.vip
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_32
@@ -358,6 +212,16 @@ proxies:
   server: 52.68.44.53
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_33
+  network: tcp
+  port: '35384'
+  server: 45.94.68.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -366,14 +230,36 @@ proxies:
   server: 149.22.87.204
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_42
-  password: amazonskr05
-  port: 443
-  server: 13.230.239.136
+  password: de6a05b7-6770-46b8-81b5-70675391db6a
+  port: 32002
+  server: vmvmvm123.jmvks.cn
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_43
+  password: amazonskr05
+  port: 443
+  server: 18.181.162.137
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: meta_vless_44
+  network: ws
+  port: 443
+  server: 4.189.216.218
+  servername: high.work.lzg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+  ws-opts:
+    headers:
+      Host: high.work.lzg.me
+    path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -386,31 +272,24 @@ proxy-groups:
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
-  - meta_vmess_06
+  - meta_ss_06
   - meta_vmess_07
-  - meta_vmess_08
+  - meta_ss_08
   - meta_vmess_09
-  - meta_vless_010
-  - meta_ss_11
-  - meta_trojan_21
-  - meta_vmess_22
-  - meta_ss_23
-  - meta_vmess_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
-  - meta_vless_212
-  - meta_vless_213
-  - meta_vless_214
-  - meta_vless_215
-  - meta_trojan_31
+  - meta_vmess_010
+  - meta_vmess_011
+  - meta_vmess_012
+  - meta_http_013
+  - meta_vmess_11
+  - meta_vmess_12
+  - meta_ss_21
+  - meta_vmess_31
   - meta_ss_32
+  - meta_vmess_33
   - meta_ss_41
   - meta_ss_42
+  - meta_ss_43
+  - meta_vless_44
 - name: WARP前置节点
   type: select
   proxies:
