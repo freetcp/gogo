@@ -141,11 +141,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_013
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -167,6 +162,21 @@ proxies:
   tls: false
   type: vmess
   uuid: ea695d03-e64c-4be0-a8ea-6346e286ef60
+- alpn:
+  - http/1.1
+  name: meta_vless_13
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: kb.lii2010.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: kb.lii2010.us.kg
+    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_21
@@ -175,6 +185,21 @@ proxies:
   server: 54.238.219.226
   tfo: false
   type: ss
+- alpn:
+  - http/1.1
+  name: meta_vless_22
+  network: ws
+  port: 443
+  server: 206.238.237.152
+  servername: kb.lii2010.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: kb.lii2010.us.kg
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -204,6 +229,21 @@ proxies:
   tls: false
   type: vmess
   uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- alpn:
+  - http/1.1
+  name: meta_vless_34
+  network: ws
+  port: 10936
+  server: 121.174.111.147
+  servername: kb.lii2010.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  ws-opts:
+    headers:
+      Host: kb.lii2010.us.kg
+    path: /?ed=2560
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -242,6 +282,19 @@ proxies:
     headers:
       Host: high.work.lzg.me
     path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+- name: meta_vless_45
+  network: ws
+  port: 443
+  server: 47.91.29.136
+  servername: de.bolagskontaktstockholm.se
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
+  ws-opts:
+    headers:
+      Host: de.bolagskontaktstockholm.se
+    path: /ws
 proxy-groups:
 - name: 节点选择
   type: select
@@ -259,17 +312,20 @@ proxy-groups:
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_http_013
   - meta_vmess_11
   - meta_vmess_12
+  - meta_vless_13
   - meta_ss_21
+  - meta_vless_22
   - meta_vmess_31
   - meta_ss_32
   - meta_vmess_33
+  - meta_vless_34
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
   - meta_vless_44
+  - meta_vless_45
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -288,17 +344,20 @@ proxy-groups:
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_http_013
   - meta_vmess_11
   - meta_vmess_12
+  - meta_vless_13
   - meta_ss_21
+  - meta_vless_22
   - meta_vmess_31
   - meta_ss_32
   - meta_vmess_33
+  - meta_vless_34
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
   - meta_vless_44
+  - meta_vless_45
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
