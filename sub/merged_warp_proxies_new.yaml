@@ -94,13 +94,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   name: meta_trojan_06
-  network: tcp
-  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
-  port: 13005
-  server: naiu-hk.05vr9nyqg5.download
+  network: ws
+  password: TGCitizenScyu
+  port: 443
+  server: cf.zhetengsha.eu.org
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  sni: maikeaxiang.me
   type: trojan
+  ws-opts:
+    headers:
+      Host: maikeaxiang.me
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -112,9 +116,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: meta_trojan_08
+  network: tcp
+  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
+  port: 13005
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_09
   network: tcp
   port: '52908'
   server: 120.234.102.229
@@ -124,7 +137,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_010
   network: tcp
   port: '34493'
   server: 120.198.71.214
@@ -134,7 +147,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '51704'
   server: 183.236.51.23
@@ -142,9 +155,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_trojan_012
+  network: ws
+  password: TGCitizenScyu
+  port: 443
+  server: cf.zhetengsha.eu.org
+  sni: maikeaxiang.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: maikeaxiang.me
+    path: '%2F%3Fed%3D2560'
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_013
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -152,124 +176,53 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_012
+- name: meta_http_014
   port: 4000
   server: hk9.ftq.ink
   tls: true
   type: http
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_vmess_11
-  port: 62506
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+  name: meta_ss_11
+  password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ
+  port: 36918
+  server: tw.ssrxray.click
   tfo: false
-  tls: false
-  type: vmess
-  uuid: d679491f-583d-462e-a986-fad497702581
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_12
+  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_12
   network: tcp
-  port: '62506'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d679491f-583d-462e-a986-fad497702581
+  password: da1b02af-a91b-425c-8b43-10ecb80adc08
+  port: 18147
+  server: svip.88de.hongxingdl.vip
+  skip-cert-verify: false
+  sni: mm2.redapricotcloud.com
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_21
-  port: 16919
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  network: ws
+  port: '80'
+  server: www.aetv.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: d679491f-583d-462e-a986-fad497702581
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_22
-  port: 34842
-  server: sggp1.pfdsddla.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: caf3f833-6973-3460-a4c7-ede4f574814c
+  uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /?ed=2048
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_23
+  name: meta_ss_31
   password: amazonskr05
   port: 443
-  server: 54.178.191.236
+  server: 13.112.235.194
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_24
-  network: tcp
-  port: '16919'
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d679491f-583d-462e-a986-fad497702581
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_25
-  network: tcp
-  port: '34842'
-  server: sggp1.pfdsddla.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: caf3f833-6973-3460-a4c7-ede4f574814c
-- name: meta_trojan_26
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: connectwithemployers.online
-  skip-cert-verify: false
-  type: trojan
-- name: meta_trojan_27
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 139.59.119.143
-  skip-cert-verify: true
-  sni: connectwithemployers.online
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_31
-  port: 35384
-  server: 45.94.68.206
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
-  password: amazonskr05
-  port: 443
-  server: 52.194.212.235
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_33
-  network: tcp
-  port: '35384'
-  server: 45.94.68.206
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -278,28 +231,27 @@ proxies:
   server: 149.22.87.204
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  password: 60005b16-5e62-4de2-8c27-4df72635e21d
-  port: 52150
-  server: xxfa85toflprzb7rt7-jp.xxfnode.com
-  skip-cert-verify: false
-  sni: xxfa85toflprzb7rt7-jp.xxfnode.com
-  type: trojan
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_43
-  password: amazonskr05
-  port: 443
-  server: 13.231.232.249
+  name: meta_vmess_42
+  port: 38953
+  server: jpp1.pfdsddla.com
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- name: meta_trojan_44
+  tls: false
+  type: vmess
+  uuid: 84d83b7e-d390-3aee-901b-257a3a2fe79d
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_43
   network: tcp
-  password: 60005b16-5e62-4de2-8c27-4df72635e21d
-  port: 52150
-  server: xxfa85toflprzb7rt7-jp.xxfnode.com
-  type: trojan
+  port: '38953'
+  server: jpp1.pfdsddla.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 84d83b7e-d390-3aee-901b-257a3a2fe79d
 proxy-groups:
 - name: 自动选择
   type: url-test
@@ -314,27 +266,20 @@ proxy-groups:
   - meta_vmess_05
   - meta_trojan_06
   - meta_vmess_07
-  - meta_vmess_08
+  - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_http_012
-  - meta_vmess_11
-  - meta_vmess_12
+  - meta_trojan_012
+  - meta_vmess_013
+  - meta_http_014
+  - meta_ss_11
+  - meta_trojan_12
   - meta_vmess_21
-  - meta_vmess_22
-  - meta_ss_23
-  - meta_vmess_24
-  - meta_vmess_25
-  - meta_trojan_26
-  - meta_trojan_27
-  - meta_vmess_31
-  - meta_ss_32
-  - meta_vmess_33
+  - meta_ss_31
   - meta_ss_41
-  - meta_trojan_42
-  - meta_ss_43
-  - meta_trojan_44
+  - meta_vmess_42
+  - meta_vmess_43
 - name: WARP前置节点
   type: select
   proxies:
