@@ -74,17 +74,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_vmess_06
-  port: 34728
-  server: 149.104.15.104
-  skip-cert-verify: false
+  name: meta_ss_06
+  password: asd123456
+  port: 8388
+  server: 154.197.26.120
   tfo: false
-  tls: false
-  type: vmess
-  uuid: c94a21b5-43f6-477d-82a6-cdae1de397c3
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -135,19 +132,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_012
-  network: tcp
-  port: '34728'
-  server: 149.104.15.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c94a21b5-43f6-477d-82a6-cdae1de397c3
 - alterId: 64
   cipher: auto
-  name: meta_vmess_013
+  name: meta_vmess_012
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -155,32 +142,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_014
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_11
-  port: 60852
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 17e51677-587d-4312-972a-3f51afd2fe4f
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_12
+- client-fingerprint: chrome
+  name: meta_trojan_11
   network: tcp
-  port: '60852'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 17e51677-587d-4312-972a-3f51afd2fe4f
+  password: 9ad5228f-3e01-4353-b717-935272e5f2d6
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -206,12 +176,26 @@ proxies:
   server: 3.112.236.3
   tfo: false
   type: ss
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_23
+  network: tcp
+  port: 443
+  server: 165.22.50.149
+  servername: zoom.us
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 57252ea4-602b-4210-9a6c-f1588ea07f04
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
   password: amazonskr05
   port: 443
-  server: 13.115.231.64
+  server: 52.79.52.119
   tfo: false
   type: ss
 - cipher: aes-128-gcm
@@ -232,25 +216,69 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  uuid: 426d4ed6-fde6-3751-9a5b-ec4220c52abb
-- cipher: aes-256-cfb
+  uuid: 4f357993-53e3-33d8-8ed7-0c58f87f7fa3
+- cipher: chacha20-ietf
   client-fingerprint: chrome
   name: meta_ss_43
+  password: asd123456
+  port: 8388
+  server: 107.148.6.121
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_44
+  network: tcp
+  password: 2add6241-8fe8-3922-8347-da25e8ced601
+  port: 50001
+  server: 120.233.26.140
+  skip-cert-verify: true
+  sni: jpcn2.doubledou.icu
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_45
   password: amazonskr05
   port: 443
-  server: 43.207.232.228
+  server: 57.181.42.233
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_44
+  name: meta_vmess_46
   network: tcp
   port: '38953'
   server: jpp1.pfdsddla.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 426d4ed6-fde6-3751-9a5b-ec4220c52abb
+  uuid: 4f357993-53e3-33d8-8ed7-0c58f87f7fa3
+- client-fingerprint: randomized
+  name: meta_vless_47
+  network: ws
+  port: 443
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 1ce7a1ba-64d3-4c50-9dc6-6b9f79bfd11d
+  ws-opts:
+    headers:
+      Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
+    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
+- name: meta_vless_48
+  network: ws
+  port: 443
+  server: pscresearch.faculty.ucdavis.edu
+  servername: pscresearch.faculty.ucdavis.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 37ec7228-f4ea-4820-84ea-d4f101575851
+  ws-opts:
+    headers:
+      Host: hvwrfuerhetitugj44yhrthj.com
+    path: /ws/?ed=2048
 - name: reality_1
   type: vless
   server: 36.226.252.19
@@ -317,24 +345,26 @@ proxy-groups:
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
-  - meta_vmess_06
+  - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vmess_013
-  - meta_http_014
-  - meta_vmess_11
-  - meta_vmess_12
+  - meta_trojan_11
   - meta_vmess_21
   - meta_ss_22
+  - meta_vless_23
   - meta_ss_31
   - meta_ss_41
   - meta_vmess_42
   - meta_ss_43
-  - meta_vmess_44
+  - meta_trojan_44
+  - meta_ss_45
+  - meta_vmess_46
+  - meta_vless_47
+  - meta_vless_48
   - reality_1
   - reality_2
   - reality_3
@@ -350,24 +380,26 @@ proxy-groups:
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
-  - meta_vmess_06
+  - meta_ss_06
   - meta_vmess_07
   - meta_trojan_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vmess_013
-  - meta_http_014
-  - meta_vmess_11
-  - meta_vmess_12
+  - meta_trojan_11
   - meta_vmess_21
   - meta_ss_22
+  - meta_vless_23
   - meta_ss_31
   - meta_ss_41
   - meta_vmess_42
   - meta_ss_43
-  - meta_vmess_44
+  - meta_trojan_44
+  - meta_ss_45
+  - meta_vmess_46
+  - meta_vless_47
+  - meta_vless_48
   - reality_1
   - reality_2
   - reality_3
