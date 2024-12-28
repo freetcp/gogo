@@ -159,13 +159,6 @@ proxies:
   tls: true
   type: vmess
   uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
-- name: meta_trojan_12
-  password: 1a668915-d98f-4440-8bac-2c51d508f811
-  port: 30337
-  server: 1.170.241.81
-  skip-cert-verify: true
-  sni: ddns.200566.xyz
-  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -238,14 +231,6 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_32
-  password: qwerREWQ@@
-  port: 24934
-  server: 221.150.109.88
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
   password: amazonskr05
   port: 443
   server: 18.139.115.92
@@ -412,7 +397,6 @@ proxy-groups:
   - meta_vmess_011
   - meta_http_012
   - meta_vmess_11
-  - meta_trojan_12
   - meta_vmess_21
   - meta_ss_22
   - meta_vless_23
@@ -420,7 +404,6 @@ proxy-groups:
   - meta_vless_25
   - meta_ss_31
   - meta_ss_32
-  - meta_ss_33
   - meta_ss_41
   - meta_vmess_42
   - meta_trojan_43
@@ -452,7 +435,6 @@ proxy-groups:
   - meta_vmess_011
   - meta_http_012
   - meta_vmess_11
-  - meta_trojan_12
   - meta_vmess_21
   - meta_ss_22
   - meta_vless_23
@@ -460,7 +442,6 @@ proxy-groups:
   - meta_vless_25
   - meta_ss_31
   - meta_ss_32
-  - meta_ss_33
   - meta_ss_41
   - meta_vmess_42
   - meta_trojan_43
