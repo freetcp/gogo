@@ -152,11 +152,32 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_012
-  port: 4000
-  server: hk9.ftq.ink
+- client-fingerprint: chrome
+  name: meta_vless_012
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
+    short-id: 6ba85179e30d4fc2
+  server: 8.217.246.186
+  servername: b.travel-assets.com
+  skip-cert-verify: false
   tls: true
-  type: http
+  type: vless
+  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
+- client-fingerprint: chrome
+  name: meta_vless_013
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
+    short-id: 6ba85179e30d4fc2
+  server: 47.76.136.169
+  servername: www.dayuse.com.hk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -177,13 +198,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 0ccaf60a-664e-38f3-8ebb-aa70d1de7d21
-- name: meta_trojan_12
-  password: 1a668915-d98f-4440-8bac-2c51d508f811
-  port: 30337
-  server: 1.170.241.81
-  skip-cert-verify: true
-  sni: ddns.200566.xyz
-  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -224,19 +238,6 @@ proxies:
   type: vless
   uuid: 57252ea4-602b-4210-9a6c-f1588ea07f04
 - name: meta_vless_24
-  network: ws
-  port: 443
-  server: 8.219.241.41
-  servername: blog.codegethub.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14ba4514-3846-45c0-aec6-444e5451b95c
-  ws-opts:
-    headers:
-      Host: blog.codegethub.org
-    path: /ws@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel
-- name: meta_vless_25
   network: tcp
   port: 443
   server: 8.222.158.140
@@ -344,47 +345,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0ccaf60a-664e-38f3-8ebb-aa70d1de7d21
-- name: meta_vless_48
-  network: ws
-  port: 443
-  server: pscresearch.faculty.ucdavis.edu
-  servername: pscresearch.faculty.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 37ec7228-f4ea-4820-84ea-d4f101575851
-  ws-opts:
-    headers:
-      Host: hvwrfuerhetitugj44yhrthj.com
-    path: /ws/?ed=2048
-- client-fingerprint: randomized
-  name: meta_vless_49
-  network: ws
-  port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: zmaoz.faculty.ucdavis.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5284a8d3-a9c5-421b-931d-bc8464d56fe1
-  ws-opts:
-    headers:
-      Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-- client-fingerprint: chrome
-  name: meta_vless_410
-  network: ws
-  port: 80
-  server: scp-fasttttly.tencent.su
-  servername: scp-only.ws.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 4ea312d7-3844-4ff8-8062-ed2e03ddc2a1
-  ws-opts:
-    headers:
-      Host: scp-only.ws.com
-    path: /ws
 - name: reality_1
   type: vless
   server: 36.226.244.225
@@ -459,14 +419,13 @@ proxy-groups:
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_http_012
+  - meta_vless_012
+  - meta_vless_013
   - meta_vmess_11
-  - meta_trojan_12
   - meta_vmess_21
   - meta_ss_22
   - meta_vless_23
   - meta_vless_24
-  - meta_vless_25
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
@@ -478,9 +437,6 @@ proxy-groups:
   - meta_ss_45
   - meta_vmess_46
   - meta_vmess_47
-  - meta_vless_48
-  - meta_vless_49
-  - meta_vless_410
   - reality_1
   - reality_2
   - reality_3
