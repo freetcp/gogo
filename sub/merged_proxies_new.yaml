@@ -211,7 +211,15 @@ proxies:
   server: s-g04.loveroise.com
   tfo: false
   type: ss
-- name: meta_vless_23
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_23
+  password: amazonskr05
+  port: 443
+  server: 43.203.243.93
+  tfo: false
+  type: ss
+- name: meta_vless_24
   network: ws
   port: 443
   server: 8.219.241.41
@@ -382,7 +390,8 @@ proxy-groups:
   - meta_vless_016
   - meta_vmess_21
   - meta_ss_22
-  - meta_vless_23
+  - meta_ss_23
+  - meta_vless_24
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
@@ -420,7 +429,8 @@ proxy-groups:
   - meta_vless_016
   - meta_vmess_21
   - meta_ss_22
-  - meta_vless_23
+  - meta_ss_23
+  - meta_vless_24
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
