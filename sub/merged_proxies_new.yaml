@@ -174,32 +174,6 @@ proxies:
   server: hk9.ftq.ink
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: meta_vless_017
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
-    short-id: 6ba85179e30d4fc2
-  server: 8.217.246.186
-  servername: b.travel-assets.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
-- client-fingerprint: chrome
-  name: meta_vless_018
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
-    short-id: 6ba85179e30d4fc2
-  server: 47.76.136.169
-  servername: www.dayuse.com.hk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
@@ -259,17 +233,9 @@ proxies:
   tls: false
   type: vmess
   uuid: fa2c4c94-b477-4809-9db8-3db03ef06202
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_25
-  password: amazonskr05
-  port: 443
-  server: 3.35.206.24
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_26
+  name: meta_vmess_25
   network: tcp
   port: '34843'
   server: sggp1.pfdsddla.com
@@ -279,7 +245,7 @@ proxies:
   uuid: f5dca880-153e-3ff1-a940-681b01da4629
 - alterId: 0
   cipher: auto
-  name: meta_vmess_27
+  name: meta_vmess_26
   network: tcp
   port: '50015'
   server: 50015.baidu-cdn.top
@@ -287,19 +253,6 @@ proxies:
   tls: false
   type: vmess
   uuid: fa2c4c94-b477-4809-9db8-3db03ef06202
-- name: meta_vless_28
-  network: ws
-  port: 443
-  server: 8.219.241.41
-  servername: blog.codegethub.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14ba4514-3846-45c0-aec6-444e5451b95c
-  ws-opts:
-    headers:
-      Host: blog.codegethub.org
-    path: /ws@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel
 - name: meta_hysteria2_31
   password: 148097c2-cd69-4015-992f-5939c08b9ab8
   port: 443
@@ -322,14 +275,16 @@ proxies:
   server: 112.213.102.228
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_34
-  password: amazonskr05
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_34
   port: 443
-  server: 13.215.250.79
-  tfo: false
-  type: ss
+  server: 193.122.110.86
+  servername: jsdownloadkr.xn--4gq62f52gopi49k.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 95eb72fe-e967-4540-ac10-069c8a95c6d7
 - name: meta_hysteria2_41
   password: 148097c2-cd69-4015-992f-5939c08b9ab8
   port: 443
@@ -439,21 +394,17 @@ proxy-groups:
   - meta_vmess_014
   - meta_vmess_015
   - meta_http_016
-  - meta_vless_017
-  - meta_vless_018
   - meta_ss_11
   - meta_vmess_21
   - meta_ss_22
   - meta_vmess_23
   - meta_vmess_24
-  - meta_ss_25
+  - meta_vmess_25
   - meta_vmess_26
-  - meta_vmess_27
-  - meta_vless_28
   - meta_hysteria2_31
   - meta_ss_32
   - meta_ss_33
-  - meta_ss_34
+  - meta_vless_34
   - meta_hysteria2_41
   - meta_trojan_42
   - meta_trojan_43
@@ -484,21 +435,17 @@ proxy-groups:
   - meta_vmess_014
   - meta_vmess_015
   - meta_http_016
-  - meta_vless_017
-  - meta_vless_018
   - meta_ss_11
   - meta_vmess_21
   - meta_ss_22
   - meta_vmess_23
   - meta_vmess_24
-  - meta_ss_25
+  - meta_vmess_25
   - meta_vmess_26
-  - meta_vmess_27
-  - meta_vless_28
   - meta_hysteria2_31
   - meta_ss_32
   - meta_ss_33
-  - meta_ss_34
+  - meta_vless_34
   - meta_hysteria2_41
   - meta_trojan_42
   - meta_trojan_43
