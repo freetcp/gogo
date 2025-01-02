@@ -80,28 +80,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_07
-  port: 64667
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+- client-fingerprint: chrome
+  name: meta_trojan_07
+  password: '!!str 3555'
+  port: 443
+  server: link.5557.run
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 69cdf2a0-64cc-4cd3-8465-1e96dd24e395
-- alterId: 0
-  cipher: auto
+  sni: link.5557.run
+  type: trojan
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_08
-  port: 8888
-  server: 154.83.88.106
-  skip-cert-verify: false
+  name: meta_ss_08
+  password: 7243745919d6de49a5db
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45578
+  server: console.02.aliyun.aq.kunlunaqs.com
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -143,29 +141,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_013
+- name: meta_trojan_013
   network: tcp
-  port: '64667'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 69cdf2a0-64cc-4cd3-8465-1e96dd24e395
+  password: '!!str 3555'
+  port: 443
+  server: link.5557.run
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: meta_vmess_014
-  network: tcp
-  port: '8888'
-  server: 154.83.88.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_015
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -173,17 +158,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- name: meta_http_016
+- name: meta_http_015
   port: 4000
   server: hk9.ftq.ink
   tls: true
   type: http
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 28865
-  server: zx1.1010520.xyz
+  password: b74518fb49bd645e6ce7
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45915
+  server: console.03.aliyun.aq.kunlunaqs.com
   tfo: false
   type: ss
 - alterId: 0
@@ -203,14 +192,15 @@ proxies:
     headers:
       Host: amd.al
     path: /?ed=2048
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_22
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  port: 54030
-  server: s-g04.loveroise.com
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_22
+  network: tcp
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: whole-foxhound.boa152.lol
+  skip-cert-verify: false
+  sni: whole-foxhound.boa152.lol
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_23
@@ -219,30 +209,14 @@ proxies:
   server: zx1.1010520.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: meta_ss_24
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_25
-  password: amazonskr05
-  port: 443
-  server: 52.194.212.235
-  tfo: false
-  type: ss
-- name: meta_trojan_26
+- name: meta_trojan_24
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 139.59.119.143
   skip-cert-verify: true
   sni: connectwithemployers.online
   type: trojan
-- name: meta_trojan_27
+- name: meta_trojan_25
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: connectwithemployers.online
@@ -254,66 +228,42 @@ proxies:
   server: sanguayun-kr.legeth.xyz
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
-  password: qwerREWQ@@
-  port: 51919
-  server: 27.255.82.49
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
-  password: qwerREWQ@@
-  port: 44987
-  server: p231.panda004.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_34
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 18119
-  server: zx1.1010520.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_35
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: meta_trojan_32
+  network: tcp
+  password: '!!str 3723507166611775488'
   port: 443
-  server: 43.207.232.228
-  tfo: false
-  type: ss
+  server: super-goblin.treefrog761.one
+  skip-cert-verify: false
+  sni: super-goblin.treefrog761.one
+  type: trojan
 - name: meta_hysteria2_41
   password: 148097c2-cd69-4015-992f-5939c08b9ab8
   port: 443
   server: sanguayun-jp.legeth.xyz
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  network: tcp
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: fleet-weevil.boa152.lol
-  skip-cert-verify: false
-  sni: fleet-weevil.boa152.lol
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_42
+  password: f5136746-de79-46d0-b3be-d15d9992fa07
+  port: 18109
+  server: zx1.1010520.xyz
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 54.238.219.226
+  server: 52.194.212.235
   tfo: false
   type: ss
 - name: reality_1
   type: vless
-  server: 36.226.244.225
-  port: 56870
-  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  server: 1.162.18.226
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
   tls: true
   udp: true
@@ -321,13 +271,13 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-    short-id: 239c3cef
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 - name: reality_2
   type: vless
-  server: 36.226.244.225
-  port: 56870
-  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  server: 1.162.18.226
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
   tls: true
   udp: true
@@ -335,13 +285,13 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-    short-id: 239c3cef
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 - name: reality_3
   type: vless
-  server: 36.226.244.225
-  port: 56870
-  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  server: 1.162.18.226
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
   tls: true
   udp: true
@@ -349,13 +299,13 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-    short-id: 239c3cef
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 - name: reality_4
   type: vless
-  server: 36.226.244.225
-  port: 56870
-  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  server: 1.162.18.226
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
   tls: true
   udp: true
@@ -363,8 +313,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-    short-id: 239c3cef
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 proxy-groups:
 - name: 节点选择
   type: select
@@ -376,31 +326,25 @@ proxy-groups:
   - meta_vmess_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vmess_07
-  - meta_vmess_08
+  - meta_trojan_07
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vmess_013
+  - meta_trojan_013
   - meta_vmess_014
-  - meta_vmess_015
-  - meta_http_016
+  - meta_http_015
   - meta_ss_11
   - meta_vmess_21
-  - meta_ss_22
+  - meta_trojan_22
   - meta_ss_23
-  - meta_ss_24
-  - meta_ss_25
-  - meta_trojan_26
-  - meta_trojan_27
+  - meta_trojan_24
+  - meta_trojan_25
   - meta_hysteria2_31
-  - meta_ss_32
-  - meta_ss_33
-  - meta_ss_34
-  - meta_ss_35
+  - meta_trojan_32
   - meta_hysteria2_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
   - reality_1
   - reality_2
@@ -418,31 +362,25 @@ proxy-groups:
   - meta_vmess_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vmess_07
-  - meta_vmess_08
+  - meta_trojan_07
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
-  - meta_vmess_013
+  - meta_trojan_013
   - meta_vmess_014
-  - meta_vmess_015
-  - meta_http_016
+  - meta_http_015
   - meta_ss_11
   - meta_vmess_21
-  - meta_ss_22
+  - meta_trojan_22
   - meta_ss_23
-  - meta_ss_24
-  - meta_ss_25
-  - meta_trojan_26
-  - meta_trojan_27
+  - meta_trojan_24
+  - meta_trojan_25
   - meta_hysteria2_31
-  - meta_ss_32
-  - meta_ss_33
-  - meta_ss_34
-  - meta_ss_35
+  - meta_trojan_32
   - meta_hysteria2_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
   - reality_1
   - reality_2
