@@ -158,11 +158,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- name: meta_http_015
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
@@ -209,19 +204,6 @@ proxies:
   server: zx1.1010520.xyz
   tfo: false
   type: ss
-- name: meta_trojan_24
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 139.59.119.143
-  skip-cert-verify: true
-  sni: connectwithemployers.online
-  type: trojan
-- name: meta_trojan_25
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: connectwithemployers.online
-  skip-cert-verify: false
-  type: trojan
 - name: meta_hysteria2_31
   password: 148097c2-cd69-4015-992f-5939c08b9ab8
   port: 443
@@ -237,6 +219,27 @@ proxies:
   skip-cert-verify: false
   sni: super-goblin.treefrog761.one
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_33
+  password: amazonskr05
+  port: 443
+  server: 13.250.115.217
+  tfo: false
+  type: ss
+- name: meta_vless_34
+  network: ws
+  port: 587
+  server: 140.238.2.81
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2560
 - name: meta_hysteria2_41
   password: 148097c2-cd69-4015-992f-5939c08b9ab8
   port: 443
@@ -334,15 +337,14 @@ proxy-groups:
   - meta_vmess_012
   - meta_trojan_013
   - meta_vmess_014
-  - meta_http_015
   - meta_ss_11
   - meta_vmess_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_trojan_24
-  - meta_trojan_25
   - meta_hysteria2_31
   - meta_trojan_32
+  - meta_ss_33
+  - meta_vless_34
   - meta_hysteria2_41
   - meta_ss_42
   - meta_ss_43
@@ -370,15 +372,14 @@ proxy-groups:
   - meta_vmess_012
   - meta_trojan_013
   - meta_vmess_014
-  - meta_http_015
   - meta_ss_11
   - meta_vmess_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_trojan_24
-  - meta_trojan_25
   - meta_hysteria2_31
   - meta_trojan_32
+  - meta_ss_33
+  - meta_vless_34
   - meta_hysteria2_41
   - meta_ss_42
   - meta_ss_43
