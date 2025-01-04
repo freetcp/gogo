@@ -164,6 +164,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
+- name: meta_http_013
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
@@ -210,19 +215,6 @@ proxies:
   server: 54.151.194.129
   tfo: false
   type: ss
-- name: meta_vless_33
-  network: ws
-  port: 587
-  server: 140.238.2.81
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -331,12 +323,12 @@ proxy-groups:
   - meta_vmess_010
   - meta_vmess_011
   - meta_vmess_012
+  - meta_http_013
   - meta_ss_11
   - meta_trojan_21
   - meta_ss_22
   - meta_trojan_31
   - meta_ss_32
-  - meta_vless_33
   - meta_ss_41
   - meta_ss_42
   - meta_trojan_43
