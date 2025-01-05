@@ -125,11 +125,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_011
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_11
@@ -183,6 +178,45 @@ proxies:
   server: 52.69.160.222
   tfo: false
   type: ss
+- name: meta_vless_23
+  network: ws
+  port: 443
+  server: 8.219.80.83
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: meta_vless_24
+  network: ws
+  port: 443
+  server: 8.219.68.66
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /?ed=2560
+- name: meta_vless_25
+  network: ws
+  port: 443
+  server: 8.222.138.157
+  servername: a.xn--i-sx6a60i.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: /
 - client-fingerprint: chrome
   name: meta_trojan_31
   network: tcp
@@ -208,6 +242,35 @@ proxies:
   server: 54.249.152.9
   tfo: false
   type: ss
+- name: meta_trojan_42
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_43
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: tw02.trojanyyds.xyz
+  type: trojan
+  udp: true
+- name: meta_trojan_44
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: my01.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: my01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_45
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: false
+  sni: de01.trojanyyds.xyz
+  type: trojan
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -279,15 +342,21 @@ proxy-groups:
   - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_http_011
   - meta_ss_11
   - meta_trojan_12
   - meta_trojan_13
   - meta_trojan_21
   - meta_ss_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_vless_25
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_41
+  - meta_trojan_42
+  - meta_trojan_43
+  - meta_trojan_44
+  - meta_trojan_45
   - reality_1
   - reality_2
   - reality_3
@@ -308,15 +377,21 @@ proxy-groups:
   - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_http_011
   - meta_ss_11
   - meta_trojan_12
   - meta_trojan_13
   - meta_trojan_21
   - meta_ss_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_vless_25
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_41
+  - meta_trojan_42
+  - meta_trojan_43
+  - meta_trojan_44
+  - meta_trojan_45
   - reality_1
   - reality_2
   - reality_3
