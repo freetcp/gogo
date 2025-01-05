@@ -71,7 +71,7 @@ proxies:
   name: meta_ss_05
   password: asd123456
   port: 8388
-  server: 154.197.26.237
+  server: 202.162.109.169
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -86,19 +86,8 @@ proxies:
   server: console.02.aliyun.aq.kunlunaqs.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_07
-  port: 54675
-  server: 103.149.183.178
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - client-fingerprint: chrome
-  name: meta_trojan_08
+  name: meta_trojan_07
   network: tcp
   password: 5586eb05-1e5c-4b27-a276-86311547b95e
   port: 443
@@ -108,7 +97,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_08
   network: tcp
   port: '52908'
   server: 120.234.102.229
@@ -118,7 +107,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_09
   network: tcp
   port: '34493'
   server: 120.198.71.214
@@ -128,7 +117,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_010
   network: tcp
   port: '51704'
   server: 183.236.51.23
@@ -136,17 +125,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_012
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- name: meta_http_013
+- name: meta_http_011
   port: 4000
   server: hk9.ftq.ink
   tls: true
@@ -164,6 +143,30 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
+  name: meta_trojan_12
+  network: ws
+  password: ouo
+  port: 26547
+  server: 211.75.73.126
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
+- name: meta_trojan_13
+  network: ws
+  password: ouo
+  port: 26547
+  server: 211.75.73.126
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: chrome
   name: meta_trojan_21
   network: tcp
   password: '!!str 3723507166611775488'
@@ -177,7 +180,7 @@ proxies:
   name: meta_ss_22
   password: amazonskr05
   port: 443
-  server: 54.254.226.170
+  server: 52.69.160.222
   tfo: false
   type: ss
 - client-fingerprint: chrome
@@ -194,45 +197,20 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 54.151.194.129
+  server: 54.238.219.226
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_41
-  password: D54PK5XJB9DYCJSR
-  port: 18003
-  server: 156.231.104.13
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_42
-  password: WHSVXNV06K183IPW
-  port: 18004
-  server: 156.231.104.14
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_43
-  network: tcp
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: smiling-marmoset.boa152.lol
-  skip-cert-verify: false
-  sni: smiling-marmoset.boa152.lol
-  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_41
   password: amazonskr05
   port: 443
-  server: 13.250.27.88
+  server: 54.249.152.9
   tfo: false
   type: ss
 - name: reality_1
   type: vless
-  server: 1.162.18.226
+  server: 1.162.51.106
   port: 37898
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
@@ -246,7 +224,7 @@ proxies:
     short-id: e12d7fdb
 - name: reality_2
   type: vless
-  server: 1.162.18.226
+  server: 1.162.51.106
   port: 37898
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
@@ -260,7 +238,7 @@ proxies:
     short-id: e12d7fdb
 - name: reality_3
   type: vless
-  server: 1.162.18.226
+  server: 1.162.51.106
   port: 37898
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
@@ -274,7 +252,7 @@ proxies:
     short-id: e12d7fdb
 - name: reality_4
   type: vless
-  server: 1.162.18.226
+  server: 1.162.51.106
   port: 37898
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   network: tcp
@@ -297,22 +275,19 @@ proxy-groups:
   - meta_vmess_04
   - meta_ss_05
   - meta_ss_06
-  - meta_vmess_07
-  - meta_trojan_08
+  - meta_trojan_07
+  - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vmess_011
-  - meta_vmess_012
-  - meta_http_013
+  - meta_http_011
   - meta_ss_11
+  - meta_trojan_12
+  - meta_trojan_13
   - meta_trojan_21
   - meta_ss_22
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_41
-  - meta_ss_42
-  - meta_trojan_43
-  - meta_ss_44
   - reality_1
   - reality_2
   - reality_3
@@ -329,22 +304,19 @@ proxy-groups:
   - meta_vmess_04
   - meta_ss_05
   - meta_ss_06
-  - meta_vmess_07
-  - meta_trojan_08
+  - meta_trojan_07
+  - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vmess_011
-  - meta_vmess_012
-  - meta_http_013
+  - meta_http_011
   - meta_ss_11
+  - meta_trojan_12
+  - meta_trojan_13
   - meta_trojan_21
   - meta_ss_22
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_41
-  - meta_ss_42
-  - meta_trojan_43
-  - meta_ss_44
   - reality_1
   - reality_2
   - reality_3
