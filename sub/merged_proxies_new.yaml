@@ -75,9 +75,17 @@ proxies:
   skip-cert-verify: false
   sni: hk03.trojanyyds.xyz
   type: trojan
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_06
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_07
   password: 6LE2F7E2WQWGJEYG
   port: 15003
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -85,7 +93,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_07
+  name: meta_ss_08
   password: Y4JZ69NZ4IMSVWMC
   port: 15011
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -93,7 +101,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_09
   network: tcp
   port: '52908'
   server: 120.234.102.229
@@ -103,7 +111,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_010
   network: tcp
   port: '34493'
   server: 120.198.71.214
@@ -113,7 +121,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_010
+  name: meta_vmess_011
   network: tcp
   port: '51704'
   server: 183.236.51.23
@@ -121,32 +129,50 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_011
+- name: meta_trojan_012
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  port: 47489
+  server: 43.199.156.113
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- name: meta_vless_013
   network: ws
-  port: 443
-  server: 47.243.60.38
-  servername: a.xn--i-sx6a60i.us.kg
+  port: 2083
+  server: 154.211.8.18
+  servername: ssvv.esslh.filegear-sg.me
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg
+      Host: ssvv.esslh.filegear-sg.me
     path: /?ed=2560
-- name: meta_http_012
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- name: meta_vless_013
+- name: meta_trojan_014
+  network: ws
+  password: SSorg
   port: 443
-  server: 8.218.120.79
-  servername: 147135010103.sec19org.com
+  server: 154.211.8.90
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
+- name: meta_trojan_015
+  network: ws
+  password: SSorg
+  port: 2087
+  server: 154.211.8.98
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: tcp
@@ -156,14 +182,78 @@ proxies:
   skip-cert-verify: false
   sni: tw01.trojanyyds.xyz
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_12
-  password: 3730d507-4825-4eca-ab8a-4c9ebd4bc3e6
-  port: 28995
-  server: gzyd3.piaomiaoxu.net
+  name: meta_vmess_12
+  port: 47436
+  server: 103.224.80.116
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_13
+  network: tcp
+  port: '47436'
+  server: 103.224.80.116
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
+- name: meta_vless_14
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_vless_15
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /
+- name: meta_vless_16
+  network: ws
+  port: 443
+  server: 103.137.63.3
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_trojan_17
+  network: ws
+  password: SSorg
+  port: 443
+  server: 103.137.63.3
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_21
@@ -181,27 +271,22 @@ proxies:
   skip-cert-verify: false
   sni: major-reindeer.boa152.lol
   type: trojan
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_23
-  password: amazonskr05
-  port: 443
-  server: 54.179.78.99
+  password: DNYXV60QG2Q7I15T
+  port: 16009
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- name: meta_vless_24
-  network: ws
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: amazonskr05
   port: 443
-  server: 8.222.218.30
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
+  server: 13.250.107.170
+  tfo: false
+  type: ss
 - name: meta_vless_25
   network: ws
   port: 587
@@ -216,6 +301,32 @@ proxies:
       Host: a.mifeng.us.kg
     path: /?ed=2560
 - name: meta_vless_26
+  network: ws
+  port: 8443
+  server: 27.50.49.242
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_vless_27
+  network: ws
+  port: 443
+  server: 206.238.237.212
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_vless_28
   port: 443
   server: 8.222.158.140
   servername: 147135010103.sec19org.com
@@ -223,45 +334,98 @@ proxies:
   tls: true
   type: vless
   uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-- name: meta_vless_27
-  network: ws
-  port: 25815
-  server: 167.172.73.223
-  servername: speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 95d47811-dd8f-4266-9b49-45c3fe369b85
-  ws-opts:
-    headers:
-      Host: speedtest.net
-    path: /FREE By Tharuwa (0767597317)
-- name: meta_vless_28
-  network: ws
-  port: 443
-  server: 8.219.254.97
-  servername: blog.codegethub.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14ba4514-3846-45c0-aec6-444e5451b95c
-  ws-opts:
-    headers:
-      Host: blog.codegethub.org
-    path: /ws@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel
 - name: meta_vless_29
   network: ws
-  port: 443
-  server: 8.219.241.41
-  servername: blog.codegethub.org
+  port: 8443
+  server: 92.243.74.2
+  servername: ssvv.esslh.filegear-sg.me
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 14ba4514-3846-45c0-aec6-444e5451b95c
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
   ws-opts:
     headers:
-      Host: blog.codegethub.org
-    path: /ws@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel----@PersiaTM_Channel
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_vless_210
+  network: ws
+  port: 8443
+  server: 206.238.236.253
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_trojan_211
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 27.50.48.154
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
+- name: meta_vless_212
+  network: ws
+  port: 2087
+  server: 206.238.236.90
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_trojan_213
+  network: ws
+  password: SSorg
+  port: 2083
+  server: 27.50.49.251
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /
+- name: meta_vless_214
+  network: ws
+  port: 2096
+  server: 206.238.236.8
+  servername: ssvv.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  ws-opts:
+    headers:
+      Host: ssvv.esslh.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: safari
+  name: meta_vless_215
+  network: ws
+  port: 443
+  server: 206.189.151.89
+  servername: freeplus.kalindu.news
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 2d9798a1-6f27-4d8c-8f89-0d4147ae7cd2
+  ws-opts:
+    headers:
+      Host: freeplus.kalindu.news
+    path: /#@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
@@ -275,22 +439,9 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 52.195.214.124
+  server: 3.0.103.234
   tfo: false
   type: ss
-- name: meta_vless_33
-  network: ws
-  port: 443
-  server: 140.238.23.148
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -304,36 +455,87 @@ proxies:
   name: meta_ss_42
   password: amazonskr05
   port: 443
-  server: 54.151.212.176
+  server: 54.254.26.119
   tfo: false
   type: ss
 - name: meta_vless_43
   network: ws
   port: 443
-  server: 64.110.104.30
-  servername: a.xn--i-sx6a60i.us.kg
+  server: 168.138.46.67
+  servername: ssvv.esslh.filegear-sg.me
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg
+      Host: ssvv.esslh.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   name: meta_vless_44
   network: ws
-  port: 8889
-  server: 160.16.242.208
-  servername: a.mifeng.us.kg
+  port: 443
+  server: cloud.xmsvx.com
+  servername: live.989bull.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 4d8426b2-0af1-4eb5-a231-b62152d7b9b9
   ws-opts:
     headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
+      Host: aft.fi
+    path: /TorCippyy?ed=2048
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_45
+  network: ws
+  port: 443
+  server: cloud.xmsvx.com
+  servername: live.989bull.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4d8426b2-0af1-4eb5-a231-b62152d7b9b9
+  ws-opts:
+    headers:
+      Host: aft.vc
+    path: /TorVipxyy?ed=2048
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_46
+  network: ws
+  port: 443
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: dbbab473-d50c-4ade-cfd7-61befc6742d6
+  ws-opts:
+    headers:
+      Host: fonmelo.com
+    path: /olem/ws?ed=4096
+- client-fingerprint: chrome
+  name: meta_vless_47
+  network: ws
+  port: 443
+  server: live.skornorth.com
+  servername: live.skornorth.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 881c2728-f294-539e-adec-7d4b7201c751
+  ws-opts:
+    headers:
+      Host: PABLO-MOSTAFAA.COM
+    path: /
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -402,30 +604,45 @@ proxy-groups:
   - meta_trojan_05
   - meta_ss_06
   - meta_ss_07
-  - meta_vmess_08
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vless_011
-  - meta_http_012
+  - meta_vmess_011
+  - meta_trojan_012
   - meta_vless_013
+  - meta_trojan_014
+  - meta_trojan_015
   - meta_trojan_11
-  - meta_ss_12
+  - meta_vmess_12
+  - meta_vmess_13
+  - meta_vless_14
+  - meta_vless_15
+  - meta_vless_16
+  - meta_trojan_17
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_vless_24
+  - meta_ss_24
   - meta_vless_25
   - meta_vless_26
   - meta_vless_27
   - meta_vless_28
   - meta_vless_29
+  - meta_vless_210
+  - meta_trojan_211
+  - meta_vless_212
+  - meta_trojan_213
+  - meta_vless_214
+  - meta_vless_215
   - meta_ss_31
   - meta_ss_32
-  - meta_vless_33
   - meta_ss_41
   - meta_ss_42
   - meta_vless_43
   - meta_vless_44
+  - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
   - reality_1
   - reality_2
   - reality_3
@@ -443,30 +660,45 @@ proxy-groups:
   - meta_trojan_05
   - meta_ss_06
   - meta_ss_07
-  - meta_vmess_08
+  - meta_ss_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vless_011
-  - meta_http_012
+  - meta_vmess_011
+  - meta_trojan_012
   - meta_vless_013
+  - meta_trojan_014
+  - meta_trojan_015
   - meta_trojan_11
-  - meta_ss_12
+  - meta_vmess_12
+  - meta_vmess_13
+  - meta_vless_14
+  - meta_vless_15
+  - meta_vless_16
+  - meta_trojan_17
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_vless_24
+  - meta_ss_24
   - meta_vless_25
   - meta_vless_26
   - meta_vless_27
   - meta_vless_28
   - meta_vless_29
+  - meta_vless_210
+  - meta_trojan_211
+  - meta_vless_212
+  - meta_trojan_213
+  - meta_vless_214
+  - meta_vless_215
   - meta_ss_31
   - meta_ss_32
-  - meta_vless_33
   - meta_ss_41
   - meta_ss_42
   - meta_vless_43
   - meta_vless_44
+  - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
   - reality_1
   - reality_2
   - reality_3
