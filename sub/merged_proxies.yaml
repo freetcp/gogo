@@ -99,6 +99,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_http_09
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: tcp
@@ -158,18 +163,6 @@ proxies:
   server: 52.79.248.198
   tfo: false
   type: ss
-- name: meta_trojan_26
-  network: ws
-  password: SSorg
-  port: 443
-  server: 206.238.236.134
-  skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
@@ -241,17 +234,33 @@ proxies:
   type: vmess
   uuid: 68227ff4-28f8-4564-9eef-8d3d3dacaf57
 - name: meta_trojan_47
-  network: ws
-  password: SSorg
-  port: 2083
-  server: 103.116.7.103
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
   skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
+  sni: sg01.trojanyyds.xyz
   type: trojan
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /
+- name: meta_trojan_48
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: false
+  sni: us01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_49
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: false
+  sni: us02.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_410
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -321,6 +330,7 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_vmess_08
+  - meta_http_09
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
@@ -328,7 +338,6 @@ proxy-groups:
   - meta_ss_23
   - meta_ss_24
   - meta_ss_25
-  - meta_trojan_26
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
@@ -338,6 +347,9 @@ proxy-groups:
   - meta_ss_45
   - meta_vmess_46
   - meta_trojan_47
+  - meta_trojan_48
+  - meta_trojan_49
+  - meta_trojan_410
   - reality_1
   - reality_2
   - reality_3
@@ -356,6 +368,7 @@ proxy-groups:
   - meta_ss_06
   - meta_vmess_07
   - meta_vmess_08
+  - meta_http_09
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_21
@@ -363,7 +376,6 @@ proxy-groups:
   - meta_ss_23
   - meta_ss_24
   - meta_ss_25
-  - meta_trojan_26
   - meta_ss_31
   - meta_ss_32
   - meta_trojan_41
@@ -373,6 +385,9 @@ proxy-groups:
   - meta_ss_45
   - meta_vmess_46
   - meta_trojan_47
+  - meta_trojan_48
+  - meta_trojan_49
+  - meta_trojan_410
   - reality_1
   - reality_2
   - reality_3
