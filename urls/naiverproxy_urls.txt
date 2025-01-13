@@ -1,1 +1,1 @@
-
+https://gitlab.com/free9999/ipupdate/-/raw/master/singbox/config.json
