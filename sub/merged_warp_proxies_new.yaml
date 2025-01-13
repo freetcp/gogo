@@ -251,34 +251,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 68227ff4-28f8-4564-9eef-8d3d3dacaf57
-- name: meta_trojan_47
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
+- name: meta_vless_47
+  port: 39353
+  server: 46.51.241.212
   skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_48
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: us01.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_49
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: us02.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_410
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: false
+  type: vless
+  uuid: 94884860-51d0-40dc-8e37-8090249edc5f
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -366,10 +345,7 @@ proxy-groups:
   - meta_ss_44
   - meta_ss_45
   - meta_vmess_46
-  - meta_trojan_47
-  - meta_trojan_48
-  - meta_trojan_49
-  - meta_trojan_410
+  - meta_vless_47
   - reality_1
   - reality_2
   - reality_3
