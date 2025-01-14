@@ -103,11 +103,69 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_010
-  port: 4000
-  server: hk9.ftq.ink
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_010
+  network: ws
+  port: 443
+  server: 13.75.45.129
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
   tls: true
-  type: http
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_011
+  network: ws
+  port: 39584
+  server: 185.213.62.199
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_012
+  network: ws
+  port: 2083
+  server: 154.218.15.250
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  name: meta_vless_013
+  network: ws
+  port: 2087
+  server: 154.211.8.227
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: tcp
@@ -159,14 +217,179 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_24
-  password: amazonskr05
+- name: meta_vless_24
+  network: ws
+  port: 2083
+  server: 27.50.48.61
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_25
+  network: ws
+  port: 8443
+  server: 92.243.74.239
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_26
+  network: ws
+  port: 2087
+  server: 92.243.75.49
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_27
+  network: ws
+  port: 2087
+  server: 206.238.236.90
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_28
+  network: ws
+  port: 2096
+  server: 206.238.236.187
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_29
+  network: ws
+  port: 2083
+  server: 27.50.48.126
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_210
+  network: ws
+  port: 2083
+  server: 27.50.49.154
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_211
+  network: ws
+  port: 2083
+  server: 27.50.49.231
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_212
+  network: ws
+  port: 2087
+  server: 206.238.237.81
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_213
+  network: ws
+  port: 2096
+  server: 27.50.49.188
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_214
+  network: ws
   port: 443
-  server: 13.124.147.239
-  tfo: false
-  type: ss
+  server: 27.50.48.21
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
@@ -175,6 +398,22 @@ proxies:
   server: 18.183.217.250
   tfo: false
   type: ss
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_32
+  network: ws
+  port: 443
+  server: 3.38.250.62
+  servername: v.aivpn.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -233,13 +472,65 @@ proxies:
   server: 52.198.226.5
   tfo: false
   type: ss
-- name: meta_vless_47
-  port: 39353
-  server: 46.51.241.212
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: meta_vless_47
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: v.aivpn.filegear-sg.me
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 94884860-51d0-40dc-8e37-8090249edc5f
+  uuid: 211bbb0b-70a7-4792-ad04-cb6e599d2b9e
+  ws-opts:
+    headers:
+      Host: v.aivpn.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  name: meta_vless_48
+  network: ws
+  port: 2083
+  server: 103.116.7.67
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  name: meta_vless_49
+  network: ws
+  port: 2083
+  server: 103.116.7.133
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: meta_vless_410
+  network: ws
+  port: 443
+  server: 103.116.7.248
+  servername: amedo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  ws-opts:
+    headers:
+      Host: amedo.esslh.filegear-sg.me
+    path: /?ed=2560
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -310,15 +601,29 @@ proxy-groups:
   - meta_ss_07
   - meta_trojan_08
   - meta_vmess_09
-  - meta_http_010
+  - meta_vless_010
+  - meta_vless_011
+  - meta_vless_012
+  - meta_vless_013
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_13
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_ss_24
+  - meta_vless_24
+  - meta_vless_25
+  - meta_vless_26
+  - meta_vless_27
+  - meta_vless_28
+  - meta_vless_29
+  - meta_vless_210
+  - meta_vless_211
+  - meta_vless_212
+  - meta_vless_213
+  - meta_vless_214
   - meta_ss_31
+  - meta_vless_32
   - meta_trojan_41
   - meta_vmess_42
   - meta_ss_43
@@ -326,6 +631,9 @@ proxy-groups:
   - meta_ss_45
   - meta_ss_46
   - meta_vless_47
+  - meta_vless_48
+  - meta_vless_49
+  - meta_vless_410
   - reality_1
   - reality_2
   - reality_3
@@ -345,15 +653,29 @@ proxy-groups:
   - meta_ss_07
   - meta_trojan_08
   - meta_vmess_09
-  - meta_http_010
+  - meta_vless_010
+  - meta_vless_011
+  - meta_vless_012
+  - meta_vless_013
   - meta_trojan_11
   - meta_trojan_12
   - meta_ss_13
   - meta_ss_21
   - meta_trojan_22
   - meta_ss_23
-  - meta_ss_24
+  - meta_vless_24
+  - meta_vless_25
+  - meta_vless_26
+  - meta_vless_27
+  - meta_vless_28
+  - meta_vless_29
+  - meta_vless_210
+  - meta_vless_211
+  - meta_vless_212
+  - meta_vless_213
+  - meta_vless_214
   - meta_ss_31
+  - meta_vless_32
   - meta_trojan_41
   - meta_vmess_42
   - meta_ss_43
@@ -361,6 +683,9 @@ proxy-groups:
   - meta_ss_45
   - meta_ss_46
   - meta_vless_47
+  - meta_vless_48
+  - meta_vless_49
+  - meta_vless_410
   - reality_1
   - reality_2
   - reality_3
