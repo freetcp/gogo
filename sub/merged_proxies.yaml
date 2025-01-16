@@ -29,26 +29,29 @@ proxies:
   name: meta_trojan_01
   network: tcp
   password: phXKwfrd
-  port: 42293
-  server: 36.150.215.220
+  port: 36442
+  server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: meta_trojan_02
   network: tcp
   password: phXKwfrd
-  port: 21673
-  server: 223.111.144.12
+  port: 42395
+  server: 36.150.215.219
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_03
-  password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-  port: 6181
-  server: 45.250.184.183
+  name: meta_vmess_03
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 00f81c36-f346-4ca6-9074-eef73fff794e
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -60,45 +63,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_05
+  network: ws
+  port: '443'
+  server: hk-bmg.cowvpn.org
+  servername: hk-bmgcf.cowvpn.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  ws-opts:
+    headers:
+      Host: hk-bmgcf.cowvpn.org
+    path: /cctv13/vmess_hk-bmgcf
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_05
-  password: NFYDVXE3DMWI2M3W
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  name: meta_ss_06
+  password: 2N0M0MMOXEJMXKPN
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_06
-  password: YPNNBXGRNCAXB9N7
-  port: 15010
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  name: meta_ss_07
+  password: 2MT8DJ2LPPCI5PH8
+  port: 15003
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_07
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: false
-  tfo: false
+  name: meta_vmess_08
+  network: tcp
+  port: '45051'
+  server: xdd.dashuai.cyou
+  servername: ''
   tls: false
   type: vmess
-  uuid: ebb96eed-2827-43ac-b539-4e4d7b0ab99b
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_08
-  password: 7243745919d6de49a5db
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45578
-  server: console.02.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
+  uuid: 00f81c36-f346-4ca6-9074-eef73fff794e
 - alterId: 64
   cipher: auto
   name: meta_vmess_09
@@ -109,49 +116,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_010
-  network: tcp
-  port: '45050'
-  server: haa.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ebb96eed-2827-43ac-b539-4e4d7b0ab99b
-- alpn:
-  - http/1.1
-  name: meta_vless_011
-  network: ws
-  port: 2087
-  server: 154.211.8.227
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: false
+- name: meta_http_010
+  port: 4000
+  server: hk9.ftq.ink
   tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: meta_trojan_11
-  network: tcp
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: tw01.trojanyyds.xyz
-  type: trojan
-- client-fingerprint: chrome
-  name: meta_trojan_12
-  network: tcp
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: tw02.trojanyyds.xyz
-  type: trojan
+  type: http
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -160,60 +129,100 @@ proxies:
   server: ctmm.gscloud.bond
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_22
-  network: tcp
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: major-reindeer.boa152.lol
-  skip-cert-verify: false
-  sni: major-reindeer.boa152.lol
-  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_23
-  password: 6KYL3YM7UAOAE94Q
-  port: 16016
+  name: meta_ss_22
+  password: BUP3OYED8WELSLPM
+  port: 16004
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_24
-  password: amazonskr05
-  port: 443
-  server: 43.201.19.60
-  tfo: false
-  type: ss
-- name: meta_vless_25
+  name: meta_vmess_23
   network: ws
-  port: 2083
-  server: 27.50.48.61
-  servername: amedo.esslh.filegear-sg.me
+  port: '443'
+  server: sg2.cowvpn.org
+  servername: sg2cf.cowvpn.org
   skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
+  type: vmess
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
   ws-opts:
     headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- cipher: aes-256-cfb
+      Host: sg2cf.cowvpn.org
+    path: /cctv13/vmess_sg2cf
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_31
-  password: qwerREWQ@@
-  port: 10113
-  server: p240.panda004.net
+  name: meta_ss_24
+  password: H5IGGU6EPG7XR7X4
+  port: 16014
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_25
+  password: amazonskr05
+  port: 443
+  server: 3.34.189.113
+  tfo: false
+  type: ss
+- name: meta_trojan_26
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.48.189
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /
+- name: meta_trojan_27
+  network: ws
+  password: Aimer
+  port: 443
+  server: 206.238.236.134
+  skip-cert-verify: false
+  sni: ameqo.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_31
+  port: 21483
+  server: 45.94.68.206
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fd112b4b-b998-4f50-a4cf-7b798e666eee
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 18.181.199.99
+  server: 43.207.226.192
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_33
+  network: tcp
+  port: '21483'
+  server: 45.94.68.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd112b4b-b998-4f50-a4cf-7b798e666eee
 - client-fingerprint: chrome
   name: meta_trojan_41
   network: tcp
@@ -226,7 +235,7 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_42
-  password: 7ZD182CF9QZLXPRW
+  password: HEFXL9QGFUT6ET4L
   port: 18013
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
@@ -234,84 +243,69 @@ proxies:
 - client-fingerprint: chrome
   name: meta_trojan_43
   network: tcp
-  password: 78c245b7-b61c-4970-b4c2-d92a173ff16a
-  port: 33345
-  server: gs.huamao888.top
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
+  port: 21015
+  server: 120.232.217.96
   skip-cert-verify: true
-  sni: gs.huamao888.top
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_44
-  password: bb3193b4-e426-40e9-9664-19b7bc331c30
-  port: 51578
-  server: chiyu.myfczy169.top
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_44
+  network: tcp
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
+  port: 47479
+  server: 120.232.217.96
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_45
   password: amazonskr05
   port: 443
-  server: 18.136.123.141
+  server: 43.203.124.9
   tfo: false
   type: ss
-- alpn:
-  - http/1.1
-  name: meta_vless_46
-  network: ws
-  port: 2083
-  server: 103.116.7.67
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- alpn:
-  - http/1.1
-  name: meta_vless_47
-  network: ws
-  port: 2083
-  server: 103.116.7.133
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_48
-  network: ws
+- name: meta_trojan_46
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: 103.116.7.248
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_49
-  network: ws
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: tw01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_47
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: 103.116.7.248
-  servername: amedo.esslh.filegear-sg.me
+  server: 74.226.136.204
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /
+  sni: hk03.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_48
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: false
+  sni: sg01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_49
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: sg02.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_410
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
+  type: trojan
+- name: meta_trojan_411
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: us01.trojanyyds.xyz
+  type: trojan
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -375,33 +369,35 @@ proxy-groups:
   - 自动选择
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ss_03
+  - meta_vmess_03
   - meta_vmess_04
-  - meta_ss_05
+  - meta_vmess_05
   - meta_ss_06
-  - meta_vmess_07
-  - meta_ss_08
+  - meta_ss_07
+  - meta_vmess_08
   - meta_vmess_09
-  - meta_vmess_010
-  - meta_vless_011
-  - meta_trojan_11
-  - meta_trojan_12
+  - meta_http_010
   - meta_ss_21
-  - meta_trojan_22
-  - meta_ss_23
+  - meta_ss_22
+  - meta_vmess_23
   - meta_ss_24
-  - meta_vless_25
-  - meta_ss_31
+  - meta_ss_25
+  - meta_trojan_26
+  - meta_trojan_27
+  - meta_vmess_31
   - meta_ss_32
+  - meta_vmess_33
   - meta_trojan_41
   - meta_ss_42
   - meta_trojan_43
-  - meta_ss_44
+  - meta_trojan_44
   - meta_ss_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
+  - meta_trojan_46
+  - meta_trojan_47
+  - meta_trojan_48
+  - meta_trojan_49
+  - meta_trojan_410
+  - meta_trojan_411
   - reality_1
   - reality_2
   - reality_3
@@ -414,33 +410,35 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_ss_03
+  - meta_vmess_03
   - meta_vmess_04
-  - meta_ss_05
+  - meta_vmess_05
   - meta_ss_06
-  - meta_vmess_07
-  - meta_ss_08
+  - meta_ss_07
+  - meta_vmess_08
   - meta_vmess_09
-  - meta_vmess_010
-  - meta_vless_011
-  - meta_trojan_11
-  - meta_trojan_12
+  - meta_http_010
   - meta_ss_21
-  - meta_trojan_22
-  - meta_ss_23
+  - meta_ss_22
+  - meta_vmess_23
   - meta_ss_24
-  - meta_vless_25
-  - meta_ss_31
+  - meta_ss_25
+  - meta_trojan_26
+  - meta_trojan_27
+  - meta_vmess_31
   - meta_ss_32
+  - meta_vmess_33
   - meta_trojan_41
   - meta_ss_42
   - meta_trojan_43
-  - meta_ss_44
+  - meta_trojan_44
   - meta_ss_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_vless_48
-  - meta_vless_49
+  - meta_trojan_46
+  - meta_trojan_47
+  - meta_trojan_48
+  - meta_trojan_49
+  - meta_trojan_410
+  - meta_trojan_411
   - reality_1
   - reality_2
   - reality_3
