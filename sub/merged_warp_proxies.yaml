@@ -134,11 +134,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_010
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -188,34 +183,18 @@ proxies:
   server: 3.34.189.113
   tfo: false
   type: ss
-- name: meta_trojan_26
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 27.50.48.189
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-    path: /
-- name: meta_trojan_27
-  network: ws
-  password: Aimer
-  port: 443
-  server: 206.238.236.134
-  skip-cert-verify: false
-  sni: ameqo.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_31
+  password: qwerREWQ@@
+  port: 21238
+  server: p230.panda004.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_31
+  name: meta_vmess_32
   port: 21483
   server: 45.94.68.206
   skip-cert-verify: false
@@ -225,7 +204,7 @@ proxies:
   uuid: fd112b4b-b998-4f50-a4cf-7b798e666eee
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_33
   password: amazonskr05
   port: 443
   server: 43.207.226.192
@@ -233,7 +212,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_33
+  name: meta_vmess_34
   network: tcp
   port: '21483'
   server: 45.94.68.206
@@ -282,48 +261,6 @@ proxies:
   server: 43.203.124.9
   tfo: false
   type: ss
-- name: meta_trojan_46
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: tw01.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_47
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: hk03.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_48
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: false
-  sni: sg01.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_49
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: sg02.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_410
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: in01.trojanyyds.xyz
-  type: trojan
-- name: meta_trojan_411
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: us01.trojanyyds.xyz
-  type: trojan
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -396,28 +333,20 @@ proxy-groups:
   - meta_ss_07
   - meta_vmess_08
   - meta_vmess_09
-  - meta_http_010
   - meta_ss_21
   - meta_ss_22
   - meta_vmess_23
   - meta_ss_24
   - meta_ss_25
-  - meta_trojan_26
-  - meta_trojan_27
-  - meta_vmess_31
-  - meta_ss_32
-  - meta_vmess_33
+  - meta_ss_31
+  - meta_vmess_32
+  - meta_ss_33
+  - meta_vmess_34
   - meta_trojan_41
   - meta_ss_42
   - meta_trojan_43
   - meta_trojan_44
   - meta_ss_45
-  - meta_trojan_46
-  - meta_trojan_47
-  - meta_trojan_48
-  - meta_trojan_49
-  - meta_trojan_410
-  - meta_trojan_411
   - reality_1
   - reality_2
   - reality_3
