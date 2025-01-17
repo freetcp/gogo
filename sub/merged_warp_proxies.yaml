@@ -129,6 +129,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
+- name: meta_http_010
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+- name: meta_http_011
+  port: 4000
+  server: ftq.ink
+  tls: true
+  type: http
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: tcp
@@ -226,6 +236,57 @@ proxies:
   server: 13.212.153.165
   tfo: false
   type: ss
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_45
+  network: ws
+  port: 443
+  server: live.989bull.com
+  servername: live.989bull.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5f5a590a-1424-4297-902b-466d10535d49
+  ws-opts:
+    headers:
+      Host: Golestan_VPN.com
+    path: /CHANNEL---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_46
+  network: ws
+  port: 443
+  server: zmaoz.faculty.ucdavis.edu
+  servername: zmaoz.faculty.ucdavis.edu.
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b51ca1a1-b1fb-4d60-84c7-aebbf3a66ea1
+  ws-opts:
+    headers:
+      Host: fonmelo.com
+    path: /olem/ws?ed=4096
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: meta_vless_47
+  network: ws
+  port: 443
+  server: cloud.xmsvx.com
+  servername: mio.splashthat.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30
+  ws-opts:
+    headers:
+      Host: jetservices55.ir
+    path: /CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -298,6 +359,8 @@ proxy-groups:
   - meta_ss_07
   - meta_vmess_08
   - meta_vmess_09
+  - meta_http_010
+  - meta_http_011
   - meta_trojan_11
   - meta_ss_21
   - meta_ss_22
@@ -310,6 +373,9 @@ proxy-groups:
   - meta_trojan_42
   - meta_trojan_43
   - meta_ss_44
+  - meta_vless_45
+  - meta_vless_46
+  - meta_vless_47
   - reality_1
   - reality_2
   - reality_3
