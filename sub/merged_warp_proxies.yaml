@@ -59,16 +59,12 @@ proxies:
   server: 36.150.215.219
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_03
-  password: 7243745919d6de49a5db
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45578
-  server: console.02.aliyun.aq.kunlunaqs.com
+  password: APEX7RPQ1FUAGNY7
+  port: 15015
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - alterId: 64
@@ -96,14 +92,6 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_06
-  password: 2N0M0MMOXEJMXKPN
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_07
   password: 2MT8DJ2LPPCI5PH8
   port: 15003
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -111,7 +99,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: meta_vmess_08
+  name: meta_vmess_07
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -121,7 +109,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_09
+  name: meta_vmess_08
   network: tcp
   port: '16785'
   server: 103.30.76.250
@@ -129,25 +117,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
-- name: meta_http_010
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-- name: meta_http_011
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  name: meta_trojan_11
-  network: tcp
-  password: e279c494-c426-443a-a034-a04516409242
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_11
+  port: 62506
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5158e623-3763-41d0-96cf-08a9ab2b734c
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_12
+  network: tcp
+  port: '62506'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5158e623-3763-41d0-96cf-08a9ab2b734c
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -177,116 +167,78 @@ proxies:
   name: meta_ss_24
   password: amazonskr05
   port: 443
-  server: 54.199.148.105
+  server: 54.199.222.156
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
-  password: qwerREWQ@@
-  port: 21238
-  server: p230.panda004.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
-  password: qwerREWQ@@
-  port: 6072
-  server: p226.panda004.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
   password: amazonskr05
   port: 443
-  server: 52.195.210.31
+  server: 13.212.31.129
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_41
+  port: 63494
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5158e623-3763-41d0-96cf-08a9ab2b734c
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_41
+  name: meta_ss_42
   password: HEFXL9QGFUT6ET4L
   port: 18013
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  network: tcp
-  password: 0bc68743-cff8-4730-9818-9d8192ee335c
-  port: 21015
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
-  name: meta_trojan_43
-  network: tcp
-  password: 0bc68743-cff8-4730-9818-9d8192ee335c
-  port: 47479
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 13.212.153.165
+  server: 3.34.189.113
   tfo: false
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_45
-  network: ws
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_44
+  network: tcp
+  port: '63494'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5158e623-3763-41d0-96cf-08a9ab2b734c
+- name: meta_trojan_45
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: live.989bull.com
-  servername: live.989bull.com
+  server: tw02.trojanyyds.xyz
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5f5a590a-1424-4297-902b-466d10535d49
-  ws-opts:
-    headers:
-      Host: Golestan_VPN.com
-    path: /CHANNEL---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_46
-  network: ws
+  sni: tw02.trojanyyds.xyz
+  type: trojan
+  udp: true
+- name: meta_trojan_46
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: zmaoz.faculty.ucdavis.edu
-  servername: zmaoz.faculty.ucdavis.edu.
+  server: tw01.trojanyyds.xyz
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b51ca1a1-b1fb-4d60-84c7-aebbf3a66ea1
-  ws-opts:
-    headers:
-      Host: fonmelo.com
-    path: /olem/ws?ed=4096
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_47
-  network: ws
+  sni: tw01.trojanyyds.xyz
+  type: trojan
+  udp: true
+- name: meta_trojan_47
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
-  server: cloud.xmsvx.com
-  servername: mio.splashthat.com
+  server: us01.trojanyyds.xyz
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: bcaa20f4-589b-4c9a-9c6f-810f31ad6b30
-  ws-opts:
-    headers:
-      Host: jetservices55.ir
-    path: /CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config
+  sni: us01.trojanyyds.xyz
+  type: trojan
+  udp: true
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -356,26 +308,22 @@ proxy-groups:
   - meta_vmess_04
   - meta_vmess_05
   - meta_ss_06
-  - meta_ss_07
+  - meta_vmess_07
   - meta_vmess_08
-  - meta_vmess_09
-  - meta_http_010
-  - meta_http_011
-  - meta_trojan_11
+  - meta_vmess_11
+  - meta_vmess_12
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
   - meta_ss_24
   - meta_ss_31
-  - meta_ss_32
-  - meta_ss_33
-  - meta_ss_41
-  - meta_trojan_42
-  - meta_trojan_43
-  - meta_ss_44
-  - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
+  - meta_vmess_41
+  - meta_ss_42
+  - meta_ss_43
+  - meta_vmess_44
+  - meta_trojan_45
+  - meta_trojan_46
+  - meta_trojan_47
   - reality_1
   - reality_2
   - reality_3
