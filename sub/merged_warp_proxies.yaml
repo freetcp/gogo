@@ -113,14 +113,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_08
-  password: 82667668-4bfd-4906-ab31-c2745d0de78e
-  port: 8098
-  server: t17.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -161,10 +153,44 @@ proxies:
   server: 13.231.234.231
   tfo: false
   type: ss
+- name: meta_trojan_26
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 206.238.236.63
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: meta_trojan_27
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_31
+  password: qwerREWQ@@
+  port: 43104
+  server: p221.panda001.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_31
+  name: meta_vmess_32
   network: ws
   port: '40396'
   server: sd3.forlive.live
@@ -180,7 +206,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_33
   password: amazonskr05
   port: 443
   server: 3.112.254.144
@@ -291,14 +317,16 @@ proxy-groups:
   - meta_ss_05
   - meta_ss_06
   - meta_vmess_07
-  - meta_trojan_08
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
   - meta_ss_24
   - meta_ss_25
-  - meta_vmess_31
-  - meta_ss_32
+  - meta_trojan_26
+  - meta_trojan_27
+  - meta_ss_31
+  - meta_vmess_32
+  - meta_ss_33
   - meta_ss_41
   - meta_ss_42
   - meta_ssr_43
