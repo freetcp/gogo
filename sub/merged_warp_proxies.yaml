@@ -51,7 +51,6 @@ proxies:
   server: 223.113.54.145
   skip-cert-verify: true
   type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: meta_trojan_02
   network: tcp
@@ -60,15 +59,23 @@ proxies:
   server: 36.150.215.219
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: meta_trojan_03
-  network: tcp
-  password: e279c494-c426-443a-a034-a04516409242
-  port: 13004
-  server: naiu-hk.05vr9nyqg5.download
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_03
+  network: ws
+  port: '8226'
+  server: 89.185.31.75
+  servername: ''
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
+    headers:
+      Host: v12.emovpn.buzz
+    path: /
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -106,27 +113,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_11
-  port: 19490
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2c735365-79bf-4ecf-ba0d-86202fa24cca
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_12
-  network: tcp
-  port: '19490'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2c735365-79bf-4ecf-ba0d-86202fa24cca
+- name: meta_trojan_08
+  password: 82667668-4bfd-4906-ab31-c2745d0de78e
+  port: 8098
+  server: t17.emovpn.buzz
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -143,159 +137,47 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_23
-  network: tcp
-  password: e279c494-c426-443a-a034-a04516409242
-  port: 13027
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_23
+  password: 3FB23A19-9424-40C7-9139-3540228283FA
+  port: 40005
+  server: sgp.fastsoonlink.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_24
+  password: 3164812a-caea-4cd7-acad-9cf0627aac08
+  port: 30001
+  server: gdgs.tarioblink.me
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_25
   password: amazonskr05
   port: 443
   server: 13.231.234.231
   tfo: false
   type: ss
-- name: meta_trojan_25
-  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
-  port: 657
-  server: t39.emoyes.top
-  skip-cert-verify: true
-  sni: www.python.org
-  type: trojan
-  udp: true
-- name: meta_vless_26
-  network: ws
-  port: 443
-  server: 8.222.192.216
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_27
-  network: ws
-  port: 443
-  server: 8.219.91.179
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_28
-  network: ws
-  port: 443
-  server: 8.222.215.15
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_29
-  network: ws
-  port: 443
-  server: 8.219.211.57
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_210
-  network: ws
-  port: 443
-  server: 8.219.122.111
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_211
-  network: ws
-  port: 443
-  server: 8.219.210.104
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_212
-  network: ws
-  port: 443
-  server: 8.219.218.214
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_213
-  network: ws
-  port: 443
-  server: 8.219.229.86
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_trojan_214
-  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
-  port: 258
-  server: t38.emoyes.top
-  skip-cert-verify: true
-  sni: www.python.org
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_31
-  password: qwerREWQ@@
-  port: 43104
-  server: p221.panda001.net
+  name: meta_vmess_31
+  network: ws
+  port: '40396'
+  server: sd3.forlive.live
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 81e16736-5ede-4050-bc4c-3062a63c926d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_32
@@ -304,76 +186,6 @@ proxies:
   server: 3.112.254.144
   tfo: false
   type: ss
-- name: meta_vless_33
-  network: ws
-  port: 443
-  server: 64.110.83.252
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_34
-  network: ws
-  port: 443
-  server: 146.56.36.249
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_35
-  network: ws
-  port: 443
-  server: 132.226.226.56
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_36
-  network: ws
-  port: 443
-  server: 193.122.104.244
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
-- name: meta_vless_37
-  network: ws
-  port: 443
-  server: 132.145.94.80
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -390,28 +202,25 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: meta_ssr_43
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40219
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_43
+  name: meta_ss_44
   password: amazonskr05
   port: 443
   server: 18.136.200.60
   tfo: false
   type: ss
-- name: meta_vless_44
-  network: ws
-  port: 443
-  server: 140.83.55.142
-  servername: mmdserver.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -477,38 +286,23 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_trojan_03
+  - meta_vmess_03
   - meta_vmess_04
   - meta_ss_05
   - meta_ss_06
   - meta_vmess_07
-  - meta_vmess_11
-  - meta_vmess_12
+  - meta_trojan_08
   - meta_ss_21
   - meta_ss_22
-  - meta_trojan_23
+  - meta_ss_23
   - meta_ss_24
-  - meta_trojan_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
-  - meta_vless_211
-  - meta_vless_212
-  - meta_vless_213
-  - meta_trojan_214
-  - meta_ss_31
+  - meta_ss_25
+  - meta_vmess_31
   - meta_ss_32
-  - meta_vless_33
-  - meta_vless_34
-  - meta_vless_35
-  - meta_vless_36
-  - meta_vless_37
   - meta_ss_41
   - meta_ss_42
-  - meta_ss_43
-  - meta_vless_44
+  - meta_ssr_43
+  - meta_ss_44
   - reality_1
   - reality_2
   - reality_3
