@@ -55,27 +55,22 @@ proxies:
   name: meta_trojan_02
   network: tcp
   password: phXKwfrd
-  port: 42395
-  server: 36.150.215.219
+  port: 18681
+  server: 36.150.215.196
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
+  udp: true
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: meta_vmess_03
-  network: ws
-  port: '8226'
-  server: 89.185.31.75
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  ws-opts:
-    headers:
-      Host: v12.emovpn.buzz
-    path: /
+  name: meta_ssr_03
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40239
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -103,9 +98,18 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_07
+  network: tcp
+  password: be28a019-a855-4cd9-bfa1-1471c56921a4
+  port: 13003
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: meta_vmess_07
+  name: meta_vmess_08
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -113,6 +117,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_http_09
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+  udp: true
+- name: meta_http_010
+  port: 4000
+  server: ftq.ink
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: meta_vless_011
+  port: 443
+  reality-opts:
+    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
+    short-id: 6ba85179e30d4fc2
+  server: 47.76.136.169
+  servername: www.dayuse.com.hk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e927b27f-e73c-4580-802e-9265fd7c40e8
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -129,89 +158,28 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_23
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40005
-  server: sgp.fastsoonlink.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_24
-  password: 3164812a-caea-4cd7-acad-9cf0627aac08
-  port: 30001
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_25
-  password: amazonskr05
-  port: 443
-  server: 13.231.234.231
-  tfo: false
-  type: ss
-- name: meta_trojan_26
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 206.238.236.63
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: meta_trojan_27
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_31
-  password: qwerREWQ@@
-  port: 43104
-  server: p221.panda001.net
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_32
-  network: ws
-  port: '40396'
-  server: sd3.forlive.live
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 81e16736-5ede-4050-bc4c-3062a63c926d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
   password: amazonskr05
   port: 443
-  server: 3.112.254.144
+  server: 18.142.225.149
   tfo: false
   type: ss
+- name: meta_vless_32
+  network: ws
+  port: 443
+  server: 132.145.94.80
+  servername: mmdserver.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_41
@@ -244,9 +212,22 @@ proxies:
   name: meta_ss_44
   password: amazonskr05
   port: 443
-  server: 18.136.200.60
+  server: 47.128.244.15
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_45
+  port: 14228
+  reality-opts:
+    public-key: rwpbqas_HY8knlW0fFSIeUrjgBXHBzSNboflsLD8elA
+  server: 138.2.37.59
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ede893a4-243f-4e9c-b2fc-31cd53e8c007
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -312,25 +293,24 @@ proxy-groups:
   proxies:
   - meta_trojan_01
   - meta_trojan_02
-  - meta_vmess_03
+  - meta_ssr_03
   - meta_vmess_04
   - meta_ss_05
   - meta_ss_06
-  - meta_vmess_07
+  - meta_trojan_07
+  - meta_vmess_08
+  - meta_http_09
+  - meta_http_010
+  - meta_vless_011
   - meta_ss_21
   - meta_ss_22
-  - meta_ss_23
-  - meta_ss_24
-  - meta_ss_25
-  - meta_trojan_26
-  - meta_trojan_27
   - meta_ss_31
-  - meta_vmess_32
-  - meta_ss_33
+  - meta_vless_32
   - meta_ss_41
   - meta_ss_42
   - meta_ssr_43
   - meta_ss_44
+  - meta_vless_45
   - reality_1
   - reality_2
   - reality_3
