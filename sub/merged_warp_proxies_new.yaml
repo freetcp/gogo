@@ -166,9 +166,18 @@ proxies:
   server: ctmm.gscloud.bond
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: meta_trojan_22
+  password: '!!str 3760559353321758720'
+  port: 443
+  server: dear-sunbeam.treefrog761.one
+  skip-cert-verify: true
+  sni: dear-sunbeam.treefrog761.one
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_22
+  name: meta_ss_23
   password: BS6J1MEQANXXVHQL
   port: 16002
   server: 219.135.227.210
@@ -176,7 +185,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_23
+  name: meta_ss_24
   password: LQVGZB307SUYK23Y
   port: 16009
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -184,20 +193,20 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_24
+  name: meta_ss_25
   password: amazonskr05
   port: 443
   server: 47.128.77.107
   tfo: false
   type: ss
-- name: meta_trojan_25
+- name: meta_trojan_26
   network: tcp
   password: 61834c10-4218-4918-b836-9b852b7add70
   port: 443
   server: sg.mjt000.com
   sni: sg.mjt000.com
   type: trojan
-- name: meta_vless_26
+- name: meta_vless_27
   network: ws
   port: 80
   server: 103.253.145.213
@@ -346,11 +355,12 @@ proxy-groups:
   - meta_vmess_011
   - meta_http_012
   - meta_ss_21
-  - meta_ss_22
+  - meta_trojan_22
   - meta_ss_23
   - meta_ss_24
-  - meta_trojan_25
-  - meta_vless_26
+  - meta_ss_25
+  - meta_trojan_26
+  - meta_vless_27
   - meta_trojan_31
   - meta_ss_32
   - meta_hysteria2_33
