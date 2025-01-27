@@ -150,12 +150,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_http_012
-  port: 4000
-  server: hk9.ftq.ink
-  tls: true
-  type: http
-  udp: true
 - client-fingerprint: chrome
   name: meta_trojan_11
   network: tcp
@@ -202,27 +196,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
-- alpn:
-  - h2
-  name: meta_vless_25
-  port: 8443
-  server: 156.146.56.207
-  servername: sin-sg-01.fromblancwithlove.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b
-- alpn:
-  - h2
-  name: meta_vless_26
-  port: 8443
-  server: sin-sg-01.fromblancwithlove.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b
 - client-fingerprint: chrome
   name: meta_trojan_31
   network: ws
@@ -382,14 +355,11 @@ proxy-groups:
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_http_012
   - meta_trojan_11
   - meta_ss_21
   - meta_vmess_22
   - meta_ss_23
   - meta_vmess_24
-  - meta_vless_25
-  - meta_vless_26
   - meta_trojan_31
   - meta_ss_32
   - meta_trojan_33
@@ -419,14 +389,11 @@ proxy-groups:
   - meta_vmess_09
   - meta_vmess_010
   - meta_vmess_011
-  - meta_http_012
   - meta_trojan_11
   - meta_ss_21
   - meta_vmess_22
   - meta_ss_23
   - meta_vmess_24
-  - meta_vless_25
-  - meta_vless_26
   - meta_trojan_31
   - meta_ss_32
   - meta_trojan_33
