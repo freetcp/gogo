@@ -25,58 +25,44 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- client-fingerprint: chrome
-  name: meta_trojan_01
-  network: ws
-  password: ouo
-  port: 443
-  server: 103.44.255.81
-  skip-cert-verify: false
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: /?ed=2560
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_01
+  password: P3H53ZJU7Q2VS6GP
+  port: 15002
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_02
+  password: UEJBNJ5R5XAGT9YJ
+  port: 15014
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_02
-  network: ws
-  port: '23532'
-  server: 212.192.12.70
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 5549a8c5-5d90-4abb-b1df-3182009206a0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
   name: meta_vmess_03
-  port: 45017
-  server: 142.0.134.242
+  port: 40975
+  server: 38.147.188.17
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  uuid: ab2867d9-5abe-4b18-836b-b3ea69df3e4f
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_04
-  port: 40565
-  server: 120.232.153.63
+  port: 43837
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -99,40 +85,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_07
-  network: ws
-  password: ouo
-  port: 443
-  server: 103.44.255.81
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: '%2F%3Fed%3D2560'
-- alterId: 64
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_07
+  network: tcp
+  port: '40975'
+  server: 38.147.188.17
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ab2867d9-5abe-4b18-836b-b3ea69df3e4f
+- alterId: 0
   cipher: auto
   name: meta_vmess_08
   network: tcp
-  port: '45017'
-  server: 142.0.134.242
+  port: '43837'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
 - alterId: 64
   cipher: auto
   name: meta_vmess_09
-  network: tcp
-  port: '40565'
-  server: 120.232.153.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_010
   network: tcp
   port: '51037'
   server: 183.236.51.23
@@ -142,7 +117,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_011
+  name: meta_vmess_010
   network: tcp
   port: '44614'
   server: 120.198.71.219
@@ -150,15 +125,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: meta_trojan_11
-  network: tcp
-  password: af2201a4-5455-492b-b78b-bc2bd713295e
-  port: 18147
-  server: wb.kaiqsz.com
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_11
+  port: 19490
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_12
+  network: tcp
+  port: '19490'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_21
@@ -167,122 +154,75 @@ proxies:
   server: ctmm.gscloud.bond
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_vmess_22
-  port: 53896
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+  name: meta_ss_22
+  password: 89JKYYJT9GRMVWVW
+  port: 16008
+  server: 219.135.227.210
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
-- cipher: aes-256-cfb
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_23
-  password: amazonskr05
-  port: 443
-  server: 54.255.94.7
+  password: NKYSJ7T1AFPJLYVG
+  port: 16003
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_24
-  network: tcp
-  port: '53896'
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
-- client-fingerprint: chrome
-  name: meta_trojan_31
-  network: ws
-  password: ouo
-  port: 40274
-  server: 132.226.171.151
-  skip-cert-verify: false
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_32
+  name: meta_ss_24
   password: amazonskr05
   port: 443
-  server: 54.178.47.135
+  server: 176.32.78.140
   tfo: false
   type: ss
-- name: meta_trojan_33
-  network: ws
-  password: ouo
-  port: 40274
-  server: 132.226.171.151
-  skip-cert-verify: true
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_41
-  port: 52380
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  port: 18034
+  server: 45.159.51.161
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
-- client-fingerprint: chrome
-  name: meta_trojan_42
-  network: ws
-  password: ouo
-  port: 443
-  server: 154.83.91.150
-  skip-cert-verify: false
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: /?ed=2560
-- cipher: aes-256-cfb
+  uuid: e0defc46-4516-4352-bf53-7c4296fc3596
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_42
+  password: 3RU9RZ91MGOPITE7
+  port: 18015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_43
+  password: W05U3QJLWPM8NDNH
+  port: 18014
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_44
   password: amazonskr05
   port: 443
-  server: 13.114.24.98
+  server: 3.112.203.145
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_44
+  name: meta_vmess_45
   network: tcp
-  port: '52380'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  port: '18034'
+  server: 45.159.51.161
   servername: ''
   tls: false
   type: vmess
-  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
-- name: meta_trojan_45
-  network: ws
-  password: ouo
-  port: 443
-  server: 154.83.91.150
-  skip-cert-verify: true
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: '%2F%3Fed%3D2560'
+  uuid: e0defc46-4516-4352-bf53-7c4296fc3596
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -344,30 +284,27 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - meta_trojan_01
-  - meta_vmess_02
+  - meta_ss_01
+  - meta_ss_02
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_trojan_07
+  - meta_vmess_07
   - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vmess_011
-  - meta_trojan_11
+  - meta_vmess_11
+  - meta_vmess_12
   - meta_ss_21
-  - meta_vmess_22
+  - meta_ss_22
   - meta_ss_23
-  - meta_vmess_24
-  - meta_trojan_31
-  - meta_ss_32
-  - meta_trojan_33
+  - meta_ss_24
   - meta_vmess_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
-  - meta_vmess_44
-  - meta_trojan_45
+  - meta_ss_44
+  - meta_vmess_45
   - reality_1
   - reality_2
   - reality_3
@@ -378,30 +315,27 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - meta_trojan_01
-  - meta_vmess_02
+  - meta_ss_01
+  - meta_ss_02
   - meta_vmess_03
   - meta_vmess_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_trojan_07
+  - meta_vmess_07
   - meta_vmess_08
   - meta_vmess_09
   - meta_vmess_010
-  - meta_vmess_011
-  - meta_trojan_11
+  - meta_vmess_11
+  - meta_vmess_12
   - meta_ss_21
-  - meta_vmess_22
+  - meta_ss_22
   - meta_ss_23
-  - meta_vmess_24
-  - meta_trojan_31
-  - meta_ss_32
-  - meta_trojan_33
+  - meta_ss_24
   - meta_vmess_41
-  - meta_trojan_42
+  - meta_ss_42
   - meta_ss_43
-  - meta_vmess_44
-  - meta_trojan_45
+  - meta_ss_44
+  - meta_vmess_45
   - reality_1
   - reality_2
   - reality_3
