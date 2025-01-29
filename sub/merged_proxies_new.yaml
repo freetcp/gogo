@@ -41,28 +41,22 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: meta_vmess_03
-  port: 40975
-  server: 38.147.188.17
-  skip-cert-verify: false
+  name: meta_ss_03
+  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
+  port: 41411
+  server: south.sf0jm.xyz
   tfo: false
-  tls: false
-  type: vmess
-  uuid: ab2867d9-5abe-4b18-836b-b3ea69df3e4f
-- alterId: 0
-  cipher: auto
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_vmess_04
-  port: 43837
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+  name: meta_ss_04
+  password: 81898fd1-12c9-4197-8017-26ec0b242647
+  port: 30018
+  server: 114.132.40.118
   tfo: false
-  tls: false
-  type: vmess
-  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
+  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -76,51 +70,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  client-fingerprint: chrome
   name: meta_vmess_06
-  port: 44614
-  server: 120.198.71.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_07
-  network: tcp
-  port: '40975'
-  server: 38.147.188.17
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ab2867d9-5abe-4b18-836b-b3ea69df3e4f
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_08
-  network: tcp
-  port: '43837'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_09
   network: tcp
   port: '51037'
   server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: meta_vmess_010
-  network: tcp
-  port: '44614'
-  server: 120.198.71.219
   servername: ''
   tls: false
   type: vmess
@@ -129,34 +82,22 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: meta_vmess_11
-  port: 19490
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  network: ws
+  port: '85'
+  server: tsadfhyifgk.461553.best
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_12
-  network: tcp
-  port: '19490'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c89e8998-9164-4a28-b664-8abdcbf3a3a6
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: meta_ss_21
-  password: f16d3752-7bae-474e-87dc-f892df2caeaf
-  port: 31620
-  server: ctmm.gscloud.bond
-  tfo: false
-  type: ss
+  uuid: 08972930-1dc6-444b-914d-7cd4f7937f37
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_22
+  name: meta_ss_21
   password: 89JKYYJT9GRMVWVW
   port: 16008
   server: 219.135.227.210
@@ -164,7 +105,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_23
+  name: meta_ss_22
   password: NKYSJ7T1AFPJLYVG
   port: 16003
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -172,26 +113,40 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_24
+  name: meta_ss_23
   password: amazonskr05
   port: 443
-  server: 176.32.78.140
+  server: 18.143.147.45
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_41
-  port: 18034
-  server: 45.159.51.161
+  name: meta_vmess_31
+  network: ws
+  port: '25770'
+  server: pppasdfjetyj.461553.best
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: e0defc46-4516-4352-bf53-7c4296fc3596
+  uuid: 08972930-1dc6-444b-914d-7cd4f7937f37
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: amazonskr05
+  port: 443
+  server: 13.229.117.61
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_42
+  name: meta_ss_41
   password: 3RU9RZ91MGOPITE7
   port: 18015
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -199,7 +154,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_43
+  name: meta_ss_42
   password: W05U3QJLWPM8NDNH
   port: 18014
   server: 219.135.227.210
@@ -207,22 +162,12 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 3.112.203.145
+  server: 54.169.74.60
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_45
-  network: tcp
-  port: '18034'
-  server: 45.159.51.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0defc46-4516-4352-bf53-7c4296fc3596
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -286,25 +231,19 @@ proxy-groups:
   - 自动选择
   - meta_ss_01
   - meta_ss_02
-  - meta_vmess_03
-  - meta_vmess_04
+  - meta_ss_03
+  - meta_ss_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vmess_07
-  - meta_vmess_08
-  - meta_vmess_09
-  - meta_vmess_010
   - meta_vmess_11
-  - meta_vmess_12
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
-  - meta_ss_24
-  - meta_vmess_41
+  - meta_vmess_31
+  - meta_ss_32
+  - meta_ss_41
   - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_vmess_45
   - reality_1
   - reality_2
   - reality_3
@@ -317,25 +256,19 @@ proxy-groups:
   proxies:
   - meta_ss_01
   - meta_ss_02
-  - meta_vmess_03
-  - meta_vmess_04
+  - meta_ss_03
+  - meta_ss_04
   - meta_vmess_05
   - meta_vmess_06
-  - meta_vmess_07
-  - meta_vmess_08
-  - meta_vmess_09
-  - meta_vmess_010
   - meta_vmess_11
-  - meta_vmess_12
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
-  - meta_ss_24
-  - meta_vmess_41
+  - meta_vmess_31
+  - meta_ss_32
+  - meta_ss_41
   - meta_ss_42
   - meta_ss_43
-  - meta_ss_44
-  - meta_vmess_45
   - reality_1
   - reality_2
   - reality_3
