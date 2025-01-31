@@ -46,42 +46,23 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_01
-  password: BND0FYT11KNZX6YW
-  port: 15012
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_02
-  password: JXLGR5HZIOG59EE6
-  port: 15006
-  server: 219.135.227.210
+  password: AAV5FFSS0OWDY2UA
+  port: 15008
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_03
+  name: meta_ss_02
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_04
-  port: 41671
-  server: 38.147.188.172
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6106cf31-69b3-4509-b0ad-7d0d5ea4688f
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_05
+  name: meta_vmess_03
   port: 40565
   server: 120.232.153.63
   skip-cert-verify: false
@@ -89,19 +70,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_06
-  network: tcp
-  port: '41671'
-  server: 38.147.188.172
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6106cf31-69b3-4509-b0ad-7d0d5ea4688f
 - alterId: 64
   cipher: auto
-  name: meta_vmess_07
+  name: meta_vmess_04
   network: tcp
   port: '40565'
   server: 120.232.153.63
@@ -117,43 +88,35 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_22
-  password: Y3R2SGI7AMKFIOWN
-  port: 16016
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_23
-  port: 53896
+  name: meta_vmess_22
+  port: 49549
   server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
+  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_24
+  name: meta_ss_23
   password: amazonskr05
   port: 443
-  server: 18.143.147.45
+  server: 54.255.22.224
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_25
+  name: meta_vmess_24
   network: tcp
-  port: '53896'
+  port: '49549'
   server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
+  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
 - client-fingerprint: chrome
   name: meta_trojan_31
   network: tcp
@@ -168,54 +131,46 @@ proxies:
   name: meta_ss_32
   password: amazonskr05
   port: 443
-  server: 13.229.117.61
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_41
-  password: BH3TD5M0B37Z4922
-  port: 18016
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_42
-  password: 19ATYI5TXV0A3IVZ
-  port: 18002
-  server: 219.135.227.210
+  server: 3.0.91.253
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_43
-  port: 63494
+  name: meta_vmess_41
+  port: 60717
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
+  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_42
+  password: 5QCGV4AXFQAJE5KA
+  port: 18012
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_44
+  name: meta_ss_43
   password: amazonskr05
   port: 443
-  server: 54.169.74.60
+  server: 52.194.205.70
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_45
+  name: meta_vmess_44
   network: tcp
-  port: '63494'
+  port: '60717'
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 2865a8a3-b9fe-4056-8378-5a03f2d4595e
+  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -281,23 +236,18 @@ proxy-groups:
   proxies:
   - meta_ss_01
   - meta_ss_02
-  - meta_ss_03
+  - meta_vmess_03
   - meta_vmess_04
-  - meta_vmess_05
-  - meta_vmess_06
-  - meta_vmess_07
   - meta_ss_21
-  - meta_ss_22
-  - meta_vmess_23
-  - meta_ss_24
-  - meta_vmess_25
+  - meta_vmess_22
+  - meta_ss_23
+  - meta_vmess_24
   - meta_trojan_31
   - meta_ss_32
-  - meta_ss_41
+  - meta_vmess_41
   - meta_ss_42
-  - meta_vmess_43
-  - meta_ss_44
-  - meta_vmess_45
+  - meta_ss_43
+  - meta_vmess_44
   - reality_1
   - reality_2
   - reality_3
