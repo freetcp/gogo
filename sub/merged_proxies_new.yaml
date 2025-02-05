@@ -104,16 +104,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_trojan_11
-  password: 89f84d5e-4170-4c64-bc78-ac99953b103a
-  port: 50025
-  server: gnpid1111.ndycom.com
-  skip-cert-verify: true
-  sni: v2tw01.fuqiangren.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: meta_trojan_12
+  name: meta_trojan_11
   network: tcp
   password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
   port: 13035
@@ -122,7 +114,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_13
+  name: meta_trojan_12
   network: tcp
   password: f1df4c41-0e78-400b-8588-eaa24bd8fd21
   port: 18147
@@ -131,7 +123,7 @@ proxies:
   sni: mm2.redapricotcloud.com
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_14
+  name: meta_trojan_13
   network: tcp
   password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
   port: 18147
@@ -140,11 +132,11 @@ proxies:
   sni: mm2.redapricotcloud.com
   type: trojan
 - name: meta_trojan_21
-  password: 372c3834-4166-3ab4-bfbb-ebab353b6e99
-  port: 20299
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 30712
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x299.flybar.work
+  sni: x83.flybar.work
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -184,12 +176,10 @@ proxies:
   server: robust-redfish.shiner427.skin
   type: trojan
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: meta_ss_31
   password: amazonskr05
   port: 443
-  server: 52.78.197.177
-  tfo: false
+  server: 52.78.178.243
   type: ss
 - client-fingerprint: chrome
   name: meta_trojan_32
@@ -227,29 +217,50 @@ proxies:
   port: 443
   server: hopeful-seagull.shiner427.skin
   type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_41
-  password: amazonskr05
-  port: 443
-  server: 54.65.35.246
-  type: ss
-- cipher: aes-256-cfb
-  name: meta_ss_42
-  password: amazonskr05
-  port: 443
-  server: 18.179.118.124
-  type: ss
-- cipher: aes-256-cfb
-  name: meta_ss_43
-  password: amazonskr05
-  port: 443
-  server: 43.207.76.121
-  type: ss
+- name: meta_trojan_41
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  type: trojan
+  udp: true
+- name: meta_trojan_42
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
+  udp: true
+- name: meta_trojan_43
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  type: trojan
+  udp: true
+- name: meta_trojan_44
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  type: trojan
+  udp: true
+- name: meta_trojan_45
+  password: 5e9b182a-9262-3244-8381-5aa946697b8d
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_44
+  name: meta_vmess_46
   port: 11171
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
@@ -259,15 +270,23 @@ proxies:
   uuid: 68512223-ea66-46fc-82f4-e22b597cdd5e
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: meta_ss_45
+  name: meta_ss_47
   password: 40983d6d-48be-4c9a-aa48-3aaf3146833e
   port: 12012
   server: mdss-jp.04z3susick.download
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_48
+  password: amazonskr05
+  port: 443
+  server: 52.78.197.177
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_46
+  name: meta_vmess_49
   network: tcp
   port: '11171'
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
@@ -347,7 +366,6 @@ proxy-groups:
   - meta_trojan_11
   - meta_trojan_12
   - meta_trojan_13
-  - meta_trojan_14
   - meta_trojan_21
   - meta_trojan_22
   - meta_trojan_23
@@ -360,12 +378,15 @@ proxy-groups:
   - meta_ss_34
   - meta_trojan_35
   - meta_trojan_36
-  - meta_ss_41
-  - meta_ss_42
-  - meta_ss_43
-  - meta_vmess_44
-  - meta_ss_45
+  - meta_trojan_41
+  - meta_trojan_42
+  - meta_trojan_43
+  - meta_trojan_44
+  - meta_trojan_45
   - meta_vmess_46
+  - meta_ss_47
+  - meta_ss_48
+  - meta_vmess_49
   - reality_1
   - reality_2
   - reality_3
@@ -387,7 +408,6 @@ proxy-groups:
   - meta_trojan_11
   - meta_trojan_12
   - meta_trojan_13
-  - meta_trojan_14
   - meta_trojan_21
   - meta_trojan_22
   - meta_trojan_23
@@ -400,12 +420,15 @@ proxy-groups:
   - meta_ss_34
   - meta_trojan_35
   - meta_trojan_36
-  - meta_ss_41
-  - meta_ss_42
-  - meta_ss_43
-  - meta_vmess_44
-  - meta_ss_45
+  - meta_trojan_41
+  - meta_trojan_42
+  - meta_trojan_43
+  - meta_trojan_44
+  - meta_trojan_45
   - meta_vmess_46
+  - meta_ss_47
+  - meta_ss_48
+  - meta_vmess_49
   - reality_1
   - reality_2
   - reality_3
