@@ -132,45 +132,37 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: meta_ss_21
   password: amazonskr05
   port: 443
   server: 18.141.24.255
   type: ss
-- name: meta_trojan_22
-  password: 85d6e3a8-a3c2-33d3-836f-494a7e77f08d
-  port: 17806
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x65.flybar.work
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_23
+  country: 🇸🇬SG
+  delay: 461
+  name: meta_ss_22
   password: amazonskr05
   port: 443
-  server: 3.1.103.118
+  server: 13.229.128.74
   type: ss
-- name: meta_trojan_24
-  password: 85d6e3a8-a3c2-33d3-836f-494a7e77f08d
-  port: 20129
-  server: gy.58n.net
+- name: meta_trojan_23
+  password: '!!str 3774827088566296576'
+  port: 443
+  server: flying-tuna.treefrog761.one
   skip-cert-verify: true
-  sni: x129.flybar.work
+  sni: flying-tuna.treefrog761.one
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_25
-  password: fe197ce2-2b1c-466d-b89e-a3cd986712ac
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
+- name: meta_trojan_24
+  password: '!!str 3774827088566296576'
+  port: 443
+  server: probable-drum.treefrog761.one
+  skip-cert-verify: true
+  sni: probable-drum.treefrog761.one
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_26
+  name: meta_vmess_25
   port: 50012
   server: 50012.baidu-cdn.top
   skip-cert-verify: false
@@ -179,7 +171,7 @@ proxies:
   type: vmess
   uuid: 224e3ed4-96d2-4ae0-8d24-070b0039074e
 - client-fingerprint: chrome
-  name: meta_trojan_27
+  name: meta_trojan_26
   password: '!!str 65086520307764900'
   port: 443
   server: dynamic-shrew.shiner427.skin
@@ -187,7 +179,7 @@ proxies:
   sni: dynamic-shrew.shiner427.skin
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_28
+  name: meta_trojan_27
   password: '!!str 65086520307764900'
   port: 443
   server: summary-sawfish.shiner427.skin
@@ -195,7 +187,7 @@ proxies:
   sni: summary-sawfish.shiner427.skin
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_29
+  name: meta_trojan_28
   network: tcp
   password: installshield
   port: 8443
@@ -204,7 +196,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_210
+  name: meta_ss_29
   password: amazonskr05
   port: 443
   server: 18.141.25.54
@@ -212,7 +204,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_211
+  name: meta_vmess_210
   network: tcp
   port: '50012'
   server: 50012.baidu-cdn.top
@@ -220,13 +212,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 224e3ed4-96d2-4ae0-8d24-070b0039074e
-- name: meta_trojan_212
+- name: meta_trojan_211
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
   server: dynamic-shrew.shiner427.skin
   type: trojan
-- name: meta_trojan_213
+- name: meta_trojan_212
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
@@ -236,46 +228,46 @@ proxies:
   name: meta_ss_31
   password: amazonskr05
   port: 443
-  server: 13.125.215.15
+  server: 3.34.123.239
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_32
-  password: amazonskr05
+- name: meta_trojan_32
+  password: '!!str 3774827088566296576'
   port: 443
-  server: 13.124.222.109
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
-  password: amazonskr05
-  port: 443
-  server: 3.35.138.163
-  tfo: false
-  type: ss
+  server: real-meerkat.insect388.motorcycles
+  skip-cert-verify: true
+  sni: real-meerkat.insect388.motorcycles
+  type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_34
+  name: meta_trojan_33
   password: '!!str 65086520307764900'
   port: 443
   server: engaged-cattle.shiner427.skin
   skip-cert-verify: false
   sni: engaged-cattle.shiner427.skin
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_34
+  password: amazonskr05
+  port: 443
+  server: 3.35.138.163
+  tfo: false
+  type: ss
 - name: meta_trojan_35
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
   server: engaged-cattle.shiner427.skin
   type: trojan
-- name: meta_http_41
-  password: exaxgqkKkd0TAMrCxeonWg==
+- auth: __mPDL8oqKjx2v2VpdSfG0g4
+  client-fingerprint: chrome
+  name: meta_hysteria2_41
+  password: __mPDL8oqKjx2v2VpdSfG0g4
   port: 443
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo102-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  server: starlink-tko.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: meta_ss_42
@@ -407,24 +399,23 @@ proxy-groups:
   - meta_vmess_08
   - meta_trojan_11
   - meta_ss_21
-  - meta_trojan_22
-  - meta_ss_23
+  - meta_ss_22
+  - meta_trojan_23
   - meta_trojan_24
-  - meta_ss_25
-  - meta_vmess_26
+  - meta_vmess_25
+  - meta_trojan_26
   - meta_trojan_27
   - meta_trojan_28
-  - meta_trojan_29
-  - meta_ss_210
-  - meta_vmess_211
+  - meta_ss_29
+  - meta_vmess_210
+  - meta_trojan_211
   - meta_trojan_212
-  - meta_trojan_213
   - meta_ss_31
-  - meta_ss_32
-  - meta_ss_33
-  - meta_trojan_34
+  - meta_trojan_32
+  - meta_trojan_33
+  - meta_ss_34
   - meta_trojan_35
-  - meta_http_41
+  - meta_hysteria2_41
   - meta_ss_42
   - meta_vmess_43
   - meta_vmess_44
