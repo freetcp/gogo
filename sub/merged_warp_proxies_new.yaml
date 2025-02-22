@@ -43,7 +43,15 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: meta_hysteria2_01
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_01
+  port: 51754
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_hysteria2_02
   password: e20abb22a245edb0
   port: 8443
   server: fast.yxmm.xyz
@@ -52,7 +60,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: meta_trojan_02
+  name: meta_trojan_03
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -60,9 +68,17 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_04
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ss_03
+  name: meta_ss_05
   password: asd123456
   port: 8388
   server: 154.197.26.120
@@ -70,7 +86,15 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_04
+  name: meta_ss_06
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_07
   password: 2H98UZT9LT1TE3X9
   port: 15008
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -78,7 +102,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_05
+  name: meta_ss_08
   password: RBN1UNGVPF1BQXPK
   port: 15006
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -86,7 +110,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_06
+  name: meta_ss_09
   password: TCEL1H0XD7TWAKI0
   port: 15011
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -94,37 +118,28 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_07
+  name: meta_ss_010
   password: FCEUOASRQJC0LN0K
   port: 15009
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_08
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_011
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_09
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_012
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: meta_http_11
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
-  name: meta_trojan_12
+  name: meta_trojan_11
   network: tcp
   password: 65f14831-5c67-483f-9e85-f3aa73f21187
   port: 13035
@@ -134,7 +149,7 @@ proxies:
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_13
+  name: meta_ss_12
   password: QF377GGQ00RATCMK
   port: 21004
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -142,7 +157,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_14
+  name: meta_ss_13
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -150,36 +165,57 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_15
+  name: meta_ss_14
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_16
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_15
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_17
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_16
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_18
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_17
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_21
+  password: amazonskr05
+  port: 443
+  server: 13.229.111.3
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: meta_vless_22
+  network: ws
+  port: 443
+  server: 124.243.148.164
+  servername: doa.fenmila.me
+  tls: true
+  type: vless
+  uuid: 416b6204-d012-46c2-e5bd-4ea8da7dc439
+  ws-opts:
+    headers:
+      Host: doa.fenmila.me
+    path: /bing
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_23
   password: 8WDLSCVIFB4I26GB
   port: 16011
   server: 154.196.244.21
@@ -187,29 +223,37 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_22
+  name: meta_ss_24
   password: YHK82TR73114VN9O
   port: 16016
   server: 154.196.244.26
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_25
+  password: amazonskr05
+  port: 443
+  server: 3.38.214.76
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_23
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_26
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_24
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_27
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_25
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_28
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
@@ -233,14 +277,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_33
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_34
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
@@ -248,14 +292,20 @@ proxies:
 - name: meta_http_41
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
+  server: jpgmo102-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
+  sni: jpgmo102-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-cfb
+  name: meta_ss_42
+  password: amazonskr05
+  port: 443
+  server: 13.114.153.253
+  type: ss
 - client-fingerprint: chrome
-  name: meta_trojan_42
+  name: meta_trojan_43
   network: tcp
   password: 65f14831-5c67-483f-9e85-f3aa73f21187
   port: 13012
@@ -265,29 +315,29 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_43
+  name: meta_ss_44
   password: amazonskr05
   port: 443
   server: 43.203.240.54
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_44
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_45
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_45
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_46
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_46
-  password: 6ebcdb37-1e9b-4784-8c70-7bc536806458
+  name: meta_ss_47
+  password: a069f65d-2163-458d-afb9-ac5935bd3608
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
@@ -355,38 +405,44 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - meta_hysteria2_01
-  - meta_trojan_02
-  - meta_ss_03
+  - meta_vmess_01
+  - meta_hysteria2_02
+  - meta_trojan_03
   - meta_ss_04
   - meta_ss_05
   - meta_ss_06
   - meta_ss_07
   - meta_ss_08
   - meta_ss_09
-  - meta_http_11
-  - meta_trojan_12
+  - meta_ss_010
+  - meta_ss_011
+  - meta_ss_012
+  - meta_trojan_11
+  - meta_ss_12
   - meta_ss_13
   - meta_ss_14
   - meta_ss_15
   - meta_ss_16
   - meta_ss_17
-  - meta_ss_18
   - meta_ss_21
-  - meta_ss_22
+  - meta_vless_22
   - meta_ss_23
   - meta_ss_24
   - meta_ss_25
+  - meta_ss_26
+  - meta_ss_27
+  - meta_ss_28
   - meta_trojan_31
   - meta_ss_32
   - meta_ss_33
   - meta_ss_34
   - meta_http_41
-  - meta_trojan_42
-  - meta_ss_43
+  - meta_ss_42
+  - meta_trojan_43
   - meta_ss_44
   - meta_ss_45
   - meta_ss_46
+  - meta_ss_47
   - reality_1
   - reality_2
   - reality_3
