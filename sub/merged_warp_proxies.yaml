@@ -44,28 +44,27 @@ proxies:
   - 8.8.8.8
   dialer-proxy: WARP前置节点
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: meta_ss_01
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31143
-  server: free.2apzhfa.xyz
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52613
+  server: hk03.x.quickcht3.club
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_02
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: meta_http_03
-  port: 4000
-  server: ftq.ink
-  sni: ftq.ink
+  name: meta_vless_02
+  network: ws
+  port: 443
+  server: 8.212.104.247
+  servername: clawhk.costs.asia
   tls: true
-  type: http
+  type: vless
+  uuid: a5c6f225-4cb9-4e58-edea-1e0793b656b7
+  ws-opts:
+    headers:
+      Host: clawhk.costs.asia
+    path: /bing
 - client-fingerprint: chrome
-  name: meta_trojan_05
+  name: meta_trojan_04
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -75,7 +74,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_06
+  name: meta_ss_05
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52611
   server: hk01.x.quickcht3.club
@@ -84,7 +83,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_07
+  name: meta_vmess_06
   port: 30704
   server: 43.247.135.63
   skip-cert-verify: false
@@ -92,6 +91,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_07
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: meta_ss_08
@@ -116,32 +123,17 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: meta_ss_011
-  password: 777bc05be0dd624959fb
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45905
-  server: console.03.aliyun.aq.kunlunaqs.com
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: hk02.x.quickcht3.club
   tfo: false
   type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: meta_ssr_012
-  obfs: plain
-  obfs-param: c499e93390.wns.windows.com
-  password: mtbv8n
-  port: 578
-  protocol: auth_aes128_md5
-  protocol-param: 93390:TDWk1JwybHq
-  server: bgphk5.vip.primeconectin.pro
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: meta_vmess_013
+  name: meta_vmess_012
   network: tcp
   port: '30704'
   server: 43.247.135.63
@@ -149,21 +141,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
-- name: meta_vless_014
-  network: ws
-  port: 1935
-  server: 43.154.34.74
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_015
+- name: meta_vless_013
   network: ws
   port: 443
   server: 162.247.5.91
@@ -177,428 +155,7 @@ proxies:
     headers:
       Host: sga.costs.asia
     path: /bing
-- name: meta_vless_016
-  network: ws
-  port: 443
-  server: 58.176.95.46
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alpn:
-  - http/1.1
-  name: meta_vless_017
-  network: ws
-  port: 2083
-  server: 154.218.15.250
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_11
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_12
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_13
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: meta_ss_14
-  password: 3e26a8cfb09fda219b36
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45573
-  server: console.03.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_15
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_16
-  password: Y2U58S90E3GST1AQ
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_17
-  password: HQJQFA7U2Z5HGZWH
-  port: 21003
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: meta_ssr_18
-  obfs: plain
-  obfs-param: c499e93390.wns.windows.com
-  password: mtbv8n
-  port: 1206
-  protocol: auth_aes128_md5
-  protocol-param: 93390:TDWk1JwybHq
-  server: aiatw6.primeconectin.pro
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_21
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_22
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_23
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: meta_ss_24
-  password: f4cd0a554e9d0558c581
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45917
-  server: console.03.aliyun.aq.kunlunaqs.com
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_25
-  password: 8WDLSCVIFB4I26GB
-  port: 16011
-  server: 154.196.244.21
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_26
-  password: YHK82TR73114VN9O
-  port: 16016
-  server: 154.196.244.26
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_27
-  password: amazonskr05
-  port: 443
-  server: 54.169.104.136
-  tfo: false
-  type: ss
-- name: meta_vless_28
-  network: ws
-  port: 443
-  server: 8.219.202.145
-  servername: dob.fenmila.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 038562dc-6958-4ce7-eae2-887d8a1bee2a
-  ws-opts:
-    headers:
-      Host: dob.fenmila.me
-    path: /bing
-- name: meta_vless_29
-  network: ws
-  port: 443
-  server: 47.236.251.178
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_210
-  network: ws
-  port: 8443
-  server: 206.238.236.137
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_211
-  network: ws
-  port: 443
-  server: 206.238.236.16
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_212
-  network: ws
-  port: 2083
-  server: 206.238.236.251
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_trojan_213
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 206.238.237.81
-  skip-cert-verify: false
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_31
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_32
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_33
-  password: amazonskr05
-  port: 443
-  server: 18.143.149.127
-  tfo: false
-  type: ss
-- name: meta_vless_34
-  network: ws
-  port: 18048
-  server: 118.46.215.195
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_35
-  network: ws
-  port: 50000
-  server: 221.167.108.29
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_36
-  network: ws
-  port: 21082
-  server: 222.120.196.136
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_37
-  network: ws
-  port: 10071
-  server: 220.122.114.61
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_38
-  network: ws
-  port: 31443
-  server: 59.19.56.223
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_39
-  network: ws
-  port: 12462
-  server: 220.117.126.46
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_310
-  network: ws
-  port: 12395
-  server: 121.140.238.170
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_311
-  network: ws
-  port: 18004
-  server: 121.153.45.186
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_312
-  network: ws
-  port: 12523
-  server: 115.23.163.214
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_313
-  network: ws
-  port: 35559
-  server: 121.191.9.243
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_41
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_42
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_43
-  password: 3a38cf75-c66e-421c-8e43-de69d816a54e
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: meta_vless_44
+- name: meta_vless_014
   network: ws
   port: 443
   server: 8.218.105.88
@@ -612,96 +169,171 @@ proxies:
     headers:
       Host: vn.cazlelmhpn.group
     path: /bing
-- name: meta_trojan_45
-  password: fe10330c-c392-37c0-a1d7-29b1c780e04c
-  port: 41767
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x114.flybar.work
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: meta_ss_46
-  password: amazonskr05
-  port: 443
-  server: 18.179.112.66
-  type: ss
-- name: meta_http_47
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo102-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-gcm
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: meta_ss_48
-  password: 4S85LF2Q3QK92171
-  port: 18008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
+  name: meta_ss_11
+  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
+  port: 12029
+  server: mdss-tw.04z3susick.download
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: meta_ss_12
+  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
+  port: 12032
+  server: mdss-tw.04z3susick.download
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_49
-  password: YMB3QL85L7F1KJR7
-  port: 18013
+  name: meta_ss_13
+  password: QF377GGQ00RATCMK
+  port: 21004
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_410
-  password: 84HMRAWILKB49QUZ
-  port: 18002
+  name: meta_ss_14
+  password: Y2U58S90E3GST1AQ
+  port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_411
-  network: tcp
-  password: fc66e1cb-1fa3-412a-81f5-900e59e3837c
-  port: 28713
-  server: wb.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- cipher: chacha20-ietf
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ssr_412
-  obfs: plain
-  obfs-param: c499e93390.wns.windows.com
-  password: mtbv8n
-  port: 1454
-  protocol: auth_aes128_md5
-  protocol-param: 93390:TDWk1JwybHq
-  server: relayjp4.vip.primeconectin.pro
-  type: ssr
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_413
-  password: amazonskr05
-  port: 443
-  server: 47.129.7.198
+  name: meta_ss_15
+  password: HQJQFA7U2Z5HGZWH
+  port: 21003
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- name: meta_vless_414
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇸🇬SG
+  delay: 492
+  name: meta_ss_21
+  password: amazonskr05
+  port: 443
+  server: 54.254.169.121
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_22
+  password: amazonskr05
+  port: 443
+  server: 54.169.215.32
+  type: ss
+- cipher: aes-256-cfb
+  name: meta_ss_23
+  password: amazonskr05
+  port: 443
+  server: 13.229.55.109
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_24
+  password: B5CJMEHJMSMNQ120
+  port: 16012
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_25
+  password: BFYCOKHTC8HIWWRB
+  port: 16006
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_26
+  password: WNW5MZJX57ZJUNQU
+  port: 16009
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_27
+  password: IHWLYZSSSX4GSKLA
+  port: 16013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: meta_ss_28
+  password: asd123456
+  port: 8388
+  server: 103.36.90.195
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_29
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_210
+  password: amazonskr05
+  port: 443
+  server: 13.229.82.37
+  tfo: false
+  type: ss
+- name: meta_vless_211
   network: ws
   port: 443
-  server: 47.74.33.96
-  servername: jpc.kddhs.asia
+  server: 8.219.202.145
+  servername: dob.fenmila.me
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  uuid: 038562dc-6958-4ce7-eae2-887d8a1bee2a
   ws-opts:
     headers:
-      Host: jpc.kddhs.asia
+      Host: dob.fenmila.me
     path: /bing
-- name: meta_vless_415
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_31
+  network: ws
+  port: '22223'
+  server: free-kr.faforex.eu.org
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 34b92487-a7b5-400a-b42f-40f53377aaab
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_32
+  password: amazonskr05
+  port: 443
+  server: 54.254.236.133
+  tfo: false
+  type: ss
+- name: meta_trojan_41
+  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: meta_vless_42
   network: ws
   port: 443
   server: 47.245.37.123
@@ -715,6 +347,75 @@ proxies:
     headers:
       Host: jpd.kddhs.asia
     path: /bing
+- name: meta_vless_43
+  network: ws
+  port: 443
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  ws-opts:
+    headers:
+      Host: jpc.kddhs.asia
+    path: /bing
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_44
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: meta_ss_45
+  password: amazonskr05
+  port: 443
+  server: 43.202.60.105
+  type: ss
+- name: meta_trojan_46
+  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_47
+  password: 4S85LF2Q3QK92171
+  port: 18008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_48
+  password: YMB3QL85L7F1KJR7
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: meta_ss_49
+  password: 84HMRAWILKB49QUZ
+  port: 18002
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_410
+  password: amazonskr05
+  port: 443
+  server: 13.212.32.201
+  tfo: false
+  type: ss
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -779,29 +480,23 @@ proxy-groups:
   tolerance: 50
   proxies:
   - meta_ss_01
-  - meta_ss_02
-  - meta_http_03
-  - meta_trojan_05
-  - meta_ss_06
-  - meta_vmess_07
+  - meta_vless_02
+  - meta_trojan_04
+  - meta_ss_05
+  - meta_vmess_06
+  - meta_ss_07
   - meta_ss_08
   - meta_ss_09
   - meta_ss_010
   - meta_ss_011
-  - meta_ssr_012
-  - meta_vmess_013
+  - meta_vmess_012
+  - meta_vless_013
   - meta_vless_014
-  - meta_vless_015
-  - meta_vless_016
-  - meta_vless_017
   - meta_ss_11
   - meta_ss_12
   - meta_ss_13
   - meta_ss_14
   - meta_ss_15
-  - meta_ss_16
-  - meta_ss_17
-  - meta_ssr_18
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
@@ -809,40 +504,22 @@ proxy-groups:
   - meta_ss_25
   - meta_ss_26
   - meta_ss_27
-  - meta_vless_28
-  - meta_vless_29
-  - meta_vless_210
+  - meta_ss_28
+  - meta_ss_29
+  - meta_ss_210
   - meta_vless_211
-  - meta_vless_212
-  - meta_trojan_213
-  - meta_ss_31
+  - meta_vmess_31
   - meta_ss_32
-  - meta_ss_33
-  - meta_vless_34
-  - meta_vless_35
-  - meta_vless_36
-  - meta_vless_37
-  - meta_vless_38
-  - meta_vless_39
-  - meta_vless_310
-  - meta_vless_311
-  - meta_vless_312
-  - meta_vless_313
-  - meta_ss_41
-  - meta_ss_42
-  - meta_ss_43
-  - meta_vless_44
-  - meta_trojan_45
-  - meta_ss_46
-  - meta_http_47
+  - meta_trojan_41
+  - meta_vless_42
+  - meta_vless_43
+  - meta_ss_44
+  - meta_ss_45
+  - meta_trojan_46
+  - meta_ss_47
   - meta_ss_48
   - meta_ss_49
   - meta_ss_410
-  - meta_trojan_411
-  - meta_ssr_412
-  - meta_ss_413
-  - meta_vless_414
-  - meta_vless_415
   - reality_1
   - reality_2
   - reality_3
