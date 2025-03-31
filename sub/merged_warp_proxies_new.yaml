@@ -43,136 +43,23 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_01
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_02
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_03
+  name: meta_vless_01
   network: tcp
-  port: 33782
+  port: 45883
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: gysz0000.dynu.net
   servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  name: meta_trojan_04
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20109
-  server: 9.2gyh5ybsic.xyz
-  skip-cert-verify: true
-  sni: 9.2gyh5ybsic.xyz
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_05
-  network: tcp
-  port: 12597
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- allowInsecure: '1'
-  name: meta_trojan_06
-  network: tcp
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20103
-  server: 111.62.241.211
-  skip-cert-verify: true
-  sni: 3.2gyh5ybsic.xyz
-  tls: true
-  type: trojan
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  name: meta_hysteria2_07
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 1000
-  server: tw.akebi.cc
   skip-cert-verify: false
-  sni: hk03.akebi.cc
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_08
-  network: tcp
-  port: 41279
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_09
-  network: tcp
-  port: 23657
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_010
-  network: tcp
-  port: 40387
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_011
-  network: tcp
-  port: 25135
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  client-fingerprint: chrome
-  name: meta_hysteria2_012
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 2000
-  server: tw3.akebi.cc
-  skip-cert-verify: false
-  sni: hk03.akebi.cc
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_013
+  name: meta_vless_02
   network: tcp
   port: 45883
   reality-opts:
@@ -184,66 +71,19 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_014
+  name: meta_vless_03
   network: tcp
-  port: 27631
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_http_015
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  name: meta_trojan_016
-  password: b13c1e89-60af-4462-8932-4acf1d604a19
-  port: 27101
-  server: aafrtpfxr.hkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_017
-  network: tcp
-  port: 61178
+  port: 10860
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: test123.zlqhdns.top
   servername: www.nvidia.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_018
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_019
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: meta_hysteria2_020
+- name: meta_hysteria2_04
   password: e20abb22a245edb0
   port: 8443
   server: fast.yxmm.xyz
@@ -252,7 +92,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: meta_trojan_021
+  name: meta_trojan_05
   network: tcp
   password: b13c1e89-60af-4462-8932-4acf1d604a19
   port: 27103
@@ -261,7 +101,7 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_022
+  name: meta_trojan_06
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20105
@@ -270,7 +110,7 @@ proxies:
   sni: 5.2gyh5ybsic.xyz
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_023
+  name: meta_trojan_07
   network: tcp
   password: VMhGp5wEIyCDf90T
   port: 42303
@@ -279,7 +119,7 @@ proxies:
   sni: hk06.run.place
   type: trojan
 - client-fingerprint: chrome
-  name: meta_trojan_024
+  name: meta_trojan_08
   network: tcp
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
@@ -287,17 +127,16 @@ proxies:
   skip-cert-verify: false
   sni: ru.mjt000.com
   type: trojan
-  udp: true
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: meta_ss_025
+  name: meta_ss_09
   password: asd123456
   port: 8388
   server: 154.197.26.237
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: meta_trojan_026
+  name: meta_trojan_010
   network: tcp
   password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
   port: 20020
@@ -307,7 +146,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: meta_vmess_027
+  name: meta_vmess_011
   network: kcp
   port: '26706'
   server: 47.239.242.136
@@ -315,218 +154,39 @@ proxies:
   tls: false
   type: vmess
   uuid: 3949be3c-f862-4081-afca-9979bd189648
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_11
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_12
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_13
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_14
+  name: meta_vless_11
   network: tcp
-  port: 15823
+  port: 47531
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.yahoo.com
-  skip-cert-verify: false
+  server: bsuqian01.dynu.net
+  servername: gateway.icloud.com
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  name: meta_http_15
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: tw1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_16
+  name: meta_vless_12
   network: tcp
   port: 12477
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: gysz0000.dynu.net
   servername: www.nvidia.com
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_http_17
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_18
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: meta_vless_19
-  network: tcp
-  port: 34313
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    short-id: ''
-  server: 120.238.53.237
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_110
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_111
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_112
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_113
+  name: meta_ss_13
   password: f203200f-f6a4-49d8-893e-6559804d79ae
   port: 50204
   server: bgp-xdd.blue-bgp.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_21
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_22
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_23
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_24
-  network: tcp
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  name: meta_vless_25
-  network: ws
-  port: 443
-  server: 13.67.9.5
-  servername: shg2.azurewebsites.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      host: shg2.azurewebsites.net
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_26
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_27
-  network: tcp
-  port: 44003
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_28
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21114
-  server: okanc.node-is.green
-  type: ss
-- name: meta_vless_29
+- name: meta_vless_21
   network: ws
   port: 80
   server: support.zoom.us
@@ -541,54 +201,20 @@ proxies:
       Host: free.pranithsandaruwan.shop
     path: /
 - client-fingerprint: chrome
-  name: meta_trojan_210
-  password: VMhGp5wEIyCDf90T
-  port: 38340
-  server: gysz0000.dynu.net
+  flow: xtls-rprx-vision
+  name: meta_vless_22
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
   skip-cert-verify: true
-  sni: hk39.work.gd
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: meta_socks5_211
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ssr_212
-  obfs: tls1.2_ticket_auth
-  obfs-param: sg2-cdn-route.couldflare-cdn.com
-  password: uiACqrIr
-  port: 56138
-  protocol: origin
-  protocol-param: ''
-  server: cm2.xcone.xyz
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_213
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_214
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_215
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: meta_hysteria2_216
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: meta_hysteria2_23
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -596,7 +222,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: meta_hysteria2_217
+- name: meta_hysteria2_24
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -606,129 +232,81 @@ proxies:
   type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_218
+  name: meta_ss_25
   password: amazonskr05
   port: 443
   server: 18.181.194.77
   tfo: false
   type: ss
-- name: meta_trojan_219
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1292
-  server: t8.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: meta_trojan_220
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1759
-  server: t13.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: meta_trojan_221
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 2339
-  server: t9.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_31
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_32
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
+- alterId: '0'
+  cipher: auto
+  name: meta_vmess_31
+  network: ws
+  port: '443'
+  server: kr3.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      host: kr3.ttcc.tech
+    path: /
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_32
+  port: 34009
+  server: v3-hanguo-zx.netcar.live
+  tls: false
+  type: vmess
+  uuid: b4a59b54-4a1d-4afc-bd1b-2e3151047c9f
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: meta_ss_33
-  password: VMhGp5wEIyCDf90T
-  port: 13483
-  server: agaungzhou01.bumbleshrimp.com
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_34
-  password: b13c1e89-60af-4462-8932-4acf1d604a19
-  port: 46668
-  server: aafrtpfxr.krl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: meta_ss_35
-  password: amazonskr05
-  port: 443
-  server: 43.201.54.89
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_36
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_37
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_38
   password: amazonskr05
   port: 443
   server: 3.0.50.161
   tfo: false
   type: ss
-- name: meta_vless_39
+- alterId: '0'
+  cipher: auto
+  name: meta_vmess_41
   network: ws
-  port: 56271
-  server: 146.56.106.51
-  servername: vv.vs2025.cfd
-  skip-cert-verify: true
+  port: '11184'
+  server: 175.215.154.208
   tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  type: vmess
+  uuid: 0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17
   ws-opts:
     headers:
-      Host: vv.vs2025.cfd
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_41
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_42
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_43
-  password: fe9932b0-c546-4e33-9779-460cb17df031
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+      host: oracle2ipv4.till.nyc.mn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_42
+  network: ws
+  port: 12134
+  server: 221.165.128.234
+  servername: oracleipv4.till.nyc.mn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a13f1b5a-7071-4bbc-8bae-f4f74fd77ace
+  ws-opts:
+    headers:
+      Host: oracleipv4.till.nyc.mn
+    path: /123
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_43
+  network: tcp
+  port: 25768
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -740,256 +318,9 @@ proxies:
   tls: false
   type: vmess
   uuid: fb6d6c7b-79ae-4ea5-aea1-b50cc0267552
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: meta_vless_45
-  network: ws
-  port: 443
-  server: vsdfee.azurewebsites.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_46
-  network: tcp
-  port: 10635
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_47
-  network: tcp
-  port: 14548
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_48
-  password: BFD35F45-24F6-4C80-BED0-81A6FB018DC6
-  port: 31100
-  server: free-relay.themars.top
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_49
-  network: tcp
-  port: 10635
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_410
-  network: tcp
-  port: 31735
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_http_411
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_412
-  network: tcp
-  port: 16497
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_413
-  network: tcp
-  port: 13989
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: gateway.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: meta_vless_414
-  network: ws
-  port: 2083
-  server: 172.66.40.87
-  servername: e.exedu.ip-ddns.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 8f320d6a-9953-4065-b61c-d62f89a6767f
-  ws-opts:
-    headers:
-      Host: e.exedu.ip-ddns.com
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_415
-  network: ws
-  port: 3774
-  server: v9.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  ws-opts:
-    headers:
-      Host: v9.emovpn.buzz
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_416
-  network: tcp
-  port: 48121
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: meta_vless_417
-  network: ws
-  port: 443
-  server: 172.66.44.118
-  servername: ConFIgmr.PaGeS.dEV
-  tls: true
-  type: vless
-  udp: false
-  uuid: 63005378-e32e-4e23-bc6e-84812f147a6f
-  ws-opts:
-    headers:
-      Host: configmr.pages.dev
-    path: /VrChX4o5oasIm4In?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_418
-  network: tcp
-  port: 25768
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_419
-  network: tcp
-  port: 17278
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  name: meta_trojan_420
-  password: b13c1e89-60af-4462-8932-4acf1d604a19
-  port: 22271
-  server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  client-fingerprint: chrome
-  name: meta_hysteria2_421
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 2012
-  server: tw3.akebi.cc
-  skip-cert-verify: false
-  sni: jp02.akebi.cc
-  type: hysteria2
-- auth: MLIvJyBzI4u1E4L7CarV1lBmPnY
-  client-fingerprint: chrome
-  name: meta_hysteria2_422
-  password: MLIvJyBzI4u1E4L7CarV1lBmPnY
-  port: 29677
-  server: 54.238.17.181
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_423
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_424
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_425
-  password: 2b3f42e8-5355-4d0b-b09a-189a0ecf5720
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_426
+  name: meta_ss_45
   password: amazonskr05
   port: 443
   server: 57.181.29.160
@@ -997,7 +328,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: meta_vmess_427
+  name: meta_vmess_46
   network: tcp
   port: '29206'
   server: gzhmbkqt.xn--fiqs8sjz2bull.com
@@ -1007,7 +338,7 @@ proxies:
   uuid: fb6d6c7b-79ae-4ea5-aea1-b50cc0267552
 - alterId: 0
   cipher: auto
-  name: meta_vmess_428
+  name: meta_vmess_47
   network: kcp
   port: '58490'
   server: 8.209.203.88
@@ -1015,6 +346,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 551087e5-9a03-4634-9e7f-714133eb3ccb
+- name: meta_http_48
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -1078,104 +417,36 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - meta_ss_01
-  - meta_ss_02
+  - meta_vless_01
+  - meta_vless_02
   - meta_vless_03
-  - meta_trojan_04
-  - meta_vless_05
+  - meta_hysteria2_04
+  - meta_trojan_05
   - meta_trojan_06
-  - meta_hysteria2_07
-  - meta_vless_08
-  - meta_vless_09
-  - meta_vless_010
-  - meta_vless_011
-  - meta_hysteria2_012
-  - meta_vless_013
-  - meta_vless_014
-  - meta_http_015
-  - meta_trojan_016
-  - meta_vless_017
-  - meta_ss_018
-  - meta_ss_019
-  - meta_hysteria2_020
-  - meta_trojan_021
-  - meta_trojan_022
-  - meta_trojan_023
-  - meta_trojan_024
-  - meta_ss_025
-  - meta_trojan_026
-  - meta_vmess_027
-  - meta_ss_11
-  - meta_ss_12
+  - meta_trojan_07
+  - meta_trojan_08
+  - meta_ss_09
+  - meta_trojan_010
+  - meta_vmess_011
+  - meta_vless_11
+  - meta_vless_12
   - meta_ss_13
-  - meta_vless_14
-  - meta_http_15
-  - meta_vless_16
-  - meta_http_17
-  - meta_vless_18
-  - meta_vless_19
-  - meta_ss_110
-  - meta_ss_111
-  - meta_ss_112
-  - meta_ss_113
-  - meta_ss_21
-  - meta_ss_22
-  - meta_ss_23
-  - meta_vless_24
-  - meta_vless_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_ss_28
-  - meta_vless_29
-  - meta_trojan_210
-  - meta_socks5_211
-  - meta_ssr_212
-  - meta_ss_213
-  - meta_ss_214
-  - meta_ss_215
-  - meta_hysteria2_216
-  - meta_hysteria2_217
-  - meta_ss_218
-  - meta_trojan_219
-  - meta_trojan_220
-  - meta_trojan_221
-  - meta_ss_31
-  - meta_ss_32
+  - meta_vless_21
+  - meta_vless_22
+  - meta_hysteria2_23
+  - meta_hysteria2_24
+  - meta_ss_25
+  - meta_vmess_31
+  - meta_vmess_32
   - meta_ss_33
-  - meta_trojan_34
-  - meta_ss_35
-  - meta_ss_36
-  - meta_ss_37
-  - meta_ss_38
-  - meta_vless_39
-  - meta_ss_41
-  - meta_ss_42
-  - meta_ss_43
+  - meta_vmess_41
+  - meta_vmess_42
+  - meta_vless_43
   - meta_vmess_44
-  - meta_vless_45
-  - meta_vless_46
-  - meta_vless_47
-  - meta_ss_48
-  - meta_vless_49
-  - meta_vless_410
-  - meta_http_411
-  - meta_vless_412
-  - meta_vless_413
-  - meta_vless_414
-  - meta_vmess_415
-  - meta_vless_416
-  - meta_vless_417
-  - meta_vless_418
-  - meta_vless_419
-  - meta_trojan_420
-  - meta_hysteria2_421
-  - meta_hysteria2_422
-  - meta_ss_423
-  - meta_ss_424
-  - meta_ss_425
-  - meta_ss_426
-  - meta_vmess_427
-  - meta_vmess_428
+  - meta_ss_45
+  - meta_vmess_46
+  - meta_vmess_47
+  - meta_http_48
   - reality_1
   - reality_2
   - reality_3
