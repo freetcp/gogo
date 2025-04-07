@@ -27,60 +27,64 @@ dns:
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_01
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_02
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_03
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_04
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  name: meta_hysteria2_05
+  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  port: 2021
+  server: tw3.akebi.cc
+  skip-cert-verify: false
+  sni: hk03.akebi.cc
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_05
+  name: meta_vless_06
   network: tcp
-  port: 41279
+  port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_trojan_06
-  password: 5a148b6f-8535-3a98-96b5-5ff133934266
-  port: 20278
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  type: trojan
-  udp: true
-- name: meta_trojan_07
-  password: 5a148b6f-8535-3a98-96b5-5ff133934266
-  port: 20309
-  server: gyl.58n.net
-  skip-cert-verify: true
-  sni: z309.hongkongnode.top
-  type: trojan
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_07
+  network: tcp
+  port: 40387
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: meta_vless_08
@@ -97,33 +101,88 @@ proxies:
   flow: xtls-rprx-vision
   name: meta_vless_09
   network: tcp
-  port: 40387
+  port: 27631
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: bsuqian01.dynu.net
   servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_010
+  network: tcp
+  port: 45883
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_vless_010
-  network: ws
-  port: 80
-  server: 45.131.4.33
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: meta_vless_011
   network: tcp
-  port: 24318
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t1.qifei.app
+  servername: s3.ap-east-1.amazonaws.com
+  tls: true
+  type: vless
+  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
+- alterId: 2
+  cipher: auto
+  name: meta_vmess_012
+  network: ws
+  port: 80
+  raw:
+    add: 2ef0c521-sueps0-swy8qd-18ug9.hgc1.tcpbbr.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 62e4530e-b6b8-11eb-a0fc-f23c913c8d2b
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_164
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 2ef0c521-sueps0-swy8qd-18ug9.hgc1.tcpbbr.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 62e4530e-b6b8-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_013
+  network: tcp
+  port: 41279
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_014
+  network: tcp
+  port: 61178
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: test123.zlqhdns.top
@@ -133,47 +192,26 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_012
+  name: meta_vless_015
   network: tcp
-  port: 33782
+  port: 35853
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: zhee01.dynu.net
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 2
-  cipher: auto
-  name: meta_vmess_013
-  network: ws
-  port: 80
-  raw:
-    add: 49c660d6-sucv40-svb30a-150lf.hk.p5pv.com
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 3035b36e-679f-11ed-87fd-f23c9164ca5d
-    net: ws
-    path: /
-    port: 80
-    ps: 🇭🇰 HK_148
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 49c660d6-sucv40-svb30a-150lf.hk.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3035b36e-679f-11ed-87fd-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: meta_hysteria2_014
+- name: meta_http_016
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: meta_hysteria2_017
   password: e20abb22a245edb0
   port: 8443
   server: fast.yxmm.xyz
@@ -181,18 +219,18 @@ proxies:
   sni: TG频道@zqnb122100
   tls: false
   type: hysteria2
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_015
-  password: cda0b6dc-d188-4896-83ce-6b055b799792
-  port: 12006
-  server: mdss-hk.04z3susick.download
+  name: meta_ss_018
+  password: 9738f723-9112-4f91-8431-1d31745e8d3c
+  port: 30001
+  server: 45.207.157.70
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_016
+  name: meta_vmess_019
   port: 41002
   server: 120.232.153.40
   skip-cert-verify: false
@@ -200,21 +238,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_017
-  port: 4136
-  server: 26025dd1-sudhc0-t33mcq-4tx.d.volczijie.com
-  skip-cert-verify: false
+  name: meta_ss_020
+  password: 95821db5-66eb-4b5f-a854-f129093e6d47
+  port: 30001
+  server: 45.207.157.70
   tfo: false
-  tls: false
-  type: vmess
-  uuid: d0a9b5ea-bf85-11ee-b758-f23c93136cb3
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_018
+  name: meta_vmess_021
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -228,26 +263,63 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_019
-  password: R5SXA70P3ARNBUBO
-  port: 15012
-  server: 156.245.190.21
+  name: meta_ss_022
+  password: 1931bac1-4248-437c-acde-d71a902c5443
+  port: 30001
+  server: 45.207.157.70
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_020
-  network: tcp
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 59623
-  server: t2.qifei.app
-  skip-cert-verify: true
-  sni: t2.qifei.app
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: meta_vmess_021
+  client-fingerprint: chrome
+  name: meta_vmess_023
+  port: 32977
+  server: 120.232.153.41
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_024
+  port: 42550
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_025
+  password: 62e7ebbd-3385-4520-a03b-76ed8b676475
+  port: 30001
+  server: 45.207.157.70
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_026
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: 111.29.57.125
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_027
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: hk02.x.quickcht3.club
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_028
   network: tcp
   port: '41002'
   server: 120.232.153.40
@@ -257,301 +329,121 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_022
+  name: meta_vmess_029
   network: tcp
-  port: '4136'
-  server: 26025dd1-sudhc0-t33mcq-4tx.d.volczijie.com
+  port: '32977'
+  server: 120.232.153.41
   servername: ''
   tls: false
   type: vmess
-  uuid: d0a9b5ea-bf85-11ee-b758-f23c93136cb3
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_030
+  network: tcp
+  port: '42550'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: meta_vless_031
+  network: ws
+  port: 443
+  server: 162.247.5.92
+  servername: vn.qhahd.shop
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df40aa49-0c6b-4fcd-d6be-f30a57a82833
+  ws-opts:
+    headers:
+      Host: vn.qhahd.shop
+    path: /bing
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_11
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_12
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_13
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_14
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_15
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_16
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: meta_vless_17
-  network: ws
-  port: 2096
-  server: 154.219.5.137
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_18
-  network: ws
-  port: 443
-  server: kip.ns.cloudflare.com
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_19
-  network: ws
-  port: 35622
-  server: 220.72.36.107
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_110
-  network: ws
-  port: 2087
-  server: 156.225.72.246
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_111
-  network: ws
-  port: 16017
-  server: 211.222.170.55
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_112
-  port: 3687
-  server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-- name: meta_vless_113
-  network: ws
-  port: 443
-  server: 154.9.207.177
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_114
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_vless_115
-  network: ws
-  port: 443
-  server: ignacio.ns.cloudflare.com
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_116
-  network: ws
-  port: 443
-  server: 188.64.108.9
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_117
-  network: ws
-  port: 12443
-  server: 43.132.239.42
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_118
-  network: ws
-  port: 443
-  server: theo.ns.cloudflare.com
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: meta_vless_119
+  name: meta_vless_17
   network: tcp
   port: 12477
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: gy01.hunheiydd.xyz
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_vless_120
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: meta_vless_18
   network: ws
-  port: 443
-  server: 170.106.152.78
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
+  port: 2052
+  server: 172.67.17.5
+  servername: ''
+  tls: false
   type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  udp: false
+  uuid: 2737560d-1867-47fa-aa80-351c36d771c7
   ws-opts:
     headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_121
-  network: ws
-  port: 443
-  server: 47.91.18.127
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
+      Host: 0118.kznyoum2.workers.dev
+    path: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_19
+  network: tcp
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
   tls: true
   type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_122
-  network: ws
-  port: 28268
-  server: 89.208.250.204
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_123
-  network: ws
-  port: 18077
-  server: 175.198.63.31
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_124
-  network: ws
-  port: 443
-  server: 18.167.12.209
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_125
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: meta_vless_110
   network: ws
   port: 443
   server: 128.1.31.125
@@ -565,111 +457,127 @@ proxies:
     headers:
       Host: tw.qhahd.shop
     path: /bing
-- name: meta_vless_126
-  network: ws
-  port: 12382
-  server: 175.205.164.6
-  servername: edcce.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: meta_vless_127
-  network: ws
-  port: 443
-  server: 131.186.37.29
-  servername: edcce.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcce.aimercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_128
-  password: D9EOTB2JHFUCARRA
-  port: 21005
-  server: 150.116.11.9
+  name: meta_ss_111
+  password: c46ba905-31de-4090-8153-ec7d2e063079
+  port: 30002
+  server: 45.207.157.70
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_112
+  password: 508cada1-f050-4864-a3ca-b626db3e74df
+  port: 30002
+  server: 45.207.157.70
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_21
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_22
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_23
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_24
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_25
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_26
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: meta_vless_27
-  network: ws
-  port: 8443
-  server: 111.119.235.98
-  servername: sgp.cayuo.me
-  tls: true
-  type: vless
-  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
-  ws-opts:
-    headers:
-      Host: sgp.cayuo.me
-    path: /bing
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_28
+  name: meta_vless_27
   network: tcp
-  port: 44003
+  port: 10778
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: test123.zlqhdns.top
   servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: meta_vless_28
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  servername: free.pranithsandaruwan.shop
   skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
+  ws-opts:
+    headers:
+      Host: free.pranithsandaruwan.shop
+    path: /
+- name: meta_socks5_29
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
+  udp: true
+  username: myszy
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_210
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_hysteria2_29
+- flow: none
+  mode: ''
+  name: meta_vless_211
+  network: ws
+  port: 2096
+  server: 141.193.213.21
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: '%2F'
+- name: meta_hysteria2_212
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -677,7 +585,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: meta_hysteria2_210
+- name: meta_hysteria2_213
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -685,7 +593,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: meta_hysteria2_211
+- name: meta_hysteria2_214
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -693,36 +601,31 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_vmess_212
-  port: 4135
-  server: 81d99721-sudhc0-tbxnq7-3qpz.d.volczijie.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3cafb97e-8bf1-11ee-8ebe-f23c93136cb3
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_213
-  password: amazonskr05
-  port: 443
-  server: 54.199.64.156
+  name: meta_ss_215
+  password: 8d4314cc-f326-4b49-9e3a-530a337eee31
+  port: 30005
+  server: 156.224.79.232
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: meta_vmess_214
-  network: tcp
-  port: '4135'
-  server: 81d99721-sudhc0-tbxnq7-3qpz.d.volczijie.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3cafb97e-8bf1-11ee-8ebe-f23c93136cb3
-- name: meta_vless_215
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: meta_ss_216
+  password: 921ee115-d40f-4151-9535-b4e37511f944
+  port: 30005
+  server: 156.224.79.232
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: meta_ss_217
+  password: amazonskr05
+  port: 443
+  server: 13.212.241.11
+  tfo: false
+  type: ss
+- name: meta_vless_218
   network: ws
   port: 443
   server: 40.65.164.247
@@ -738,106 +641,36 @@ proxies:
     path: /bing
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_31
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_32
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_33
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_34
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: meta_vless_35
-  network: ws
-  port: 443
-  server: 212.183.88.162
-  servername: cb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- name: meta_vless_36
-  network: ws
-  port: 443
-  server: 185.133.35.242
-  servername: cb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- name: meta_vless_37
-  network: ws
-  port: 443
-  server: 212.183.88.132
-  servername: cb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- name: meta_vless_38
-  network: ws
-  port: 443
-  server: 45.67.215.0
-  servername: cb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- name: meta_vless_39
-  network: ws
-  port: 80
-  server: 45.131.5.35
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳 @MxlShare@WangCai2/?ed=2560
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_310
+  name: meta_vmess_35
   network: ws
   port: '30828'
   server: v28.heduian.link
@@ -853,50 +686,50 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_311
+  name: meta_ss_36
   password: amazonskr05
   port: 443
-  server: 13.250.5.171
+  server: 18.140.50.192
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_41
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_42
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_43
-  password: 48a74a75-c594-4b9f-80a8-6e1180f9e38f
+  password: 25cd6996-567d-40d6-a67a-eb1bce770f3d
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_44
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_45
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_46
-  password: fbf636cc-9511-43a7-939d-410b8f866371
+  password: 19a92edc-dd7a-438f-99d3-467e4925c437
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -905,30 +738,97 @@ proxies:
   flow: xtls-rprx-vision
   name: meta_vless_47
   network: tcp
-  port: 443
+  port: 25768
   reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t9.qifei.app
-  servername: www.amazon.com
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
-  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: meta_vless_48
   network: tcp
-  port: 35659
+  port: 31735
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: meta_vless_49
+  network: tcp
+  port: 13989
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_410
+  network: tcp
+  port: 10635
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: meta_vless_411
+  network: ws
+  port: 80
+  server: 45.131.4.214
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_412
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: v61.qifei.app
+  servername: www.lovelive-anime.jp
+  tls: true
+  type: vless
+  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_413
+  network: tcp
+  port: 16497
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: meta_vless_414
   network: tcp
   port: 48121
   reality-opts:
@@ -940,37 +840,60 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_410
+  name: meta_vless_415
   network: tcp
-  port: 31735
+  port: 14548
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
+  server: csuzhou01.1cooldns.com
   servername: www.nvidia.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: meta_trojan_411
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 63224
-  server: t7.qifei.app
-  skip-cert-verify: true
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_412
+  name: meta_vless_416
   network: tcp
-  port: 17278
+  port: 443
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.yahoo.com
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t9.qifei.app
+  servername: www.amazon.com
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
+- client-fingerprint: randomized
+  flow: ''
+  mode: ''
+  name: meta_vless_417
+  network: ws
+  port: 443
+  server: 172.66.45.9
+  servername: MiSTliNK-CL9.pAgEs.Dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
+  ws-opts:
+    headers:
+      Host: mistlink-cl9.pages.dev
+    path: /ERlnnsHzyLczPW3c?ed=2560
+- name: meta_http_418
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: meta_ss_413
+  name: meta_ss_419
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -982,79 +905,50 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_414
-  password: 75XFDM4RTK8B4LLG
+  name: meta_ss_420
+  password: TTY07WM37NEXCPQB
   port: 18012
   server: 156.231.104.22
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_415
-  password: JPHJGLROBW89TTNI
-  port: 18003
-  server: 156.231.104.13
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: meta_ss_416
-  password: 2DFUK58DWLGU6EQH
+  name: meta_ss_421
+  password: V87NZNS8MU6PXNMO
   port: 18005
   server: 156.231.104.15
   tfo: false
   type: ss
-- cipher: rc4-md5
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: meta_ss_417
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
-    mode: http
-  port: 8769
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: meta_trojan_418
-  password: '!!str 74260700211203800'
-  port: 443
-  server: possible-tiger.shiner427.skin
+  name: meta_vmess_422
+  port: 4151
+  server: 36fed4c6-sumqo0-swo13r-3im.c.volczijie.com
   skip-cert-verify: false
-  sni: possible-tiger.shiner427.skin
-  type: trojan
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: meta_ss_419
-  password: f7ea2e58-8dd2-4243-8908-f79e00eafd83
-  port: 26735
-  server: 183.236.51.167
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 647b46f6-2ba4-11ee-af1f-f23c93136cb3
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_420
+  name: meta_ss_423
   password: amazonskr05
   port: 443
-  server: 54.254.9.107
+  server: 35.72.13.55
   tfo: false
   type: ss
-- name: meta_trojan_421
+- alterId: 0
+  cipher: auto
+  name: meta_vmess_424
   network: tcp
-  password: '!!str 74260700211203800'
-  port: 443
-  server: possible-tiger.shiner427.skin
-  type: trojan
-- name: meta_http_422
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: meta_vless_423
+  port: '4151'
+  server: 36fed4c6-sumqo0-swo13r-3im.c.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 647b46f6-2ba4-11ee-af1f-f23c93136cb3
+- name: meta_vless_425
   network: ws
   port: 80
   server: zmaoz.faculty.ucdavis.edu
@@ -1133,24 +1027,33 @@ proxy-groups:
   - meta_ss_02
   - meta_ss_03
   - meta_ss_04
-  - meta_vless_05
-  - meta_trojan_06
-  - meta_trojan_07
+  - meta_hysteria2_05
+  - meta_vless_06
+  - meta_vless_07
   - meta_vless_08
   - meta_vless_09
   - meta_vless_010
   - meta_vless_011
-  - meta_vless_012
-  - meta_vmess_013
-  - meta_hysteria2_014
-  - meta_ss_015
-  - meta_vmess_016
-  - meta_vmess_017
-  - meta_vmess_018
-  - meta_ss_019
-  - meta_trojan_020
+  - meta_vmess_012
+  - meta_vless_013
+  - meta_vless_014
+  - meta_vless_015
+  - meta_http_016
+  - meta_hysteria2_017
+  - meta_ss_018
+  - meta_vmess_019
+  - meta_ss_020
   - meta_vmess_021
-  - meta_vmess_022
+  - meta_ss_022
+  - meta_vmess_023
+  - meta_vmess_024
+  - meta_ss_025
+  - meta_ss_026
+  - meta_ss_027
+  - meta_vmess_028
+  - meta_vmess_029
+  - meta_vmess_030
+  - meta_vless_031
   - meta_ss_11
   - meta_ss_12
   - meta_ss_13
@@ -1161,24 +1064,8 @@ proxy-groups:
   - meta_vless_18
   - meta_vless_19
   - meta_vless_110
-  - meta_vless_111
-  - meta_vmess_112
-  - meta_vless_113
-  - meta_vless_114
-  - meta_vless_115
-  - meta_vless_116
-  - meta_vless_117
-  - meta_vless_118
-  - meta_vless_119
-  - meta_vless_120
-  - meta_vless_121
-  - meta_vless_122
-  - meta_vless_123
-  - meta_vless_124
-  - meta_vless_125
-  - meta_vless_126
-  - meta_vless_127
-  - meta_ss_128
+  - meta_ss_111
+  - meta_ss_112
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
@@ -1187,24 +1074,22 @@ proxy-groups:
   - meta_ss_26
   - meta_vless_27
   - meta_vless_28
-  - meta_hysteria2_29
-  - meta_hysteria2_210
-  - meta_hysteria2_211
-  - meta_vmess_212
-  - meta_ss_213
-  - meta_vmess_214
-  - meta_vless_215
+  - meta_socks5_29
+  - meta_vless_210
+  - meta_vless_211
+  - meta_hysteria2_212
+  - meta_hysteria2_213
+  - meta_hysteria2_214
+  - meta_ss_215
+  - meta_ss_216
+  - meta_ss_217
+  - meta_vless_218
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
   - meta_ss_34
-  - meta_vless_35
-  - meta_vless_36
-  - meta_vless_37
-  - meta_vless_38
-  - meta_vless_39
-  - meta_vmess_310
-  - meta_ss_311
+  - meta_vmess_35
+  - meta_ss_36
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
@@ -1215,19 +1100,21 @@ proxy-groups:
   - meta_vless_48
   - meta_vless_49
   - meta_vless_410
-  - meta_trojan_411
+  - meta_vless_411
   - meta_vless_412
-  - meta_ss_413
-  - meta_ss_414
-  - meta_ss_415
-  - meta_ss_416
-  - meta_ss_417
-  - meta_trojan_418
+  - meta_vless_413
+  - meta_vless_414
+  - meta_vless_415
+  - meta_vless_416
+  - meta_vless_417
+  - meta_http_418
   - meta_ss_419
   - meta_ss_420
-  - meta_trojan_421
-  - meta_http_422
-  - meta_vless_423
+  - meta_ss_421
+  - meta_vmess_422
+  - meta_ss_423
+  - meta_vmess_424
+  - meta_vless_425
   - reality_1
   - reality_2
   - reality_3
@@ -1242,24 +1129,33 @@ proxy-groups:
   - meta_ss_02
   - meta_ss_03
   - meta_ss_04
-  - meta_vless_05
-  - meta_trojan_06
-  - meta_trojan_07
+  - meta_hysteria2_05
+  - meta_vless_06
+  - meta_vless_07
   - meta_vless_08
   - meta_vless_09
   - meta_vless_010
   - meta_vless_011
-  - meta_vless_012
-  - meta_vmess_013
-  - meta_hysteria2_014
-  - meta_ss_015
-  - meta_vmess_016
-  - meta_vmess_017
-  - meta_vmess_018
-  - meta_ss_019
-  - meta_trojan_020
+  - meta_vmess_012
+  - meta_vless_013
+  - meta_vless_014
+  - meta_vless_015
+  - meta_http_016
+  - meta_hysteria2_017
+  - meta_ss_018
+  - meta_vmess_019
+  - meta_ss_020
   - meta_vmess_021
-  - meta_vmess_022
+  - meta_ss_022
+  - meta_vmess_023
+  - meta_vmess_024
+  - meta_ss_025
+  - meta_ss_026
+  - meta_ss_027
+  - meta_vmess_028
+  - meta_vmess_029
+  - meta_vmess_030
+  - meta_vless_031
   - meta_ss_11
   - meta_ss_12
   - meta_ss_13
@@ -1270,24 +1166,8 @@ proxy-groups:
   - meta_vless_18
   - meta_vless_19
   - meta_vless_110
-  - meta_vless_111
-  - meta_vmess_112
-  - meta_vless_113
-  - meta_vless_114
-  - meta_vless_115
-  - meta_vless_116
-  - meta_vless_117
-  - meta_vless_118
-  - meta_vless_119
-  - meta_vless_120
-  - meta_vless_121
-  - meta_vless_122
-  - meta_vless_123
-  - meta_vless_124
-  - meta_vless_125
-  - meta_vless_126
-  - meta_vless_127
-  - meta_ss_128
+  - meta_ss_111
+  - meta_ss_112
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
@@ -1296,24 +1176,22 @@ proxy-groups:
   - meta_ss_26
   - meta_vless_27
   - meta_vless_28
-  - meta_hysteria2_29
-  - meta_hysteria2_210
-  - meta_hysteria2_211
-  - meta_vmess_212
-  - meta_ss_213
-  - meta_vmess_214
-  - meta_vless_215
+  - meta_socks5_29
+  - meta_vless_210
+  - meta_vless_211
+  - meta_hysteria2_212
+  - meta_hysteria2_213
+  - meta_hysteria2_214
+  - meta_ss_215
+  - meta_ss_216
+  - meta_ss_217
+  - meta_vless_218
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
   - meta_ss_34
-  - meta_vless_35
-  - meta_vless_36
-  - meta_vless_37
-  - meta_vless_38
-  - meta_vless_39
-  - meta_vmess_310
-  - meta_ss_311
+  - meta_vmess_35
+  - meta_ss_36
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
@@ -1324,19 +1202,21 @@ proxy-groups:
   - meta_vless_48
   - meta_vless_49
   - meta_vless_410
-  - meta_trojan_411
+  - meta_vless_411
   - meta_vless_412
-  - meta_ss_413
-  - meta_ss_414
-  - meta_ss_415
-  - meta_ss_416
-  - meta_ss_417
-  - meta_trojan_418
+  - meta_vless_413
+  - meta_vless_414
+  - meta_vless_415
+  - meta_vless_416
+  - meta_vless_417
+  - meta_http_418
   - meta_ss_419
   - meta_ss_420
-  - meta_trojan_421
-  - meta_http_422
-  - meta_vless_423
+  - meta_ss_421
+  - meta_vmess_422
+  - meta_ss_423
+  - meta_vmess_424
+  - meta_vless_425
   - reality_1
   - reality_2
   - reality_3
