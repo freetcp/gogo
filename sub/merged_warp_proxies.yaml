@@ -45,16 +45,16 @@ proxies:
   dialer-proxy: WARP前置节点
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_01
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36143
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31143
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_02
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36145
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31145
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -278,7 +278,6 @@ proxies:
     public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
   server: hkt-ty-line-1.sudatech.store
   servername: www.paypal.com
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -497,38 +496,24 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_043
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_044
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: meta_ss_11
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36241
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31241
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_12
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36243
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31243
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_13
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36245
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31245
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -634,45 +619,24 @@ proxies:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_112
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_113
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_114
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: meta_ss_21
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36171
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31171
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_22
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36173
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31173
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_23
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36175
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31175
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -784,38 +748,17 @@ proxies:
       Host: tyep.esslh.filegear-sg.me
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_216
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_217
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_218
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: meta_ss_31
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36311
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_32
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36313
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -992,67 +935,25 @@ proxies:
     headers:
       Host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
-- name: meta_vless_319
-  network: ws
-  port: 14896
-  server: 222.117.231.32
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: meta_vless_320
-  network: ws
-  port: 10943
-  server: 14.39.43.121
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_321
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_322
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_41
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36111
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31111
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_42
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36113
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31113
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_43
-  password: 3789532f-08d3-4b05-b885-8479db56455f
-  port: 36115
-  server: free.2weradf.xyz
+  password: db67fd39-ac87-40c5-91d3-e30b9be183e3
+  port: 31115
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -1589,35 +1490,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
-- name: meta_trojan_447
-  password: '!!str 74260671232757400'
-  port: 443
-  server: correct-sheepdog.shiner427.skin
-  skip-cert-verify: false
-  sni: correct-sheepdog.shiner427.skin
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_448
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_449
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_450
-  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -1722,8 +1594,6 @@ proxy-groups:
   - meta_trojan_040
   - meta_vmess_041
   - meta_vmess_042
-  - meta_ss_043
-  - meta_ss_044
   - meta_ss_11
   - meta_ss_12
   - meta_ss_13
@@ -1735,9 +1605,6 @@ proxy-groups:
   - meta_vmess_19
   - meta_vmess_110
   - meta_vless_111
-  - meta_ss_112
-  - meta_ss_113
-  - meta_ss_114
   - meta_ss_21
   - meta_ss_22
   - meta_ss_23
@@ -1750,9 +1617,6 @@ proxy-groups:
   - meta_ss_213
   - meta_vless_214
   - meta_trojan_215
-  - meta_ss_216
-  - meta_ss_217
-  - meta_ss_218
   - meta_ss_31
   - meta_ss_32
   - meta_ss_33
@@ -1771,10 +1635,6 @@ proxy-groups:
   - meta_ss_316
   - meta_vmess_317
   - meta_vless_318
-  - meta_vless_319
-  - meta_vless_320
-  - meta_ss_321
-  - meta_ss_322
   - meta_ss_41
   - meta_ss_42
   - meta_ss_43
@@ -1821,10 +1681,6 @@ proxy-groups:
   - meta_ss_444
   - meta_trojan_445
   - meta_vmess_446
-  - meta_trojan_447
-  - meta_ss_448
-  - meta_ss_449
-  - meta_ss_450
   - reality_1
   - reality_2
   - reality_3
