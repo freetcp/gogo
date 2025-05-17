@@ -25,50 +25,51 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: meta_trojan_01
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_01
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: meta_vless_02
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_02
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: meta_vless_03
   network: ws
-  port: '443'
-  server: 172.66.45.9
-  servername: MiSTliNK-CL9.pAgEs.Dev
-  tls: true
+  port: '80'
+  server: 45.131.210.98
   type: vless
   udp: true
-  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: mistlink-cl9.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /ERlnnsHzyLczPW3c?ed=2560
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/44.0.2403.157 Safari/537.36
+    path: 'Telegram: @vpnAndroid2/?ed=2560'
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_03
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_04
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_04
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_05
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: meta_ss_05
+  name: meta_ss_06
   password: ENYGONDU94UW1G6X
   port: 15010
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -76,7 +77,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_06
+  name: meta_ss_07
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -93,7 +94,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_07
+  name: meta_vmess_08
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -104,7 +105,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_08
+  name: meta_vmess_09
   port: 43302
   server: 183.236.51.38
   skip-cert-verify: false
@@ -113,7 +114,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: meta_trojan_09
+  name: meta_trojan_010
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -124,7 +125,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_010
+  name: meta_vmess_011
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -135,7 +136,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_011
+  name: meta_vmess_012
   port: 41554
   server: 183.236.51.38
   skip-cert-verify: false
@@ -145,7 +146,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_012
+  name: meta_vmess_013
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -155,7 +156,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: meta_vmess_013
+  name: meta_vmess_014
   network: tcp
   port: '43302'
   server: 183.236.51.38
@@ -165,7 +166,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_014
+  name: meta_vmess_015
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -175,7 +176,7 @@ proxies:
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 64
   cipher: auto
-  name: meta_vmess_015
+  name: meta_vmess_016
   network: tcp
   port: '41554'
   server: 183.236.51.38
@@ -185,7 +186,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: meta_vless_016
+  name: meta_vless_017
   port: 20550
   reality-opts:
     public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
@@ -196,7 +197,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- name: meta_trojan_017
+- name: meta_trojan_018
   network: ws
   password: bpb-trojan
   port: 443
@@ -209,7 +210,7 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- name: meta_trojan_018
+- name: meta_trojan_019
   network: ws
   password: bpb-trojan
   port: 443
@@ -223,52 +224,59 @@ proxies:
       Host: skwygx.top
     path: /tr
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_019
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31143
+  name: meta_ss_11
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_020
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- delay: 680
-  name: meta_http_11
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_12
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_13
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: meta_ssr_14
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: records.godeove.xyz
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_15
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_13
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_16
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_14
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_17
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: meta_trojan_15
+  name: meta_trojan_18
   network: tcp
   password: 9f19a22d-60d0-4cf8-935d-ebcff8546054
   port: 42765
@@ -277,36 +285,65 @@ proxies:
   sni: mmbiz1.redapricotcloud.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_16
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_17
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_18
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: meta_ss_21
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_22
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_23
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: meta_vless_24
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: xrr.rtxconfigz.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- name: meta_vless_25
+  network: ws
+  port: '8080'
+  server: 170.114.45.6
+  servername: xrr.rtxconfigz.xyz
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_26
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_22
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_27
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36173
   server: free.2weradf.xyz
   type: ss
@@ -314,7 +351,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_23
+  name: meta_vmess_28
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -331,7 +368,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: meta_vmess_24
+  name: meta_vmess_29
   port: 54652
   server: 183.236.51.38
   skip-cert-verify: false
@@ -341,7 +378,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_25
+  name: meta_vmess_210
   network: tcp
   port: '54652'
   server: 183.236.51.38
@@ -349,7 +386,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: meta_vless_26
+- name: meta_vless_211
   network: ws
   port: 8880
   server: 92.243.74.20
@@ -363,7 +400,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: meta_vless_27
+- name: meta_vless_212
   network: ws
   port: 2087
   server: 27.50.48.18
@@ -378,76 +415,88 @@ proxies:
       Host: edccx.aimercc.filegear-sg.me
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_28
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_29
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_210
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: meta_ss_31
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
-- client-fingerprint: chrome
-  name: meta_vless_32
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_32
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: meta_vless_33
   network: ws
-  port: '443'
-  server: 172.66.45.20
-  servername: M2-1CM.paGes.DeV
-  tls: true
+  port: '80'
+  server: 45.131.7.55
   type: vless
   udp: true
-  uuid: 0ef0630e-544c-4ed0-a4de-861f14695f37
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: M2-1CM.paGes.DeV
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /ognicwivyrkxih6r
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: 'Telegram: @vpnAndroid2/?ed=2560'
+  xudp: true
+- name: meta_vless_34
+  network: ws
+  port: '80'
+  server: 45.131.7.13
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: 'Telegram: @vpnAndroid2/?ed=2560'
+  xudp: true
+- name: meta_vless_35
+  network: ws
+  port: '80'
+  server: 45.131.5.94
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: 'Telegram: @vpnAndroid2/?ed=2560'
   xudp: true
 - alterId: 0
   cipher: auto
-  name: meta_vmess_33
+  name: meta_vmess_36
   network: ws
-  port: 2096
-  server: 193.122.119.152
-  servername: dv4.789900.xyz
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
   ws-opts:
     headers:
-      Host: dv4.789900.xyz
-    path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_34
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  name: meta_ss_37
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_35
+  name: meta_ss_38
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
@@ -455,7 +504,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: meta_ss_36
+  name: meta_ss_39
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.36.68.170
@@ -463,79 +512,50 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: meta_ss_37
+  name: meta_ss_310
   password: 1601e3c29c8db1a88942cf0cad731bf3
   port: 3306
   server: 43.131.255.175
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_38
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31311
+  name: meta_ss_41
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: meta_ss_39
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31313
+  name: meta_ss_42
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: meta_vless_41
-  network: ws
-  port: '443'
-  server: 20.210.64.11
-  servername: vsdfee.azurewebsites.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: vsdfee.azurewebsites.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/65.0.3325.181 Safari/537.36
-    path: ''
-  xudp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: meta_ss_42
-  password: awsps0501
-  port: 443
-  server: 43.207.198.128
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  name: meta_ss_43
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  port: 31115
+  server: free.2apzhfa.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: meta_vmess_43
-  port: 33184
-  server: gzhmbkqt.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_44
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_45
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: meta_ss_46
-  password: 328c910d-c035-47e3-acdf-780d1a77aad7
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -546,7 +566,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505121278853-hDhUn5bpB5.download.microsoft.com
+    host: 202505031478387-KuiKPndOsR.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -579,9 +599,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: meta_vmess_410
+  port: 33184
+  server: gzhmbkqt.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
 - alterId: 64
   cipher: auto
-  name: meta_vmess_410
+  name: meta_vmess_411
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -591,7 +622,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: meta_vmess_411
+  name: meta_vmess_412
   network: tcp
   port: '33184'
   server: gzhmbkqt.xn--fiqs8sjz2bull.com
@@ -601,7 +632,7 @@ proxies:
   uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
 - alterId: 0
   cipher: auto
-  name: meta_vmess_412
+  name: meta_vmess_413
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -609,27 +640,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_413
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_414
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: meta_ss_415
-  password: 332c8df0-97fd-4d5b-a73e-04664c129c26
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: reality_1
   type: vless
   server: 1.162.51.106
@@ -691,56 +701,58 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - meta_trojan_01
-  - meta_vless_02
-  - meta_ss_03
+  - meta_ss_01
+  - meta_ss_02
+  - meta_vless_03
   - meta_ss_04
   - meta_ss_05
   - meta_ss_06
-  - meta_vmess_07
+  - meta_ss_07
   - meta_vmess_08
-  - meta_trojan_09
-  - meta_vmess_010
+  - meta_vmess_09
+  - meta_trojan_010
   - meta_vmess_011
   - meta_vmess_012
   - meta_vmess_013
   - meta_vmess_014
   - meta_vmess_015
-  - meta_vless_016
-  - meta_trojan_017
+  - meta_vmess_016
+  - meta_vless_017
   - meta_trojan_018
-  - meta_ss_019
-  - meta_ss_020
-  - meta_http_11
+  - meta_trojan_019
+  - meta_ss_11
   - meta_ss_12
   - meta_ss_13
-  - meta_ss_14
-  - meta_trojan_15
+  - meta_ssr_14
+  - meta_ss_15
   - meta_ss_16
   - meta_ss_17
-  - meta_ss_18
+  - meta_trojan_18
   - meta_ss_21
   - meta_ss_22
-  - meta_vmess_23
-  - meta_vmess_24
-  - meta_vmess_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_ss_28
-  - meta_ss_29
-  - meta_ss_210
+  - meta_ss_23
+  - meta_vless_24
+  - meta_vless_25
+  - meta_ss_26
+  - meta_ss_27
+  - meta_vmess_28
+  - meta_vmess_29
+  - meta_vmess_210
+  - meta_vless_211
+  - meta_vless_212
   - meta_ss_31
-  - meta_vless_32
-  - meta_vmess_33
-  - meta_ss_34
-  - meta_ss_35
-  - meta_ss_36
+  - meta_ss_32
+  - meta_vless_33
+  - meta_vless_34
+  - meta_vless_35
+  - meta_vmess_36
   - meta_ss_37
   - meta_ss_38
   - meta_ss_39
-  - meta_vless_41
+  - meta_ss_310
+  - meta_ss_41
   - meta_ss_42
-  - meta_vmess_43
+  - meta_ss_43
   - meta_ss_44
   - meta_ss_45
   - meta_ss_46
@@ -750,9 +762,7 @@ proxy-groups:
   - meta_vmess_410
   - meta_vmess_411
   - meta_vmess_412
-  - meta_ss_413
-  - meta_ss_414
-  - meta_ss_415
+  - meta_vmess_413
   - reality_1
   - reality_2
   - reality_3
@@ -763,56 +773,58 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - meta_trojan_01
-  - meta_vless_02
-  - meta_ss_03
+  - meta_ss_01
+  - meta_ss_02
+  - meta_vless_03
   - meta_ss_04
   - meta_ss_05
   - meta_ss_06
-  - meta_vmess_07
+  - meta_ss_07
   - meta_vmess_08
-  - meta_trojan_09
-  - meta_vmess_010
+  - meta_vmess_09
+  - meta_trojan_010
   - meta_vmess_011
   - meta_vmess_012
   - meta_vmess_013
   - meta_vmess_014
   - meta_vmess_015
-  - meta_vless_016
-  - meta_trojan_017
+  - meta_vmess_016
+  - meta_vless_017
   - meta_trojan_018
-  - meta_ss_019
-  - meta_ss_020
-  - meta_http_11
+  - meta_trojan_019
+  - meta_ss_11
   - meta_ss_12
   - meta_ss_13
-  - meta_ss_14
-  - meta_trojan_15
+  - meta_ssr_14
+  - meta_ss_15
   - meta_ss_16
   - meta_ss_17
-  - meta_ss_18
+  - meta_trojan_18
   - meta_ss_21
   - meta_ss_22
-  - meta_vmess_23
-  - meta_vmess_24
-  - meta_vmess_25
-  - meta_vless_26
-  - meta_vless_27
-  - meta_ss_28
-  - meta_ss_29
-  - meta_ss_210
+  - meta_ss_23
+  - meta_vless_24
+  - meta_vless_25
+  - meta_ss_26
+  - meta_ss_27
+  - meta_vmess_28
+  - meta_vmess_29
+  - meta_vmess_210
+  - meta_vless_211
+  - meta_vless_212
   - meta_ss_31
-  - meta_vless_32
-  - meta_vmess_33
-  - meta_ss_34
-  - meta_ss_35
-  - meta_ss_36
+  - meta_ss_32
+  - meta_vless_33
+  - meta_vless_34
+  - meta_vless_35
+  - meta_vmess_36
   - meta_ss_37
   - meta_ss_38
   - meta_ss_39
-  - meta_vless_41
+  - meta_ss_310
+  - meta_ss_41
   - meta_ss_42
-  - meta_vmess_43
+  - meta_ss_43
   - meta_ss_44
   - meta_ss_45
   - meta_ss_46
@@ -822,9 +834,7 @@ proxy-groups:
   - meta_vmess_410
   - meta_vmess_411
   - meta_vmess_412
-  - meta_ss_413
-  - meta_ss_414
-  - meta_ss_415
+  - meta_vmess_413
   - reality_1
   - reality_2
   - reality_3
