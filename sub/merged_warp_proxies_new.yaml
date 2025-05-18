@@ -71,6 +71,20 @@ proxies:
   reality-opts:
     public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
     short-id: e12d7fdb
+- name: reality_3
+  type: vless
+  server: 1.162.51.106
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 - name: reality_4
   type: vless
   server: 1.162.51.106
@@ -94,6 +108,7 @@ proxy-groups:
   proxies:
   - reality_1
   - reality_2
+  - reality_3
   - reality_4
 - name: WARP前置节点
   type: select
